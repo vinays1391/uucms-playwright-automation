@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+test_data/loginData.json
+test_data/createNotificationData.json
+*.pyc
+*.egg-info/
+recordings/*.py
+test-results/
+playwright-report/

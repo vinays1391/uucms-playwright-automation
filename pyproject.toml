@@ -1,0 +1,19 @@
+[project]
+name = "uucms-playwright"
+version = "0.1.0"
+description = "Playwright login automation for UUCMS"
+requires-python = ">=3.10"
+dependencies = [
+  "playwright>=1.49,<2",
+  "pytest>=8,<9",
+  "pytest-playwright>=0.6,<1",
+  "python-dotenv>=1.0,<2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--tracing retain-on-failure --screenshot only-on-failure --output=test-results"
+markers = [
+  "login: requires a reachable UUCMS environment and configured login values",
+  "exam: requires a configured Exam module test-data file",
+]

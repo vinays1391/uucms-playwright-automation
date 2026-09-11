@@ -1,0 +1,10 @@
+{
+  "actions": [
+    {"type": "select_label", "selector": "#AcademicYearId", "value": "2025-2026"},
+    {"type": "select_label", "selector": "#ExamTypeId", "value": "regular"},
+    {"type": "select_labels", "selector": "#ProgramNameId", "value": "Program One, Program Two"},
+    {"type": "select_labels", "selector": "#TermId", "value": "Term One, Term Two"},
+    {"type": "click", "selector": "#btnAddExamNotification"}
+  ],
+  "success_selector": "#academic_year"
+}

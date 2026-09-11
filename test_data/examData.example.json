@@ -1,0 +1,11 @@
+{
+  "module_url": "http://123.63.4.210:5010/REPLACE_WITH_EXAM_URL",
+  "fields": [
+    {
+      "selector": "#REPLACE_WITH_FIELD_SELECTOR",
+      "value": "REPLACE_WITH_FIELD_VALUE"
+    }
+  ],
+  "submit_selector": "button:has-text(Submit)",
+  "success_selector": "REPLACE_WITH_SUCCESS_SELECTOR"
+}
