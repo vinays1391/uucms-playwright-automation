@@ -1,0 +1,1 @@
+"""Admission page objects."""

@@ -7,5 +7,6 @@ test_data/createNotificationData.json
 *.pyc
 *.egg-info/
 recordings/*.py
+recordings/videos/
 test-results/
 playwright-report/

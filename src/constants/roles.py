@@ -1,0 +1,11 @@
+"""Role and actor names used across the UUCMS automation flows."""
+
+STATE_ADMIN = "State Admin"
+UNIVERSITY_ADMIN = "University Admin"
+DEPARTMENT_CHAIRPERSON = "Department Chairperson"
+REGISTRAR_ADMIN = "Registrar (Admin)"
+STUDENT = "Student/Candidate"
+GUIDE = "Guide"
+CO_GUIDE = "Co-Guide"
+DOCTORAL_COMMITTEE = "Doctoral Committee"
+SUPERINTENDENT = "Superintendent"

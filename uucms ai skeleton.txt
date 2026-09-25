@@ -1,0 +1,288 @@
+UUCMS AI/
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── pyproject.toml
+├── README.md
+│
+├── record_login.bat
+├── record_login_video.bat
+├── run_login.bat
+├── run_exam.bat
+├── run_rnd.bat
+│
+├── prompts/
+│   ├── antigravity-pom-conversion.md
+│   ├── exam-pom-conversion.md
+│   └── rnd-pom-conversion.md
+│
+├── recordings/
+│   ├── login_codegen.py
+│   ├── exam_codegen.py
+│   ├── rnd_codegen/
+│   │   ├── phd_admission_codegen.py
+│   │   ├── synopsis_codegen.py
+│   │   ├── progress_report_codegen.py
+│   │   ├── final_viva_codegen.py
+│   │   └── research_project_codegen.py
+│   │
+│   └── videos/
+│
+├── scripts/
+│   ├── record-login-video.py
+│   ├── record-login.ps1
+│   ├── run-login.ps1
+│   ├── run-exam.ps1
+│   └── run-rnd.ps1
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── config/
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   └── environments.py
+│   │
+│   ├── constants/
+│   │   ├── __init__.py
+│   │   ├── roles.py
+│   │   ├── menus.py
+│   │   ├── statuses.py
+│   │   │
+│   │   └── menu_paths/
+│   │       ├── __init__.py
+│   │       ├── admission.py
+│   │       ├── academics.py
+│   │       ├── exam.py
+│   │       ├── research_development.py
+│   │       ├── registrar_admin.py
+│   │       ├── registrar_evaluation.py
+│   │       ├── department_chairperson.py
+│   │       ├── doctoral_committee.py
+│   │       ├── research_project.py
+│   │       └── principal.py
+│   │
+│   ├── pages/
+│   │   ├── __init__.py
+│   │   ├── base_page.py
+│   │   │
+│   │   ├── auth/
+│   │   │   ├── __init__.py
+│   │   │   └── login_page.py
+│   │   │
+│   │   ├── common/
+│   │   │   ├── __init__.py
+│   │   │   ├── dashboard_page.py
+│   │   │   ├── menu_page.py
+│   │   │   └── navigation_page.py
+│   │   │
+│   │   ├── admission/
+│   │   │   ├── __init__.py
+│   │   │   └── phd_admission_page.py
+│   │   │
+│   │   ├── academics/
+│   │   │   ├── __init__.py
+│   │   │   ├── phd_curriculum_page.py
+│   │   │   └── coursework_page.py
+│   │   │
+│   │   ├── exam/
+│   │   │   ├── __init__.py
+│   │   │   ├── exam_page.py
+│   │   │   ├── create_notification_page.py
+│   │   │   ├── exam_application_page.py
+│   │   │   └── result_page.py
+│   │   │
+│   │   └── rnd/
+│   │       ├── __init__.py
+│   │       │
+│   │       ├── phd/
+│   │       │   ├── __init__.py
+│   │       │   ├── area_of_research_page.py
+│   │       │   ├── guide_allocation_page.py
+│   │       │   ├── vacancy_matrix_page.py
+│   │       │   ├── provisional_usn_page.py
+│   │       │   ├── synopsis_page.py
+│   │       │   ├── synopsis_approval_page.py
+│   │       │   ├── permanent_usn_page.py
+│   │       │   ├── progress_report_page.py
+│   │       │   ├── final_report_page.py
+│   │       │   ├── thesis_page.py
+│   │       │   ├── viva_voce_page.py
+│   │       │   ├── colloquium_page.py
+│   │       │   ├── symposium_page.py
+│   │       │   └── convocation_page.py
+│   │       │
+│   │       ├── requests/
+│   │       │   ├── __init__.py
+│   │       │   ├── guide_change_page.py
+│   │       │   ├── co_guide_allocation_page.py
+│   │       │   ├── co_guide_change_page.py
+│   │       │   ├── special_guide_change_page.py
+│   │       │   ├── special_co_guide_change_page.py
+│   │       │   ├── mode_of_study_page.py
+│   │       │   ├── extension_page.py
+│   │       │   ├── maternity_leave_page.py
+│   │       │   └── additional_extension_page.py
+│   │       │
+│   │       └── research_project/
+│   │           ├── __init__.py
+│   │           ├── funding_agency_page.py
+│   │           ├── research_committee_page.py
+│   │           ├── project_creation_page.py
+│   │           ├── project_approval_page.py
+│   │           ├── project_member_page.py
+│   │           ├── project_progress_page.py
+│   │           ├── final_project_report_page.py
+│   │           ├── utilization_certificate_page.py
+│   │           ├── yearly_utilization_certificate_page.py
+│   │           ├── mou_page.py
+│   │           └── project_closure_page.py
+│   │
+│   ├── workflows/
+│   │   ├── __init__.py
+│   │   ├── login_workflow.py
+│   │   ├── exam_workflow.py
+│   │   ├── approval_workflow.py
+│   │   │
+│   │   └── rnd/
+│   │       ├── __init__.py
+│   │       ├── phd_admission_workflow.py
+│   │       ├── guide_allocation_workflow.py
+│   │       ├── synopsis_workflow.py
+│   │       ├── permanent_usn_workflow.py
+│   │       ├── progress_report_workflow.py
+│   │       ├── final_report_workflow.py
+│   │       ├── final_viva_workflow.py
+│   │       ├── convocation_workflow.py
+│   │       ├── scholar_request_workflow.py
+│   │       └── research_project_workflow.py
+│   │
+│   ├── fixtures/
+│   │   ├── __init__.py
+│   │   ├── users.py
+│   │   ├── login_fixtures.py
+│   │   ├── exam_fixtures.py
+│   │   ├── phd_fixtures.py
+│   │   └── research_project_fixtures.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── json_reader.py
+│       ├── excel_reader.py
+│       ├── logger.py
+│       ├── screenshot.py
+│       ├── video.py
+│       ├── wait_utils.py
+│       ├── date_utils.py
+│       ├── file_utils.py
+│       ├── validation_utils.py
+│       │
+│       └── database/
+│           ├── __init__.py
+│           ├── db_connection.py
+│           ├── query_executor.py
+│           └── queries/
+│               ├── admission_queries.sql
+│               ├── academics_queries.sql
+│               ├── exam_queries.sql
+│               └── rnd_queries.sql
+│
+├── test_data/
+│   ├── login/
+│   │   ├── loginData.example.json
+│   │   └── loginData.json
+│   │
+│   ├── admission/
+│   │   └── phd_admission.json
+│   │
+│   ├── academics/
+│   │   └── phd_curriculum.json
+│   │
+│   ├── exam/
+│   │   ├── createNotificationData.example.json
+│   │   ├── createNotificationData.json
+│   │   └── examData.example.json
+│   │
+│   └── rnd/
+│       ├── area_of_research.json
+│       ├── guide_allocation.json
+│       ├── vacancy_matrix.json
+│       ├── provisional_usn.json
+│       ├── synopsis.json
+│       ├── permanent_usn.json
+│       ├── progress_report.json
+│       ├── final_report.json
+│       ├── viva_voce.json
+│       ├── colloquium.json
+│       ├── symposium.json
+│       ├── convocation.json
+│       ├── scholar_requests.json
+│       └── research_projects.json
+│
+├── test_files/
+│   ├── rnd/
+│   │   ├── synopsis/
+│   │   ├── progress_reports/
+│   │   ├── thesis/
+│   │   ├── viva_voce/
+│   │   └── convocation/
+│   │
+│   └── research_projects/
+│       ├── proposals/
+│       ├── sanction_letters/
+│       ├── utilization_certificates/
+│       └── mou/
+│
+├── tests/
+│   ├── conftest.py
+│   │
+│   ├── login/
+│   │   └── test_login.py
+│   │
+│   ├── admission/
+│   │   └── test_phd_admission.py
+│   │
+│   ├── academics/
+│   │   └── test_phd_curriculum.py
+│   │
+│   ├── exam/
+│   │   └── test_exam.py
+│   │
+│   └── rnd/
+│       ├── phd/
+│       │   ├── test_area_of_research.py
+│       │   ├── test_guide_allocation.py
+│       │   ├── test_vacancy_matrix.py
+│       │   ├── test_provisional_usn.py
+│       │   ├── test_synopsis.py
+│       │   ├── test_permanent_usn.py
+│       │   ├── test_progress_report.py
+│       │   ├── test_final_report.py
+│       │   ├── test_viva_voce.py
+│       │   ├── test_colloquium.py
+│       │   ├── test_symposium.py
+│       │   └── test_convocation.py
+│       │
+│       ├── requests/
+│       │   ├── test_guide_change.py
+│       │   ├── test_co_guide.py
+│       │   ├── test_special_circumstances.py
+│       │   ├── test_mode_of_study.py
+│       │   ├── test_extension.py
+│       │   └── test_maternity_leave.py
+│       │
+│       └── research_project/
+│           ├── test_funding_agency.py
+│           ├── test_research_committee.py
+│           ├── test_project_creation.py
+│           ├── test_project_approval.py
+│           ├── test_project_member.py
+│           ├── test_project_progress.py
+│           ├── test_final_project_report.py
+│           ├── test_utilization_certificate.py
+│           └── test_project_closure.py
+│
+├── test-results/
+│
+└── .venv/
