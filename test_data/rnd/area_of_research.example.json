@@ -1,0 +1,58 @@
+{
+  "list": {
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "REPLACE_WITH_PROGRAM_LEVEL"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "select_label", "selector": "REPLACE_WITH_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"}
+    ],
+    "list_selector": "REPLACE_WITH_AOR_LIST_SELECTOR",
+    "list_columns": [
+      "Sl. No.", "Program Level", "Program Name", "Discipline",
+      "Area of Research Code", "Area of Research Name",
+      "Area of Research Short Form", "Action"
+    ]
+  },
+  "add": {
+    "add_button": "REPLACE_WITH_AOR_ADD_BUTTON",
+    "code_field": "REPLACE_WITH_AOR_CODE_FIELD",
+    "name_field": "REPLACE_WITH_AOR_NAME_FIELD",
+    "short_form_field": "REPLACE_WITH_AOR_SHORT_FORM_FIELD",
+    "aor_code": "REPLACE_WITH_AOR_CODE",
+    "aor_name": "REPLACE_WITH_AOR_NAME",
+    "aor_short_form": "REPLACE_WITH_AOR_SHORT_FORM",
+    "submit_button": "REPLACE_WITH_AOR_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_AOR_SAVED_ROW_SELECTOR"
+  },
+  "duplicate_code": {
+    "add_button": "REPLACE_WITH_AOR_ADD_BUTTON",
+    "existing_code": "REPLACE_WITH_EXISTING_AOR_CODE",
+    "new_name": "REPLACE_WITH_AOR_NAME_2",
+    "submit_button": "REPLACE_WITH_AOR_SUBMIT_BUTTON",
+    "expected_message": "REPLACE_WITH_DUPLICATE_CODE_VALIDATION_MESSAGE",
+    "confirm_selector": "REPLACE_WITH_AOR_VALIDATION_DIALOG_OK_BUTTON",
+    "existing_row": "REPLACE_WITH_EXISTING_AOR_ROW"
+  },
+  "required_validation": {
+    "add_button": "REPLACE_WITH_AOR_ADD_BUTTON",
+    "submit_button": "REPLACE_WITH_AOR_SUBMIT_BUTTON",
+    "expected_messages": [
+      "REPLACE_WITH_AOR_CODE_REQUIRED_MESSAGE",
+      "REPLACE_WITH_AOR_NAME_REQUIRED_MESSAGE",
+      "REPLACE_WITH_AOR_SHORT_FORM_REQUIRED_MESSAGE"
+    ],
+    "no_row_created_check": "REPLACE_WITH_NEW_AOR_ROW_CHECK_SELECTOR"
+  },
+  "delete": {
+    "aor_row": "REPLACE_WITH_AOR_1_ROW",
+    "delete_action": "REPLACE_WITH_AOR_1_DELETE_ACTION",
+    "confirm_selector": "REPLACE_WITH_AOR_DELETE_CONFIRM_BUTTON"
+  },
+  "back_discards": {
+    "add_button": "REPLACE_WITH_AOR_ADD_BUTTON",
+    "code_field": "REPLACE_WITH_AOR_CODE_FIELD",
+    "partial_code": "REPLACE_WITH_AOR_CODE",
+    "back_button": "REPLACE_WITH_AOR_BACK_BUTTON",
+    "list_selector": "REPLACE_WITH_AOR_LIST_SELECTOR",
+    "unchanged_row": "REPLACE_WITH_EXISTING_AOR_ROW"
+  }
+}

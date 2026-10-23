@@ -10,10 +10,10 @@ Convert this Playwright Codegen Python script into the existing UUCMS Playwright
 
 Requirements:
 
-- Put page behavior in `src/pages/login_page.py` and keep the test flow in `tests/test_login.py`.
+- Put login page behavior in `src/uucms/auth/login_page.py` and keep the test flow in `tests/ui/authentication/test_login.py`.
 - Preserve the observed login behavior, but replace brittle generated selectors with stable selectors where the page supports them.
 - Use the known UUCMS selectors when they match the live page: `pills-university-tab`, `txtUserName`, `txtPassword`, CAPTCHA input, `Log In`, and authenticated marker `MenuDiv`.
-- Read URL, username, password, CAPTCHA, browser, headless mode, and timeout from environment configuration through `src/config/settings.py`.
+- Read URL, username, password, CAPTCHA, browser, headless mode, and timeout from environment configuration through `config/settings.py`.
 - Never copy literal credentials or CAPTCHA values into source, fixtures, recordings, logs, or comments.
 - Do not solve, bypass, or OCR CAPTCHA. Accept a configured CAPTCHA value or leave the test blocked with a clear failure.
 - Prefer Playwright locators and web-first assertions. Avoid arbitrary sleeps.
@@ -24,8 +24,8 @@ Requirements:
 
 Return updated contents for:
 
-1. `src/pages/login_page.py`
-2. `tests/test_login.py`
+1. `src/uucms/auth/login_page.py`
+2. `tests/ui/authentication/test_login.py`
 3. Any narrowly required configuration change
 
 Do not modify the one-click runner or add an API call to Gemini. The conversion remains a reviewed manual step.

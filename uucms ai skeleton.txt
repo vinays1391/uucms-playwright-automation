@@ -7,7 +7,8 @@ UUCMS AI/
 ├── README.md
 │
 ├── record_login.bat
-├── record_login_video.bat
+├── record_video.bat
+├── record_codegen.bat
 ├── run_login.bat
 ├── run_exam.bat
 ├── run_rnd.bat
@@ -30,7 +31,8 @@ UUCMS AI/
 │   └── videos/
 │
 ├── scripts/
-│   ├── record-login-video.py
+│   ├── record-video.py
+│   ├── record-codegen.py
 │   ├── record-login.ps1
 │   ├── run-login.ps1
 │   ├── run-exam.ps1
@@ -79,7 +81,7 @@ UUCMS AI/
 │   │   │
 │   │   ├── admission/
 │   │   │   ├── __init__.py
-│   │   │   └── phd_admission_page.py
+│   │   │   └── application_page.py
 │   │   │
 │   │   ├── academics/
 │   │   │   ├── __init__.py

@@ -1,0 +1,402 @@
+{
+  "pending_after_scholar": "Guide & Co-Guide",
+  "pending_after_guide": "Co-Guide",
+  "send_back_stage": "department_chairperson",
+  "reject_stage": "doctoral_committee_chairperson",
+  "configuration_list": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Configuration", "Research Progress Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_PR_VIEW_SCHOLARS_BUTTON",
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Scholar USN", "Scholar Name", "Research frequency Submission From Date",
+      "Frequency of Submission",
+      "No. of Days from start date - Submission to be allowed",
+      "Total Number of Reports to be submitted including final Report",
+      "Projected Final Report Submission Date", "Action"
+    ]
+  },
+  "configure_scholar": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Configuration", "Research Progress Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_SCHOLAR_ROW",
+    "actions": [
+      {"type": "fill", "selector": "REPLACE_WITH_PR_FROM_DATE_FIELD", "value": "REPLACE_WITH_FROM_DATE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_FREQUENCY_SELECT", "value": "Monthly"},
+      {"type": "fill", "selector": "REPLACE_WITH_PR_DAYS_FROM_START_FIELD", "value": "3"},
+      {"type": "fill", "selector": "REPLACE_WITH_PR_TOTAL_REPORTS_FIELD", "value": "6"},
+      {"type": "fill", "selector": "REPLACE_WITH_PR_PROJECTED_FINAL_DATE_FIELD", "value": "REPLACE_WITH_PROJ_DATE"}
+    ],
+    "save_selector": "REPLACE_WITH_PR_CONFIG_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_PR_CONFIG_SUCCESS_SELECTOR",
+    "expected_row_values": ["REPLACE_WITH_FROM_DATE", "Monthly", "3", "6", "REPLACE_WITH_PROJ_DATE"]
+  },
+  "frequency_options": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Configuration", "Research Progress Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_SCHOLAR_ROW",
+    "edit_action": "REPLACE_WITH_PR_CONFIG_EDIT_ACTION",
+    "frequency_select": "REPLACE_WITH_PR_FREQUENCY_SELECT",
+    "expected_options": ["Weekly", "bi-weekly", "Monthly", "Bi-Monthly", "three months", "six months", "Nine Months", "one year"]
+  },
+  "edit_configuration": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Configuration", "Research Progress Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_SCHOLAR_ROW",
+    "edit_action": "REPLACE_WITH_PR_CONFIG_EDIT_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_FREQUENCY_SELECT", "value": "three months"}
+    ],
+    "save_selector": "REPLACE_WITH_PR_CONFIG_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_PR_CONFIG_SUCCESS_SELECTOR",
+    "expected_row_values": ["three months"]
+  },
+  "master_table": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "status_cells": "REPLACE_WITH_PR_STATUS_CELLS_SELECTOR",
+    "pending_cells": "REPLACE_WITH_PR_PENDING_CELLS_SELECTOR"
+  },
+  "scholar_list": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Scholar USN", "Scholar Name", "Total Approved Submission Till Date",
+      "Progress Report ID", "Progress Report Submission Deadline",
+      "Progress Report Submission Status", "Action Pending With",
+      "Latest Status Updated Date & Time", "Action"
+    ]
+  },
+  "submit_window_enabled": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_CURRENT_REPORT_ROW",
+    "submit_action": "REPLACE_WITH_PR_SUBMIT_ACTION"
+  },
+  "submit_before_start": {
+    "login": "pre_start_scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_NOT_STARTED_REPORT_ROW",
+    "submit_action": "REPLACE_WITH_PR_SUBMIT_ACTION"
+  },
+  "deadline_message": {
+    "login": "expired_scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_EXPIRED_REPORT_ROW",
+    "submit_action": "REPLACE_WITH_PR_SUBMIT_ACTION",
+    "deadline_message": "Your Progress Report deadline has been passed. You cannot submit the Progress Report now"
+  },
+  "next_report_displayed": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "approved_row": "REPLACE_WITH_APPROVED_REPORT_ROW",
+    "next_report_row": "REPLACE_WITH_NEXT_REPORT_ROW",
+    "next_report_marker": "REPLACE_WITH_NEXT_REPORT_ID",
+    "next_report_date": "REPLACE_WITH_NEXT_REPORT_DATE",
+    "submit_action": "REPLACE_WITH_PR_SUBMIT_ACTION"
+  },
+  "report_id_format": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "first_report_row": "REPLACE_WITH_FIRST_REPORT_ROW",
+    "first_report_id_cell": "REPLACE_WITH_FIRST_REPORT_ID_CELL",
+    "first_report_id": "PRGRS202618AIML001",
+    "id_pattern": "^PRGRS(\\d{4})(\\d{2})([A-Z]{4})(\\d{3})$",
+    "admission_year": "2026",
+    "university_id": "18",
+    "aor_short_form": "AIML",
+    "all_report_id_cells": "REPLACE_WITH_ALL_REPORT_ID_CELLS",
+    "second_report_id": "PRGRS202618AIML002"
+  },
+  "final_report_id": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "final_report_row": "REPLACE_WITH_FINAL_REPORT_ROW",
+    "final_report_id_cell": "REPLACE_WITH_FINAL_REPORT_ID_CELL",
+    "expected_id": "FINAL202618AIML001",
+    "id_pattern": "^FINAL(\\d{4})(\\d{2})([A-Z]{4})(\\d{3})$"
+  },
+  "scholar": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_CURRENT_REPORT_ROW",
+    "submit_action": "REPLACE_WITH_PR_SUBMIT_ACTION",
+    "resubmit_action": "REPLACE_WITH_PR_RESUBMIT_ACTION",
+    "brief_field": "REPLACE_WITH_PR_BRIEF_DETAILS_FIELD",
+    "brief": "REPLACE_WITH_BRIEF_DETAILS",
+    "document_input": "REPLACE_WITH_PR_DOCUMENT_INPUT",
+    "document": "REPLACE_WITH_PROGRESS_DOC.PDF",
+    "submit_selector": "REPLACE_WITH_PR_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_PR_SUBMIT_SUCCESS_SELECTOR",
+    "report_id_cell": "REPLACE_WITH_SUBMITTED_REPORT_ID_CELL"
+  },
+  "submission_validation": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_CURRENT_REPORT_ROW",
+    "submit_action": "REPLACE_WITH_PR_SUBMIT_ACTION",
+    "brief_field": "REPLACE_WITH_PR_BRIEF_DETAILS_FIELD",
+    "brief": "REPLACE_WITH_BRIEF_DETAILS",
+    "document_input": "REPLACE_WITH_PR_DOCUMENT_INPUT",
+    "document": "REPLACE_WITH_PROGRESS_DOC.PDF",
+    "submit_selector": "REPLACE_WITH_PR_SUBMIT_BUTTON",
+    "blank_brief_message": "REPLACE_WITH_PR_BRIEF_REQUIRED_MESSAGE",
+    "missing_document_message": "REPLACE_WITH_PR_DOCUMENT_REQUIRED_MESSAGE",
+    "dialog_ok_selector": "REPLACE_WITH_VALIDATION_DIALOG_OK_BUTTON"
+  },
+  "invalid_document": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_CURRENT_REPORT_ROW",
+    "submit_action": "REPLACE_WITH_PR_SUBMIT_ACTION",
+    "document_input": "REPLACE_WITH_PR_DOCUMENT_INPUT",
+    "invalid_file": "REPLACE_WITH_INVALID_FILE.EXE",
+    "expected_message": "REPLACE_WITH_PR_INVALID_FILE_MESSAGE"
+  },
+  "guide": {
+    "login": "guide",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_LATEST_STATUS_SELECT", "value": "REPLACE_WITH_LATEST_STATUS"}
+    ],
+    "list_columns": [
+      "Total Approved Submission Till Date", "Progress Report ID",
+      "Progress Report Submission Deadline", "Progress Report Submission Status",
+      "Action Pending With", "Latest Status Updated Date & Time"
+    ],
+    "pending_rows": [
+      {"row": "REPLACE_WITH_GUIDE_PENDING_REPORT_ROW", "pending_with": "Guide"},
+      {"row": "REPLACE_WITH_CHAIR_PENDING_ROW2", "pending_with": "Department Chairperson"},
+      {"row": "REPLACE_WITH_DCC_PENDING_ROW2", "pending_with": "Doctoral Committee Chairperson"},
+      {"row": "REPLACE_WITH_SCHOLAR_SIDE_ROW", "pending_with": "Scholar"}
+    ],
+    "report_row": "REPLACE_WITH_GUIDE_PENDING_REPORT_ROW",
+    "review_action": "REPLACE_WITH_GUIDE_PR_VIEW_ACTION",
+    "document_view_selector": "REPLACE_WITH_GUIDE_PR_DOC_VIEW_SELECTOR",
+    "document_download_selector": "REPLACE_WITH_GUIDE_PR_DOC_DOWNLOAD_SELECTOR",
+    "detail_sections": ["REPLACE_WITH_PR_BRIEF_SECTION", "REPLACE_WITH_PR_RESEARCH_TITLE_SECTION"],
+    "remarks_field": "REPLACE_WITH_GUIDE_PR_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_GUIDE_PR_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_GUIDE_PR_SEND_BACK_BUTTON",
+    "reject_selector": "REPLACE_WITH_GUIDE_PR_REJECT_BUTTON",
+    "success_selector": "REPLACE_WITH_GUIDE_PR_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_GUIDE_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_GUIDE_SEND_BACK_REMARKS",
+    "reject_remarks": "REPLACE_WITH_GUIDE_REJECT_REMARKS",
+    "next_pending_with": "Co-Guide",
+    "coguide_review_section": "Progress Report Review Remarks of the Co-Guide",
+    "coguide_review_remarks": "REPLACE_WITH_COGUIDE_REMARKS"
+  },
+  "coguide": {
+    "login": "coguide",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_LATEST_STATUS_SELECT", "value": "REPLACE_WITH_LATEST_STATUS"}
+    ],
+    "report_row": "REPLACE_WITH_COGUIDE_PENDING_REPORT_ROW",
+    "review_action": "REPLACE_WITH_COGUIDE_PR_VIEW_ACTION",
+    "remarks_field": "REPLACE_WITH_COGUIDE_PR_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_COGUIDE_PR_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_COGUIDE_PR_SEND_BACK_BUTTON",
+    "success_selector": "REPLACE_WITH_COGUIDE_PR_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_COGUIDE_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_COGUIDE_SEND_BACK_REMARKS",
+    "next_pending_with": "Department Chairperson",
+    "guide_review_section": "Progress Report Review Remarks of the Guide",
+    "guide_review_remarks": "REPLACE_WITH_GUIDE_REMARKS"
+  },
+  "cross_display": {
+    "coguide_reviewed_first": {
+      "login": "guide",
+      "menu_path": ["R&D", "Research Progress", "Submissions"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "report_row": "REPLACE_WITH_CROSS_DISPLAY_REPORT_ROW",
+      "view_action": "REPLACE_WITH_GUIDE_PR_VIEW_ACTION",
+      "coguide_review_section": "Progress Report Review Remarks of the Co-Guide",
+      "coguide_review_remarks": "REPLACE_WITH_COGUIDE_REMARKS",
+      "coguide_review_status": "Approved"
+    },
+    "guide_reviewed_first": {
+      "login": "coguide",
+      "menu_path": ["R&D", "Research Progress", "Submissions"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "report_row": "REPLACE_WITH_CROSS_DISPLAY_REPORT_ROW",
+      "view_action": "REPLACE_WITH_COGUIDE_PR_VIEW_ACTION",
+      "guide_review_section": "Progress Report Review Remarks of the Guide",
+      "guide_review_remarks": "REPLACE_WITH_GUIDE_REMARKS",
+      "guide_review_status": "Approved"
+    }
+  },
+  "resubmit_after_send_back": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_SENT_BACK_REPORT_ROW",
+    "resubmit_action": "REPLACE_WITH_PR_RESUBMIT_ACTION",
+    "brief_field": "REPLACE_WITH_PR_BRIEF_DETAILS_FIELD",
+    "brief": "REPLACE_WITH_BRIEF_DETAILS_V2",
+    "document_input": "REPLACE_WITH_PR_DOCUMENT_INPUT",
+    "document": "REPLACE_WITH_PROGRESS_DOC_V2.PDF",
+    "submit_selector": "REPLACE_WITH_PR_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_PR_SUBMIT_SUCCESS_SELECTOR",
+    "pending_with": "Guide"
+  },
+  "skip_coguide": {
+    "login": "guide",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_NO_COGUIDE_REPORT_ROW",
+    "review_action": "REPLACE_WITH_GUIDE_PR_VIEW_ACTION",
+    "remarks_field": "REPLACE_WITH_GUIDE_PR_REMARKS_FIELD",
+    "approve_remarks": "REPLACE_WITH_GUIDE_REMARKS",
+    "approve_selector": "REPLACE_WITH_GUIDE_PR_APPROVE_BUTTON",
+    "success_selector": "REPLACE_WITH_GUIDE_PR_ACTION_SUCCESS_SELECTOR",
+    "next_pending_with": "Department Chairperson"
+  },
+  "department_chairperson": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_LATEST_STATUS_SELECT", "value": "REPLACE_WITH_LATEST_STATUS"}
+    ],
+    "report_row": "REPLACE_WITH_CHAIR_PENDING_REPORT_ROW",
+    "review_action": "REPLACE_WITH_CHAIR_PR_VIEW_ACTION",
+    "document_view_selector": "REPLACE_WITH_CHAIR_PR_DOC_VIEW_SELECTOR",
+    "document_download_selector": "REPLACE_WITH_CHAIR_PR_DOC_DOWNLOAD_SELECTOR",
+    "detail_sections": ["REPLACE_WITH_PR_BRIEF_SECTION", "REPLACE_WITH_PR_RESEARCH_TITLE_SECTION"],
+    "remarks_field": "REPLACE_WITH_CHAIR_PR_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_CHAIR_PR_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_CHAIR_PR_SEND_BACK_BUTTON",
+    "reject_selector": "REPLACE_WITH_CHAIR_PR_REJECT_BUTTON",
+    "success_selector": "REPLACE_WITH_CHAIR_PR_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_DEPT_CHAIR_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_DEPT_CHAIR_SEND_BACK_REMARKS",
+    "reject_remarks": "REPLACE_WITH_DEPT_CHAIR_REJECT_REMARKS",
+    "next_pending_with": "Doctoral Committee Chairperson",
+    "expected_sections": [
+      "Progress Report Review Remarks of the Guide",
+      "Progress Report Review Remarks of the Co-Guide"
+    ],
+    "expected_remarks": ["REPLACE_WITH_GUIDE_REMARKS", "REPLACE_WITH_COGUIDE_REMARKS"]
+  },
+  "doctoral_committee_chairperson": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_DCC_PENDING_REPORT_ROW",
+    "review_action": "REPLACE_WITH_DCC_PR_VIEW_ACTION",
+    "remarks_field": "REPLACE_WITH_DCC_PR_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_DCC_PR_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_DCC_PR_SEND_BACK_BUTTON",
+    "reject_selector": "REPLACE_WITH_DCC_PR_REJECT_BUTTON",
+    "success_selector": "REPLACE_WITH_DCC_PR_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_DCC_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_DCC_SEND_BACK_REMARKS",
+    "reject_remarks": "REPLACE_WITH_DCC_REJECT_REMARKS",
+    "expected_sections": [
+      "Progress Report Review Remarks of the Guide",
+      "Progress Report Review Remarks of the Co-Guide",
+      "Progress Report Review Remarks of the Department Chairperson"
+    ],
+    "expected_remarks": [
+      "REPLACE_WITH_GUIDE_REMARKS", "REPLACE_WITH_COGUIDE_REMARKS", "REPLACE_WITH_DEPT_CHAIR_REMARKS"
+    ],
+    "symposium_upload_action": "REPLACE_WITH_PR_UPLOAD_SYMPOSIUM_ACTION",
+    "symposium_input": "REPLACE_WITH_PR_SYMPOSIUM_DETAILS_FILE_INPUT",
+    "symposium_document": "REPLACE_WITH_SYMPOSIUM_DOC.PDF",
+    "total_approved_cell": "REPLACE_WITH_PR_TOTAL_APPROVED_CELL",
+    "total_approved_value": "REPLACE_WITH_TOTAL_APPROVED_COUNT",
+    "symposium_list_check": "REPLACE_WITH_DCC_SYMPOSIUM_INVITATION_LIST_CHECK"
+  },
+  "scholar_view_approved": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "report_row": "REPLACE_WITH_APPROVED_REPORT_ROW",
+    "view_action": "REPLACE_WITH_SCHOLAR_PR_VIEW_ACTION",
+    "document_view_selector": "REPLACE_WITH_SCHOLAR_PR_DOC_VIEW_SELECTOR",
+    "document_download_selector": "REPLACE_WITH_SCHOLAR_PR_DOC_DOWNLOAD_SELECTOR",
+    "expected_sections": [
+      "Progress Report Review Remarks of the Guide",
+      "Progress Report Review Remarks of the Co-Guide",
+      "Progress Report Review Remarks of the Department Chairperson",
+      "Progress Report Review Remarks of the Doctoral Committee Chairperson"
+    ],
+    "expected_remarks": [
+      "REPLACE_WITH_GUIDE_REMARKS", "REPLACE_WITH_COGUIDE_REMARKS",
+      "REPLACE_WITH_DEPT_CHAIR_REMARKS", "REPLACE_WITH_DCC_REMARKS"
+    ],
+    "symposium_details_view_selector": "REPLACE_WITH_PR_SYMPOSIUM_DETAILS_VIEW_SELECTOR",
+    "symposium_details_download_selector": "REPLACE_WITH_PR_SYMPOSIUM_DETAILS_DOWNLOAD_SELECTOR"
+  }
+}

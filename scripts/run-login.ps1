@@ -14,5 +14,5 @@ if (Test-Path ".env") {
 if ($Browser -notin @("chromium", "firefox", "webkit")) { throw "UUCMS_BROWSER must be chromium, firefox, or webkit." }
 & $Python -m playwright install $Browser
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-& $Python -m pytest tests/test_login.py -m login --browser=$Browser
+& $Python -m pytest tests/ui/authentication/test_login.py -m login --browser=$Browser
 exit $LASTEXITCODE

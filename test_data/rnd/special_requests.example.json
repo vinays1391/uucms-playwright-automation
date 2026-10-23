@@ -1,0 +1,677 @@
+{
+  "student_list": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "view_button": "REPLACE_WITH_VIEW_MY_REQUESTS_BUTTON",
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Student USN", "Student Name", "Course Work Status", "Request Type",
+      "Special Circumstance", "Amount Paid",
+      "Request Submission Status Updated Date & Time", "Request Status",
+      "Action"
+    ],
+    "add_new_request_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION"
+  },
+  "raise_guide_change": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "student_details": [
+      "REPLACE_WITH_STUDENT_NAME", "REPLACE_WITH_STUDENT_USN",
+      "REPLACE_WITH_STUDENT_PROGRAM", "REPLACE_WITH_STUDENT_DISCIPLINE",
+      "REPLACE_WITH_STUDENT_AOR"
+    ],
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+    "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "success_selector": "REPLACE_WITH_SR_WIZARD_NEXT_SUCCESS_SELECTOR",
+    "preferred_faculty_heading": "Choose Preferred Faculty"
+  },
+  "special_circumstance_types": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "special_circumstance_select": "REPLACE_WITH_SR_SPECIAL_CIRCUMSTANCE_SELECT",
+    "request_types": [
+      "Request for Guide Change under special Circumstances",
+      "Request for Co-Guide Change under Special Circumstances"
+    ],
+    "expected_options": [
+      "Death of the Guide",
+      "Serious health issue of Guide",
+      "Transfer of the Research scholar to another University",
+      "Grievance of Research scholar"
+    ]
+  },
+  "no_special_circumstance": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Co-Guide Allocation",
+    "special_circumstance_select": "REPLACE_WITH_SR_SPECIAL_CIRCUMSTANCE_SELECT"
+  },
+  "preferred_faculty_vacancy": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "list_columns": [
+      "Faculty Area of Research Code", "Area of Research Name",
+      "Department", "Faculty Type", "Research Faculty Type",
+      "Contact Number", "Email ID"
+    ],
+    "present": ["REPLACE_WITH_FACULTY_1"],
+    "absent": ["REPLACE_WITH_FACULTY_2"]
+  },
+  "coguide_vacancy_matrix": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Co-Guide Allocation",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "present": ["REPLACE_WITH_COGUIDE_FACULTY_1"],
+    "absent": ["REPLACE_WITH_COGUIDE_FACULTY_2"]
+  },
+  "existing_guide_excluded": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "present": ["REPLACE_WITH_ELIGIBLE_FACULTY"],
+    "absent": ["REPLACE_WITH_FACULTY_1"]
+  },
+  "aor_limited_faculty": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "present": ["REPLACE_WITH_AOR_FACULTY"],
+    "absent": ["REPLACE_WITH_OTHER_AOR_FACULTY"]
+  },
+  "research_faculty_type": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "research_faculty_type_cells": "REPLACE_WITH_RESEARCH_FACULTY_TYPE_CELLS",
+    "guide_change": {"request_type": "Request for Guide Change", "expected_types": ["Guide"]},
+    "coguide_allocation": {"request_type": "Request for Co-Guide Allocation", "expected_types": ["Co-Guide"]}
+  },
+  "online_fee_payment": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+    "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "faculty_select": "REPLACE_WITH_SR_PREFERRED_FACULTY_SELECT",
+    "faculty": "REPLACE_WITH_FACULTY_1",
+    "fee_amount_field": "REPLACE_WITH_SR_FEE_AMOUNT_FIELD",
+    "expected_amount": "1000",
+    "pay_selector": "REPLACE_WITH_SR_PAY_FEES_BUTTON",
+    "payment_actions": [
+      {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"},
+      {"type": "fill", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_2", "value": "REPLACE_WITH_PAYMENT_DETAILS"}
+    ],
+    "payment_success_selector": "REPLACE_WITH_SR_PAYMENT_SUCCESS_SELECTOR",
+    "request_row": "REPLACE_WITH_SUBMITTED_REQUEST_ROW",
+    "amount_paid": "1000"
+  },
+  "no_offline_payment": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "faculty_select": "REPLACE_WITH_SR_PREFERRED_FACULTY_SELECT",
+    "faculty": "REPLACE_WITH_FACULTY_1",
+    "offline_option_selector": "REPLACE_WITH_OFFLINE_PAYMENT_OPTION_CHECK"
+  },
+  "vacancy_seat_lock": {
+    "matrix": {
+      "login": "university_admin",
+      "menu_path": ["REPLACE_WITH_VACANCY_MATRIX_MENU"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_MATRIX_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "faculty_row": "REPLACE_WITH_FACULTY_1_MATRIX_ROW",
+      "seat_cell": "REPLACE_WITH_FACULTY_1_SEAT_COUNT_CELL",
+      "original_seats": "1"
+    },
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+    "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "faculty_select": "REPLACE_WITH_SR_PREFERRED_FACULTY_SELECT",
+    "faculty": "REPLACE_WITH_FACULTY_1",
+    "pay_selector": "REPLACE_WITH_SR_PAY_FEES_BUTTON",
+    "payment_actions": [
+      {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+    ],
+    "payment_success_selector": "REPLACE_WITH_SR_PAYMENT_SUCCESS_SELECTOR",
+    "request_row": "REPLACE_WITH_SUBMITTED_REQUEST_ROW",
+    "release_action": "REPLACE_WITH_SR_REQUEST_RELEASE_ACTION",
+    "release_confirm_selector": "REPLACE_WITH_SR_REQUEST_RELEASE_CONFIRM_BUTTON"
+  },
+  "existing_coguide_display": {
+    "student_a": {
+      "login": "scholar",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "request_type": "Request for Co-Guide Change",
+      "coguide_field": "REPLACE_WITH_EXISTING_COGUIDE_FIELD",
+      "coguide_name": "REPLACE_WITH_COGUIDE_NAME"
+    },
+    "student_b": {
+      "login": "REPLACE_WITH_STUDENT_B_ROLE",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "request_type": "Request for Co-Guide Change",
+      "coguide_field": "REPLACE_WITH_EXISTING_COGUIDE_FIELD"
+    }
+  },
+  "reason_required": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "expected_message": "REPLACE_WITH_REASON_REQUIRED_MESSAGE"
+  },
+  "request_type_required": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "expected_message": "REPLACE_WITH_REQUEST_TYPE_REQUIRED_MESSAGE"
+  },
+  "duplicate_pending": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Guide Change",
+    "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+    "expected_message": "REPLACE_WITH_DUPLICATE_REQUEST_MESSAGE"
+  },
+  "chairperson_list": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "view_button": "REPLACE_WITH_CHAIR_STUDENTS_VIEW_BUTTON",
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Student USN", "Student Name", "Course Work Status", "Request Type",
+      "Special Circumstance", "Amount Paid",
+      "Request Submission Status Updated Date & Time", "Request Status",
+      "Action"
+    ]
+  },
+  "dcc_list": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "view_button": "REPLACE_WITH_DCC_STUDENTS_VIEW_BUTTON",
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Student USN", "Student Name", "Course Work Status", "Request Type",
+      "Special Circumstance", "Amount Paid",
+      "Request Submission Status Updated Date & Time", "Request Status",
+      "Action"
+    ]
+  },
+  "chairperson_review": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "request_row": "REPLACE_WITH_REQUEST_ROW",
+    "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+    "student_details": [
+      "REPLACE_WITH_STUDENT_NAME", "REPLACE_WITH_STUDENT_USN",
+      "REPLACE_WITH_STUDENT_PROGRAM", "REPLACE_WITH_STUDENT_AOR",
+      "REPLACE_WITH_EXISTING_GUIDE"
+    ],
+    "sections": ["Request for Guide Change", "REPLACE_WITH_REASON"],
+    "document_view_selector": "REPLACE_WITH_SR_DOC_VIEW_SELECTOR",
+    "document_download_selector": "REPLACE_WITH_SR_DOC_DOWNLOAD_SELECTOR",
+    "preferred_faculty_columns": [
+      "Faculty Area of Research Code", "Area of Research Name",
+      "Department", "Faculty Type", "Research Faculty Type",
+      "Contact Number", "Email ID"
+    ],
+    "preference_approve_action": "REPLACE_WITH_SR_PREFERENCE_APPROVE_ACTION",
+    "fee_paid_status": "REPLACE_WITH_FEES_PAID_STATUS_TEXT",
+    "remarks_field": "REPLACE_WITH_CHAIR_SR_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_BUTTON",
+    "reject_selector": "REPLACE_WITH_CHAIR_SR_REJECT_BUTTON"
+  },
+  "chairperson_approves": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "request_row": "REPLACE_WITH_REQUEST_ROW",
+    "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+    "approve_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_BUTTON",
+    "success_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_SUCCESS_SELECTOR",
+    "approved_status": "Approved",
+    "allocation_check_selector": "REPLACE_WITH_NEW_GUIDE_ALLOCATION_CHECK",
+    "allocated_guide": "REPLACE_WITH_FACULTY_1"
+  },
+  "chairperson_rejects": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "request_row": "REPLACE_WITH_REQUEST_ROW",
+    "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+    "remarks_field": "REPLACE_WITH_CHAIR_SR_REMARKS_FIELD",
+    "reject_remarks": "REPLACE_WITH_REMARKS",
+    "reject_selector": "REPLACE_WITH_CHAIR_SR_REJECT_BUTTON",
+    "success_selector": "REPLACE_WITH_CHAIR_SR_REJECT_SUCCESS_SELECTOR",
+    "rejected_status": "Rejected"
+  },
+  "approve_specific_faculty": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "request_row": "REPLACE_WITH_REQUEST_ROW",
+    "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+    "faculties": ["REPLACE_WITH_FACULTY_1", "REPLACE_WITH_FACULTY_2", "REPLACE_WITH_FACULTY_3"],
+    "faculty_rows": ["REPLACE_WITH_FACULTY_1_ROW", "REPLACE_WITH_FACULTY_2_ROW", "REPLACE_WITH_FACULTY_3_ROW"],
+    "approves_index": 1,
+    "preference_approve_action": "REPLACE_WITH_SR_PREFERENCE_APPROVE_ACTION",
+    "success_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_SUCCESS_SELECTOR",
+    "allocation_check_selector": "REPLACE_WITH_GUIDE_ALLOCATION_CHECK",
+    "allocated_faculty": "REPLACE_WITH_FACULTY_2",
+    "not_allocated_faculties": ["REPLACE_WITH_FACULTY_1", "REPLACE_WITH_FACULTY_3"]
+  },
+  "mode_of_study": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request to change the mode of study",
+    "mode_select": "REPLACE_WITH_SR_MODE_OF_STUDY_SELECT",
+    "mode": "Fellowship – Full Time",
+    "expected_modes": ["Fellowship – Full Time", "Non-Fellowship - Part time"],
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "pay_fee": {
+      "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+      "fee_amount_field": "REPLACE_WITH_SR_FEE_AMOUNT_FIELD",
+      "expected_amount": "REPLACE_WITH_MODE_FEE",
+      "pay_selector": "REPLACE_WITH_SR_PAY_FEES_BUTTON",
+      "payment_actions": [
+        {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+      ],
+      "payment_success_selector": "REPLACE_WITH_SR_PAYMENT_SUCCESS_SELECTOR"
+    }
+  },
+  "mode_of_study_review": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "request_row": "REPLACE_WITH_MODE_REQUEST_ROW",
+    "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+    "mode_requested_field": "REPLACE_WITH_SR_MODE_REQUESTED_FIELD",
+    "mode_requested": "Fellowship – Full Time",
+    "document_view_selector": "REPLACE_WITH_SR_DOC_VIEW_SELECTOR",
+    "document_download_selector": "REPLACE_WITH_SR_DOC_DOWNLOAD_SELECTOR",
+    "fee_paid_status": "REPLACE_WITH_FEES_PAID_STATUS_TEXT",
+    "remarks_field": "REPLACE_WITH_CHAIR_SR_REMARKS_FIELD",
+    "approve_remarks": "REPLACE_WITH_REMARKS",
+    "approve_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_BUTTON",
+    "success_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_SUCCESS_SELECTOR",
+    "approved_status": "Approved"
+  },
+  "maternity_leave_visibility": {
+    "female_scholar": {
+      "login": "female_scholar",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "present": ["Request for Maternity Leave"]
+    },
+    "male_scholar": {
+      "login": "male_scholar",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "absent": ["Request for Maternity Leave"]
+    }
+  },
+  "maternity_leave_request": {
+    "login": "female_scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for Maternity Leave",
+    "from_date_field": "REPLACE_WITH_ML_FROM_DATE_FIELD",
+    "from_date": "REPLACE_WITH_FROM_DATE",
+    "to_date_field": "REPLACE_WITH_ML_TO_DATE_FIELD",
+    "to_date": "REPLACE_WITH_TO_DATE",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+    "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+    "pay_fee": {
+      "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+      "fee_amount_field": "REPLACE_WITH_SR_FEE_AMOUNT_FIELD",
+      "expected_amount": "REPLACE_WITH_ML_FEE",
+      "pay_selector": "REPLACE_WITH_SR_PAY_FEES_BUTTON",
+      "payment_actions": [
+        {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+      ],
+      "payment_success_selector": "REPLACE_WITH_SR_PAYMENT_SUCCESS_SELECTOR"
+    },
+    "chairperson": {
+      "login": "department_chairperson",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "request_row": "REPLACE_WITH_ML_REQUEST_ROW",
+      "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+      "from_date_label": "REPLACE_WITH_ML_FROM_DATE_LABEL",
+      "to_date_label": "REPLACE_WITH_ML_TO_DATE_LABEL",
+      "approve_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_BUTTON",
+      "reject_selector": "REPLACE_WITH_CHAIR_SR_REJECT_BUTTON",
+      "remarks_field": "REPLACE_WITH_CHAIR_SR_REMARKS_FIELD"
+    }
+  },
+  "no_submission_during_leave": {
+    "login": "female_scholar",
+    "synopsis_menu_path": ["R&D", "Synopsis", "Submissions"],
+    "synopsis_row": "REPLACE_WITH_LEAVE_SCHOLAR_SYNOPSIS_ROW",
+    "synopsis_submit_action": "REPLACE_WITH_SYNOPSIS_SUBMIT_ACTION",
+    "progress_menu_path": ["R&D", "Research Progress", "Submissions"],
+    "progress_row": "REPLACE_WITH_LEAVE_SCHOLAR_PROGRESS_ROW",
+    "progress_submit_action": "REPLACE_WITH_PROGRESS_SUBMIT_ACTION"
+  },
+  "maternity_leave_6plus": {
+    "student": {
+      "login": "female_scholar",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "request_type": "Request for Maternity Leave",
+      "from_date_field": "REPLACE_WITH_ML_FROM_DATE_FIELD",
+      "from_date": "REPLACE_WITH_ML_8M_FROM_DATE",
+      "to_date_field": "REPLACE_WITH_ML_TO_DATE_FIELD",
+      "to_date": "REPLACE_WITH_ML_8M_TO_DATE",
+      "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+      "reason": "REPLACE_WITH_REASON",
+      "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+      "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+      "pay_fee": {
+        "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+        "pay_selector": "REPLACE_WITH_SR_PAY_FEES_BUTTON",
+        "payment_actions": [
+          {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+        ],
+        "payment_success_selector": "REPLACE_WITH_SR_PAYMENT_SUCCESS_SELECTOR"
+      }
+    },
+    "chairperson": {
+      "login": "department_chairperson",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "request_row": "REPLACE_WITH_ML_8M_REQUEST_ROW",
+      "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+      "approve_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_BUTTON",
+      "success_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_SUCCESS_SELECTOR",
+      "approved_status": "Approved",
+      "double_duration_check": "REPLACE_WITH_DOUBLE_DURATION_CHECK"
+    }
+  },
+  "extension_request": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for extension of expected end date",
+    "new_end_date_field": "REPLACE_WITH_SR_NEW_END_DATE_FIELD",
+    "new_end_date": "REPLACE_WITH_NEW_END_DATE",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+    "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+    "pay_fee": {
+      "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+      "fee_amount_field": "REPLACE_WITH_SR_FEE_AMOUNT_FIELD",
+      "expected_amount": "REPLACE_WITH_EXTENSION_FEE",
+      "pay_selector": "REPLACE_WITH_SR_PAY_FEES_BUTTON",
+      "payment_actions": [
+        {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+      ],
+      "payment_success_selector": "REPLACE_WITH_SR_PAYMENT_SUCCESS_SELECTOR"
+    }
+  },
+  "extension_approve": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "request_row": "REPLACE_WITH_EXTENSION_REQUEST_ROW",
+    "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+    "remarks_field": "REPLACE_WITH_CHAIR_SR_REMARKS_FIELD",
+    "approve_remarks": "REPLACE_WITH_REMARKS",
+    "approve_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_BUTTON",
+    "success_selector": "REPLACE_WITH_CHAIR_SR_APPROVE_SUCCESS_SELECTOR",
+    "approved_status": "Approved",
+    "end_date_updated_check": "REPLACE_WITH_EXPECTED_END_DATE_UPDATED_CHECK",
+    "new_end_date": "REPLACE_WITH_NEW_END_DATE"
+  },
+  "extension_reject": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "request_row": "REPLACE_WITH_EXTENSION_REQUEST_ROW",
+    "view_action": "REPLACE_WITH_SR_VIEW_DETAILS_ACTION",
+    "remarks_field": "REPLACE_WITH_CHAIR_SR_REMARKS_FIELD",
+    "reject_remarks": "REPLACE_WITH_REMARKS",
+    "reject_selector": "REPLACE_WITH_CHAIR_SR_REJECT_BUTTON",
+    "success_selector": "REPLACE_WITH_CHAIR_SR_REJECT_SUCCESS_SELECTOR",
+    "rejected_status": "Rejected"
+  },
+  "additional_year_visibility": {
+    "student_a": {
+      "login": "scholar_double_duration",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "present": ["Request for additional year of extension"]
+    },
+    "student_b": {
+      "login": "scholar_not_double_duration",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "absent": ["Request for additional year of extension"]
+    }
+  },
+  "additional_year_request": {
+    "login": "scholar_double_duration",
+    "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+    "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+    "request_type": "Request for additional year of extension",
+    "existing_projected_year_field": "REPLACE_WITH_EXISTING_PROJECTED_YEAR_FIELD",
+    "existing_projected_year": "REPLACE_WITH_EXISTING_PROJECTED_YEAR",
+    "updated_projected_year_field": "REPLACE_WITH_UPDATED_PROJECTED_YEAR_FIELD",
+    "updated_projected_year": "REPLACE_WITH_UPDATED_PROJECTED_YEAR",
+    "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+    "reason": "REPLACE_WITH_REASON",
+    "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+    "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+    "pay_fee": {
+      "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+      "pay_selector": "REPLACE_WITH_SR_PAY_FEES_BUTTON",
+      "payment_actions": [
+        {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+      ],
+      "payment_success_selector": "REPLACE_WITH_SR_PAYMENT_SUCCESS_SELECTOR"
+    }
+  },
+  "activities_after_extension": {
+    "login": "scholar_double_duration",
+    "synopsis_menu_path": ["R&D", "Synopsis", "Submissions"],
+    "synopsis_row": "REPLACE_WITH_EXT_SCHOLAR_SYNOPSIS_ROW",
+    "synopsis_submit_action": "REPLACE_WITH_SYNOPSIS_SUBMIT_ACTION",
+    "progress_menu_path": ["R&D", "Research Progress", "Submissions"],
+    "progress_row": "REPLACE_WITH_EXT_SCHOLAR_PROGRESS_ROW",
+    "progress_submit_action": "REPLACE_WITH_PROGRESS_SUBMIT_ACTION",
+    "convocation_menu_path": ["REPLACE_WITH_CONVOCATION_APPLICATION_MENU"],
+    "convocation_apply_action": "REPLACE_WITH_CONVOCATION_APPLY_ACTION"
+  },
+  "activities_blocked_no_extension": {
+    "login": "scholar_duration_limited",
+    "synopsis_menu_path": ["R&D", "Synopsis", "Submissions"],
+    "synopsis_row": "REPLACE_WITH_LIMIT_SCHOLAR_SYNOPSIS_ROW",
+    "synopsis_submit_action": "REPLACE_WITH_SYNOPSIS_SUBMIT_ACTION",
+    "progress_menu_path": ["R&D", "Research Progress", "Submissions"],
+    "progress_row": "REPLACE_WITH_LIMIT_SCHOLAR_PROGRESS_ROW",
+    "progress_submit_action": "REPLACE_WITH_PROGRESS_SUBMIT_ACTION",
+    "convocation_menu_path": ["REPLACE_WITH_CONVOCATION_APPLICATION_MENU"],
+    "convocation_apply_action": "REPLACE_WITH_CONVOCATION_APPLY_ACTION"
+  }
+}

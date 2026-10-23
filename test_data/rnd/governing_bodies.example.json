@@ -1,0 +1,253 @@
+{
+  "create_screen": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Create Committees"],
+    "committee_type_select": "REPLACE_WITH_COMMITTEE_TYPE_SELECT",
+    "committee_id_field": "REPLACE_WITH_COMMITTEE_ID_FIELD",
+    "committee_name_field": "REPLACE_WITH_COMMITTEE_NAME_FIELD",
+    "committee_name_kannada_field": "REPLACE_WITH_COMMITTEE_NAME_KANNADA_FIELD",
+    "committee_purpose_field": "REPLACE_WITH_COMMITTEE_PURPOSE_FIELD",
+    "purpose": "REPLACE_WITH_COMMITTEE_PURPOSE",
+    "add_selector": "REPLACE_WITH_COMMITTEE_ADD_BUTTON",
+    "success_selector": "REPLACE_WITH_COMMITTEE_CREATED_SUCCESS_SELECTOR",
+    "list_columns": [
+      "Sl. No.", "Committee Type", "Committee ID", "Committee Name",
+      "Committee Name in Kannada", "Committee Purpose", "Action"
+    ]
+  },
+  "create_committee": {
+    "committee_type": "Board of Studies",
+    "committee_id": "BS18001",
+    "committee_name": "REPLACE_WITH_BS_NAME",
+    "committee_name_kannada": "REPLACE_WITH_BS_NAME_KANNADA",
+    "committee_row": "REPLACE_WITH_BS18001_ROW",
+    "expected_row_values": ["Board of Studies", "BS18001"]
+  },
+  "id_sequence": {
+    "university_id": "REPLACE_WITH_UNIVERSITY_ID",
+    "communities_to_create": [
+      {"committee_type": "Board of Studies", "committee_id": "REPLACE_WITH_NEW_BS_COMMITTEE_ID", "committee_name": "REPLACE_WITH_BS2_NAME", "committee_name_kannada": "REPLACE_WITH_BS2_NAME_KANNADA", "expected_id": "BS18002"},
+      {"committee_type": "Doctoral Committee", "committee_id": "REPLACE_WITH_NEW_DC_COMMITTEE_ID", "committee_name": "REPLACE_WITH_DC_NAME", "committee_name_kannada": "REPLACE_WITH_DC_NAME_KANNADA", "expected_id": "DC18001"},
+      {"committee_type": "Panel of Examiners", "committee_id": "REPLACE_WITH_NEW_PE_COMMITTEE_ID", "committee_name": "REPLACE_WITH_PE_NAME", "committee_name_kannada": "REPLACE_WITH_PE_NAME_KANNADA", "expected_id": "PE18001"},
+      {"committee_type": "Research Review Committee", "committee_id": "REPLACE_WITH_NEW_RC_COMMITTEE_ID", "committee_name": "REPLACE_WITH_RC_NAME", "committee_name_kannada": "REPLACE_WITH_RC_NAME_KANNADA", "expected_id": "RC18001"}
+    ],
+    "committee_id_cells": "REPLACE_WITH_ALL_COMMITTEE_ID_CELLS"
+  },
+  "invalid_id": {
+    "committees": [
+      {"committee_type": "Board of Studies", "committee_id": "BS18", "committee_name": "REPLACE_WITH_INVALID_BS_NAME", "committee_name_kannada": "REPLACE_WITH_INVALID_BS_NAME_KANNADA"},
+      {"committee_type": "Board of Studies", "committee_id": "XX18001", "committee_name": "REPLACE_WITH_INVALID_XX_NAME", "committee_name_kannada": "REPLACE_WITH_INVALID_XX_NAME_KANNADA"}
+    ],
+    "expected_message": "REPLACE_WITH_INVALID_COMMITTEE_ID_MESSAGE",
+    "dialog_ok_selector": "REPLACE_WITH_VALIDATION_DIALOG_OK_BUTTON"
+  },
+  "blank_type": {
+    "actions": [
+      {"type": "fill", "selector": "REPLACE_WITH_COMMITTEE_ID_FIELD", "value": "BS18009"},
+      {"type": "fill", "selector": "REPLACE_WITH_COMMITTEE_NAME_FIELD", "value": "REPLACE_WITH_BLANK_TYPE_NAME"},
+      {"type": "fill", "selector": "REPLACE_WITH_COMMITTEE_NAME_KANNADA_FIELD", "value": "REPLACE_WITH_BLANK_TYPE_NAME_KANNADA"},
+      {"type": "fill", "selector": "REPLACE_WITH_COMMITTEE_PURPOSE_FIELD", "value": "REPLACE_WITH_COMMITTEE_PURPOSE"}
+    ],
+    "expected_message": "REPLACE_WITH_COMMITTEE_TYPE_REQUIRED_MESSAGE",
+    "dialog_ok_selector": "REPLACE_WITH_VALIDATION_DIALOG_OK_BUTTON",
+    "committee_id": "BS18009"
+  },
+  "college_admin_create": {
+    "login": "college_admin",
+    "committee_type": "Doctoral Committee",
+    "committee_id": "DC18001",
+    "committee_name": "REPLACE_WITH_DC_NAME",
+    "committee_name_kannada": "REPLACE_WITH_DC_NAME_KANNADA",
+    "committee_row": "REPLACE_WITH_DC18001_ROW",
+    "expected_row_values": ["Doctoral Committee", "DC18001"]
+  },
+  "delete_committee": {
+    "committee_row": "REPLACE_WITH_BS18001_ROW",
+    "delete_action": "REPLACE_WITH_COMMITTEE_DELETE_ACTION",
+    "confirm_selector": "REPLACE_WITH_COMMITTEE_DELETE_CONFIRM_BUTTON",
+    "success_selector": "REPLACE_WITH_COMMITTEE_DELETE_SUCCESS_SELECTOR"
+  },
+  "submit_committees": {
+    "committee_row": "REPLACE_WITH_BS18001_ROW",
+    "submit_selector": "REPLACE_WITH_COMMITTEE_SUBMIT_BUTTON",
+    "back_selector": "REPLACE_WITH_COMMITTEE_BACK_BUTTON",
+    "success_selector": "REPLACE_WITH_COMMITTEE_SUBMIT_SUCCESS_SELECTOR",
+    "expected_rows": ["BS18001", "DC18001"]
+  },
+  "row_member_actions": {
+    "committee_row": "REPLACE_WITH_BS18001_ROW",
+    "action_texts": [
+      "Map Members to Committee",
+      "View Members to Committee",
+      "Edit Members to Committee"
+    ]
+  },
+  "map_members": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ADMISSION_YEAR_SELECT", "value": "REPLACE_WITH_ADMISSION_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "multiselect_labels", "selector": "REPLACE_WITH_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"}
+    ],
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_TYPE_SELECT", "value": "Board of Studies"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_ID_SELECT", "value": "BS18001"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FACULTY_TYPE_SELECT", "value": "Permanent"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_DEPARTMENT_SELECT", "value": "REPLACE_WITH_DEPARTMENT"},
+      {"type": "select_labels", "selector": "REPLACE_WITH_EMPLOYEE_SELECT", "value": "REPLACE_WITH_EMPLOYEE_1"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MEMBER_TYPE_SELECT", "value": "Chairperson"},
+      {"type": "fill", "selector": "REPLACE_WITH_PHONE_FIELD", "value": "REPLACE_WITH_PHONE"},
+      {"type": "fill", "selector": "REPLACE_WITH_EMAIL_FIELD", "value": "REPLACE_WITH_EMAIL"}
+    ],
+    "add_selector": "REPLACE_WITH_MEMBER_ADD_BUTTON",
+    "map_selector": "REPLACE_WITH_MEMBERS_MAP_BUTTON",
+    "success_selector": "REPLACE_WITH_MEMBER_MAPPED_SUCCESS_SELECTOR",
+    "member_row": "REPLACE_WITH_MAPPED_MEMBER_ROW",
+    "expected_row_values": ["Chairperson", "REPLACE_WITH_PHONE", "REPLACE_WITH_EMAIL"]
+  },
+  "faculty_type_options": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_DEPARTMENT_SELECT", "value": "REPLACE_WITH_DEPARTMENT"}
+    ],
+    "faculty_type_select": "REPLACE_WITH_FACULTY_TYPE_SELECT",
+    "expected_options": ["Permanent", "Temporary", "Outside University"],
+    "employee_select": "REPLACE_WITH_EMPLOYEE_SELECT",
+    "employee_list_container": "REPLACE_WITH_EMPLOYEE_LIST_CONTAINER",
+    "present": ["REPLACE_WITH_TEACHING_EMPLOYEE"],
+    "absent": ["REPLACE_WITH_NON_TEACHING_EMPLOYEE"]
+  },
+  "department_restriction": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "multiselect_labels", "selector": "REPLACE_WITH_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"}
+    ],
+    "department_select": "REPLACE_WITH_MAP_DEPARTMENT_SELECT",
+    "expected_options": ["REPLACE_WITH_DEPARTMENT"],
+    "absent_options": ["REPLACE_WITH_OTHER_DEPARTMENT"]
+  },
+  "single_chairperson": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_TYPE_SELECT", "value": "Board of Studies"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_ID_SELECT", "value": "BS18001"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FACULTY_TYPE_SELECT", "value": "Permanent"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_DEPARTMENT_SELECT", "value": "REPLACE_WITH_DEPARTMENT"}
+    ],
+    "actions": [
+      {"type": "select_labels", "selector": "REPLACE_WITH_EMPLOYEE_SELECT", "value": "REPLACE_WITH_EMPLOYEE_2"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MEMBER_TYPE_SELECT", "value": "Chairperson"}
+    ],
+    "add_selector": "REPLACE_WITH_MEMBER_ADD_BUTTON",
+    "expected_message": "REPLACE_WITH_ONLY_ONE_CHAIRPERSON_MESSAGE",
+    "member_not_saved_text": "REPLACE_WITH_EMPLOYEE_2"
+  },
+  "map_member_and_secretary": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_TYPE_SELECT", "value": "Board of Studies"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_ID_SELECT", "value": "BS18001"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FACULTY_TYPE_SELECT", "value": "Permanent"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_DEPARTMENT_SELECT", "value": "REPLACE_WITH_DEPARTMENT"}
+    ],
+    "employee_select": "REPLACE_WITH_EMPLOYEE_SELECT",
+    "member_type_select": "REPLACE_WITH_MEMBER_TYPE_SELECT",
+    "phone_field": "REPLACE_WITH_PHONE_FIELD",
+    "email_field": "REPLACE_WITH_EMAIL_FIELD",
+    "members": [
+      {"employee": "REPLACE_WITH_EMPLOYEE_3", "member_type": "Member", "phone": "REPLACE_WITH_PHONE_3", "email": "REPLACE_WITH_EMAIL_3"},
+      {"employee": "REPLACE_WITH_EMPLOYEE_4", "member_type": "Member Secretary", "phone": "REPLACE_WITH_PHONE_4", "email": "REPLACE_WITH_EMAIL_4"}
+    ],
+    "add_selector": "REPLACE_WITH_MEMBER_ADD_BUTTON",
+    "map_selector": "REPLACE_WITH_MEMBERS_MAP_BUTTON",
+    "success_selector": "REPLACE_WITH_MEMBER_MAPPED_SUCCESS_SELECTOR",
+    "expected_row_values": ["Member", "Member Secretary"]
+  },
+  "outside_university": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_TYPE_SELECT", "value": "Board of Studies"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_ID_SELECT", "value": "BS18001"}
+    ],
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_FACULTY_TYPE_SELECT", "value": "Outside University"},
+      {"type": "select_labels", "selector": "REPLACE_WITH_EMPLOYEE_SELECT", "value": "REPLACE_WITH_OUTSIDE_EMPLOYEE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MEMBER_TYPE_SELECT", "value": "Member"},
+      {"type": "fill", "selector": "REPLACE_WITH_PHONE_FIELD", "value": "REPLACE_WITH_OUTSIDE_PHONE"},
+      {"type": "fill", "selector": "REPLACE_WITH_EMAIL_FIELD", "value": "REPLACE_WITH_OUTSIDE_EMAIL"}
+    ],
+    "add_selector": "REPLACE_WITH_MEMBER_ADD_BUTTON",
+    "map_selector": "REPLACE_WITH_MEMBERS_MAP_BUTTON",
+    "success_selector": "REPLACE_WITH_MEMBER_MAPPED_SUCCESS_SELECTOR",
+    "member_row": "REPLACE_WITH_OUTSIDE_MEMBER_ROW",
+    "expected_row_values": ["Outside University", "REPLACE_WITH_OUTSIDE_PHONE", "REPLACE_WITH_OUTSIDE_EMAIL"]
+  },
+  "delete_member": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_TYPE_SELECT", "value": "Board of Studies"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_ID_SELECT", "value": "BS18001"}
+    ],
+    "member_row": "REPLACE_WITH_EMPLOYEE_3_MEMBER_ROW",
+    "delete_action": "REPLACE_WITH_MEMBER_DELETE_ACTION",
+    "confirm_selector": "REPLACE_WITH_MEMBER_DELETE_CONFIRM_BUTTON",
+    "member_text": "REPLACE_WITH_EMPLOYEE_3"
+  },
+  "view_members": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Create Committees"],
+    "committee_row": "REPLACE_WITH_BS18001_ROW",
+    "view_action": "REPLACE_WITH_VIEW_MEMBERS_ACTION",
+    "list_columns": [
+      "Sl. No.", "Admission Year", "Program Level", "Program Name",
+      "Discipline", "Committee Type", "Committee ID & Name", "Department",
+      "Faculty Type", "Employee University", "Employee College",
+      "Employee ID & Name", "Employee Post in the Committee", "Phone Number",
+      "Email ID"
+    ],
+    "back_selector": "REPLACE_WITH_VIEW_MEMBERS_BACK_BUTTON"
+  },
+  "edit_contact": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Create Committees"],
+    "committee_row": "REPLACE_WITH_BS18001_ROW",
+    "edit_action": "REPLACE_WITH_EDIT_MEMBERS_ACTION",
+    "member_row": "REPLACE_WITH_EMPLOYEE_1_MEMBER_ROW",
+    "actions": [
+      {"type": "fill", "selector": "REPLACE_WITH_PHONE_FIELD", "value": "REPLACE_WITH_PHONE_2"},
+      {"type": "fill", "selector": "REPLACE_WITH_EMAIL_FIELD", "value": "REPLACE_WITH_EMAIL_2"}
+    ],
+    "save_selector": "REPLACE_WITH_EDIT_MEMBERS_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_EDIT_MEMBERS_SUCCESS_SELECTOR"
+  },
+  "blank_employee": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Map Members to Committee"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_TYPE_SELECT", "value": "Board of Studies"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_COMMITTEE_ID_SELECT", "value": "BS18001"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FACULTY_TYPE_SELECT", "value": "Permanent"},
+      {"type": "select_label", "selector": "REPLACE_WITH_MAP_DEPARTMENT_SELECT", "value": "REPLACE_WITH_DEPARTMENT"}
+    ],
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_MEMBER_TYPE_SELECT", "value": "Member"}
+    ],
+    "add_selector": "REPLACE_WITH_MEMBER_ADD_BUTTON",
+    "expected_message": "REPLACE_WITH_EMPLOYEE_REQUIRED_MESSAGE",
+    "dialog_ok_selector": "REPLACE_WITH_VALIDATION_DIALOG_OK_BUTTON",
+    "no_row_check": "REPLACE_WITH_NO_MEMBER_ROW_CHECK"
+  },
+  "scholar_access": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Governing Bodies"],
+    "denied_message": "REPLACE_WITH_ACCESS_DENIED_MESSAGE"
+  }
+}

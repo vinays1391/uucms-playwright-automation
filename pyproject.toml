@@ -8,12 +8,17 @@ dependencies = [
   "pytest>=8,<9",
   "pytest-playwright>=0.6,<1",
   "python-dotenv>=1.0,<2",
+  "openpyxl>=3.1,<4",
 ]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src", "."]
 addopts = "--tracing retain-on-failure --screenshot only-on-failure --output=test-results"
 markers = [
+  "academics: requires a reachable UUCMS environment and configured coursework/examination test-data files",
+  "admission: requires a reachable UUCMS environment and configured Ph.D admission test-data files",
   "login: requires a reachable UUCMS environment and configured login values",
   "exam: requires a configured Exam module test-data file",
+  "rnd: requires a reachable UUCMS environment and configured R&D test-data files",
 ]

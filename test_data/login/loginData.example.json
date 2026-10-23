@@ -1,5 +1,23 @@
 {
-  "username": "REPLACE_WITH_USERNAME",
-  "password": "REPLACE_WITH_PASSWORD",
-  "captcha": "12345"
+  "username": "REPLACE_WITH_DEFAULT_USERNAME",
+  "password_env": "UUCMS_TEST_PASSWORD",
+  "captcha": "12345",
+  "roles": {
+    "university_admin_university_1": {
+      "username": "REPLACE_WITH_UNIVERSITY_1_ADMIN_USERNAME",
+      "password_env": "UUCMS_TEST_PASSWORD"
+    },
+    "university_admin_university_2": {
+      "username": "REPLACE_WITH_UNIVERSITY_2_ADMIN_USERNAME",
+      "password_env": "UUCMS_TEST_PASSWORD"
+    },
+    "registrar_evaluation": {
+      "username": "REPLACE_WITH_REGISTRAR_EVALUATION_USERNAME",
+      "password_env": "UUCMS_TEST_PASSWORD"
+    },
+    "department_chairperson": {
+      "username": "REPLACE_WITH_CHAIRPERSON_USERNAME",
+      "password_env": "UUCMS_TEST_PASSWORD"
+    }
+  }
 }

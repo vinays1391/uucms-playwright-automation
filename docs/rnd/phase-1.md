@@ -1,0 +1,1193 @@
+## Slide 1
+
+- UUCMS: Exam Module
+- Change Request: Research and Development Module
+
+## Slide 2
+
+- Actors involved for reference purpose:
+- Candidate: From Registration to Admission
+- Student: From Admission Approved to Course Work Completion using provisional USN.
+- Scholar: From generation of the USN to awarding of P.hd certificate.
+- Guide/Co-Guide AKA Faculty, Scientist or Supervisor
+- Department Chairperson
+- Board of Studies which recommends what to study for PhD
+- Doctoral Committee/RAC acts as research advisory committee and oversees by assessing and reviewing the research work.
+- Panel of Examiners:  Panel of Examiners for adjudicating the PhD thesis of the scholar
+- University Admin: Administrative Provision Authorities.
+
+## Slide 3
+
+- Details for PhD level and R&D to be implemented and all the payments should be happening to the respective module.
+- Superintendent and University Registrar Approval for Provisional USN to be removed if implemented for PhD
+- The fee setup and promotion for PhD to be provided for every year.
+- Changes in Admissions to be implemented – Part 1
+
+## Slide 4
+
+- Sl. No.
+- Program Level
+- Program Name
+- Abbreviation
+- Terms per Year
+- Duration of Program (In Years)
+- Max Duration allowed
+- (In Years)
+- Duration of Term in Weeks
+- Action
+- 1
+- Edit
+- View
+- Map Discipline/Combination
+- Map Areas of Research
+- 2
+- 3
+- University Wise Program Details
+- Existing Programs offered Under University
+- User Login: University Admin / College Admin
+- Academics
+- Program Details
+- Map New Program
+- Research and Development Module
+- Research and Development
+- Map Teaching Mode and Medium of Instruction
+- Map Evaluation System
+- Map Language
+- Map Open Elective
+
+## Slide 5
+
+- Sl. No.
+- Area of Research Code
+- Area of Research Name
+- Area of Research Short Form
+- Action
+- 1
+- Add
+- Discipline Wise - Area of Research Mapping
+- User Login: University Admin / College Admin
+- Research and Development Module
+- Research and Development
+- Program
+- Name
+- Discipline
+- Program
+- Level
+- Existing Areas of Research offered under the University
+- Sl. No.
+- Program level
+- Program Name
+- Discipline
+- Area of Research Code
+- Area of Research Name
+- Area of Research Short Form
+- Action
+- 1
+- Delete
+- Submit
+- Back
+
+## Slide 6
+
+- Sl. No.
+- Academics Year
+- Program Level
+- Program Name
+- Discipline*
+- Action
+- 1
+- Map Areas of Research to Faculties
+- View Mapped Areas of Research to Faculties
+- Modify Mapped Areas of Research to Faculties
+- Mapping of Area of Research to Faculty
+- Mapped Areas of Research
+- Areas of Research
+- Map
+- Research and Development Module
+- Research and Development
+- Academic Year*:
+- Program Level:
+- Program
+- Name:
+- View
+- * Display Disciplines only for which the area of research has been added under.
+- User Login: University Admin / College Admin
+
+## Slide 7
+
+- Sl. No.
+- Area of Research Code
+- Area of Research Name
+- Department
+- Faculty Type
+- Employee ID & Name
+- Research Faculty Type
+- 1
+- Delete
+- 2
+- Delete
+- Mapping of Area of Research to Faculty
+- User Login: University Admin / College Admin
+- Research and Development Module
+- Research and Development
+- Program
+- Name
+- Discipline
+- Program
+- Level
+- Area of Research Name:
+- Area of Research Code
+- Permanent
+- Temporary
+- Faculty Type
+- (Display only Teaching Staff)
+- Department1:
+- Employee ID and Name
+- Research Faculty Type
+- Guide
+- Co-Guide
+- Principal Investigator
+- Mentor
+- Add
+- Provide Multi-Select
+- Submit
+- Back
+- 1. Please display only the departments which have been mapped to Discipline
+
+## Slide 8
+
+- Sl. No.
+- Academics Year
+- Program Level
+- Program Name
+- Discipline*
+- Action
+- 1
+- Map Areas of Research to Faculties
+- View Mapped Areas of Research to Faculties
+- Modify Mapped Areas of Research to Faculties
+- Mapping of Area of Research to Faculty
+- Mapped Areas of Research
+- Areas of Research
+- Map
+- Research and Development Module
+- Research and Development
+- Academic Year*:
+- Program Level:
+- Program
+- Name:
+- View
+- * Display Disciplines only for which the area of research has been added under.
+- User Login: University Admin / College Admin
+
+## Slide 9
+
+- Sl. No.
+- Area of Research Code
+- Area of Research Name
+- Department
+- Faculty Type
+- Employee ID & Name
+- Research Faculty Type
+- 1
+- 2
+- Mapping of Area of Research to Faculty
+- User Login: University Admin / College Admin
+- Research and Development Module
+- Research and Development
+- Program
+- Name
+- Discipline
+- Program
+- Level
+- Area of Research Code
+- View
+- Area of Research Name:
+- Provide Multi-Select
+- Submit
+- Back
+- 1. Provide Print Provision
+- Print
+
+## Slide 10
+
+- Sl. No.
+- Academics Year
+- Program Level
+- Program Name
+- Discipline*
+- Action
+- 1
+- Map Areas of Research to Faculties
+- View Mapped Areas of Research to Faculties
+- Modify Mapped Areas of Research to Faculties
+- Mapping of Area of Research to Faculties
+- Mapped Areas of Research
+- Areas of Research
+- Map
+- Research and Development Module
+- Research and Development
+- Academic Year*:
+- Program Level:
+- Program
+- Name:
+- View
+- * Display Disciplines only for which the area of research has been added under.
+- User Login: University Admin / College Admin
+
+## Slide 11
+
+- Sl. No.
+- Area of Research Code
+- Area of Research Name
+- Department
+- Faculty Type
+- Employee ID & Name
+- Research Faculty Type
+- Action
+- 1
+- Delete
+- 2
+- Delete
+- Mapping of Area of Research to Faculty
+- User Login: University Admin / College Admin
+- Research and Development Module
+- Research and Development
+- Program
+- Name
+- Discipline
+- Program
+- Level
+- Area of Research Name:
+- Area of Research Code
+- Submit
+- Back
+- 1. Please allow deletion only if the mapped employees are not currently mapped as guide/co-guide to the any students or mapped as Principal Investigator/Mentor to any project
+- View
+- Provide Multi-Select
+
+## Slide 12
+
+- The students should be mapped to the area of research. Then the Guides / Co-Guides available under should be allowed to be mapped under the area of research. This should be happening before sending the online fee payment invitation. If offline, this should be done before approving for the payment.
+- The scheme of evaluation for PhD is Annual and all the promotion will happen annually.
+- The Data will then move to Academics module
+- Changes in Admissions to be implemented – Part 2
+
+## Slide 13
+
+- Academics Module:
+- The University Admin configures the coursework courses curriculum with credits and details – Discipline Wise & Programme Wise.
+- If the Course Work courses is only of IA, then the Department Chairperson will enter the IA and Attendance (Mysore University Guidelines and BU Regulations).
+- If there are any courses related to the areas of research chosen and student has to take that, such courses should be offered as elective under the curriculum designed discipline basis. All the electives will be visible to the students enrolled under the discipline. They should select the relevant courses associated to their area of research.
+- The scheme of evaluation for PhD is Annual and all the promotion will happen annually.
+- Else, the SEE will be conducted as usual and if required, they can also additionally configure it as one of the already available audit paper types to display the results specially in the examination results
+
+## Slide 14
+
+- Examination Module:
+- Once the Details have been completed, the courses will be moved to examination.
+- The cycle-wise examination will be made and the rest of the examination process remains same.
+- The courses can utilise the other components marks entry provision to decide the marks entry process for SEE in exam.
+- Once, exam is completed, the results can be published and if any audit type is configured, the same will be displayed in the results.
+- The marks-cards can be printed as usual without any changes.
+- Further the results data of this coursework can be pushed to NAD too, if required.
+- The SSP can also take this data, if they wish to provide the scholarship for the students.
+
+## Slide 15
+
+- User Login: Department Chairperson
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- Date not updated
+- Dept Chairperson
+- -
+- 20-09-2026
+- -
+- 1
+- 10-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 9-10-2026
+- Edit Submission details
+- 2
+- 10-10-2026
+- Awaiting Approval & Approved
+- Guide
+- DeptChairperson
+- 9-10-2026
+- View synopsis Details
+- 10-10-2026
+- Awaiting Approval & Approved
+- Co-guide
+- Guide
+- 9-10-2026
+- View synopsis Details
+- 10-10-2026
+- Awaiting Approval
+- DeptChairperson
+- Co-guide
+- 9-10-2026
+- Enter synopsis Details
+- 10-10-2026
+- Awaiting Approval
+- DoctoralCommitteeChairperson
+- DeptChairperson
+- 9-10-2026
+- View synopsis Details
+- 10-10-2026
+- Approved
+- --
+- DoctoralCommitteeChairperson
+- 9-10-2026
+- View synopsis Details
+- 4
+- 15-10-2026
+- Send Back
+- Students
+- By any
+- 9-10-2026
+- View Old Synopsis DetailsRE-Submission Date
+- Deadline Passed
+- Students
+- DeptChairperson
+- 20-09-2026
+- Re-Set-Up Submission  Deadline
+
+## Slide 16
+
+- User Login: Department Chairperson
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- Date not updated
+- Dept Chairperson
+- -
+- 20-09-2026
+- -
+- 1
+- 13-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 11-10-2026
+- View old synopsis details
+- 2
+- 1310-2026
+- Awaiting Approval
+- Guide
+- DeptChairperson
+- 11-10-2026
+- View synopsis detailsView old synopsis details
+- 13-10-2026
+- Awaiting Approval
+- Co-guide
+- Guide
+- 11-10-2026
+- View synopsis detailsView old synopsis details
+- 13-10-2026
+- Awaiting Approval & Approved
+- DeptChairperson
+- Co-guide
+- 11-10-2026
+- Enter synopsis detailsView old synopsis details
+- 13-10-2026
+- Awaiting Approval & Approved
+- DoctoralCommitteeChairperson
+- DeptChairperson
+- 11-10-2026
+- View synopsis detailsView old synopsis details
+- 13-10-2026
+- Approved
+- --
+- DoctoralCommitteeChairperson
+- 11-10-2026
+- View synopsis detailsView old synopsis details
+- 4
+- 15-10-2026
+- Send Back
+- Students
+- By any
+- 11-10-2026
+- View Old Synopsis DetailsRE-Submission Date
+- Deadline Passed
+- Students
+- DeptChairperson
+- 20-09-2026
+- Re-Set-Up Submission  Deadline
+
+## Slide 17
+
+- Action Pending With (Master Table)
+- Date not Setup
+- Yet to upload
+- Awaiting approval
+- Approved
+- Sent Back
+- Rejected
+- Deadline Passed
+- Synopsis pending with
+- Student
+- Guide
+- Co-Guide
+- Guide & Co-Guide
+- Department Chairperson
+- Doctoral Committee Chairperson
+- None
+- Master Table Details for R&D
+
+## Slide 18
+
+- User Login: Student
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- 1
+- 10-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 9-10-2026
+- Enter Synopsis details
+- 2
+- 10-10-2026
+- Awaiting Approval &Approved
+- Guide
+- Student
+- 9-10-2026
+- View synopsis Details
+- 3
+- 10-10-2026
+- Awaiting Approval &Approved
+- Co-guide
+- Guide
+- 9-10-2026
+- View synopsis Details
+- 10-10-2026
+- Awaiting Approval &Approved
+- DeptChairperson
+- Co-guide
+- 9-10-2026
+- View synopsis Details
+- 10-10-2026
+- Awaiting Approval &Approved
+- DoctoralCommittee Chairperson
+- DeptChairperson
+- 9-10-2026
+- View synopsis Details
+- 10-10-2026
+- Approved
+- --
+- Doctoral CommitteeChairperson
+- 9-10-2026
+- View synopsis Details
+- 4
+- 15-10-2026
+- Send Back/Yet to upload
+- Students
+- Guide/by any
+- 9-10-2026
+- Re-Enter Synopsis DetailsView old Synopsis details
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Back
+- Research and Development
+
+## Slide 19
+
+- User Login: Student
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- 1
+- 12-10-2026
+- Send Back/Yet to Upload
+- Student
+- DeptChairperson
+- 12-10-2026
+- Re-Enter Synopsis details
+- View Old synopsis details
+- 2
+- 12-10-2026
+- Awaiting Approval &Approved
+- Guide
+- Student
+- 12-10-2026
+- View synopsis Details
+- View Old synopsis details
+- 3
+- 12-10-2026
+- Awaiting Approval &Approved
+- Co-guide
+- Guide
+- 12-10-2026
+- View synopsis Details
+- View Old synopsis details
+- 10-10-2026
+- Awaiting Approval &Approved
+- DeptChairperson
+- Co-guide
+- 9-10-2026
+- View synopsis Details
+- View Old synopsis details
+- 10-10-2026
+- Awaiting Approval &Approved
+- DoctoralCommittee Chairperson
+- DeptChairperson
+- 9-10-2026
+- View synopsis Details
+- View Old synopsis details
+- 10-10-2026
+- Approved
+- --
+- Doctoral CommitteeChairperson
+- 9-10-2026
+- View synopsis Details
+- View Old synopsis details
+- 4
+- 20-10-2026
+- Send Back/Yet to upload
+- Students
+- Guide
+- 12-10-2026
+- Re-Enter Synopsis DetailsView old Synopsis details
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Back
+- Research and Development
+
+## Slide 20
+
+- User Login: Student
+- Synopsis Submissions
+- Submit
+- Research and Development
+- Enter brief details on the synopsis
+- Brief details of
+- the Synopsis: *
+- Upload  Synopsis Document*
+- Upload
+- Back
+
+## Slide 21
+
+- View Old Synopsis Details
+- Research and Development
+- shfdhfdsfkdfjdshfjshurtyurehfjdnvxcvbnvbhf
+- Brief details of
+- the Synopsis: *
+- Upload  Synopsis Document*
+- View/Download
+- Synopsis Details uploaded by the Student
+- Back
+- Synopsis Review Remarks
+- of the Guide
+- Synopsis Review Remarks of Guide
+- Synopsis Review Status
+- Date & Time:
+- 09-10-2026
+- Date & Time:
+- Synopsis Review Remarks
+- of the Co-Guide
+- Synopsis Review Status
+- Date & Time:
+- Synopsis Review Remarks of Co-Guide
+- User Login: Student
+- Synopsis Review Remarks
+- of the Department Chairperson
+- Synopsis Review Remarks of Department Chairperson
+- Synopsis Review Status
+- Date & Time:
+- Synopsis Review Remarks
+- of the Co-Guide
+- Synopsis Review Status
+- Date & Time:
+- Synopsis Review Remarks of Doctoral Committee Chairperson
+- Previous Synopsis Submission:
+- Latest sent back should be displayed in the first option in the dropdown
+
+## Slide 22
+
+- User Login: Guides
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Back
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- Date not updated
+- Dept Chairperson
+- -
+- -
+- -
+- 1
+- 10-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 9-10-2026
+- -
+- 2
+- 10-10-2026
+- Awaiting Approval
+- Guide
+- Student
+- 9-10-2026
+- Enter synopsis Details
+- 3
+- 10-10-2026
+- Awaiting Approval
+- Co-guide
+- Guide
+- 9-10-2026
+- Enter synopsis Details
+- 10-10-2026
+- Approved
+- Guide
+- Student
+- 9-10-2026
+- View synopsis Details
+- 10-10-2026
+- Approved
+- Co-guide
+- Guide
+- 9-10-2026
+- View synopsis Details
+- 4
+- 10-10-2026
+- Send Back
+- Students
+- Guide/Co-guide
+- 9-10-2026
+- view old synopsis details
+
+## Slide 23
+
+- User Login: Guides
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Back
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- Date not updated
+- Dept Chairperson
+- -
+- -
+- -
+- 1
+- 15-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 12-10-2026
+- View old synopsis details
+- 2
+- 15-10-2026
+- Awaiting Approval
+- Guide
+- Student
+- 12-10-2026
+- Enter synopsis DetailsView old synopsis details
+- 3
+- 15-10-2026
+- Awaiting Approval
+- Co-guide
+- Guide
+- 12-10-2026
+- Enter synopsis Details view old synopsis details
+- 15-10-2026
+- Approved
+- Co-guide
+- Guide
+- 12-10-2026
+- View synopsis Details view old synopsis details
+- 15-10-2026
+- Approved
+- Guide
+- Co-guide
+- 12-10-2026
+- View synopsis Details view old synopsis details
+- 4
+- 15-10-2026
+- Send Back
+- Students
+- Guide/Co-guide
+- 12-10-2026
+- view old synopsis details
+
+## Slide 24
+
+- User Login: Guides
+- Synopsis Submissions
+- Approve
+- Research and Development
+- Brief details of
+- the Synopsis: *
+- Upload  Synopsis Document*
+- Send Back/ Reject
+- View/Download
+- Synopsis Details uploaded by the Student
+- Enter Remarks
+- Back
+- Date & Time:
+
+## Slide 25
+
+- User Login: Guide
+- Synopsis Submissions
+- Research and Development
+- Brief details of
+- the Synopsis: *
+- Upload  Synopsis Document*
+- View/Download
+- Synopsis Details uploaded by the Student
+- Enter Review Remarks
+- Please display synopsis review of Guide to Co-Guide and Vice versa if anyone has submitted first
+- Approve
+- Send Back/ Reject
+- Back
+- Synopsis Review Remarks of Co-Guide
+- Synopsis Review Remarks
+- of the Guide
+- Approved
+- Synopsis Review Status
+- Date & Time:
+- Date & Time:
+
+## Slide 26
+
+- User Login: Co-Guide
+- Synopsis Submissions
+- Research and Development
+- Brief details of
+- the Synopsis: *
+- Upload  Synopsis Document*
+- View/Download
+- Synopsis Details uploaded by the Student
+- Enter Review Remarks
+- Please display synopsis review of Guide to Co-Guide and Vice versa if anyone has submitted first
+- Approve
+- Send Back/ Reject
+- Back
+- Synopsis Review Remarks of Guide
+- Synopsis Review Remarks
+- of the Guide
+- Approved
+- Synopsis Review Status
+- Date & Time:
+- Date & Time:
+
+## Slide 27
+
+- User Login: Department Chairperson
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- Date not updated
+- Dept Chairperson
+- -
+- 20-09-2026
+- -
+- 1
+- 10-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 9-10-2026
+- 10-10-2026
+- Awaiting Approval
+- DeptChairperson
+- Co-guide
+- 9-10-2026
+- Enter synopsis Details
+- 10-10-2026
+- Approved
+- DoctoralCommitteeChairperson
+- DeptChairperson
+- 9-10-2026
+- View synopsis Details
+- 4
+- 15-10-2026
+- Send Back
+- Students
+- By any
+- 9-10-2026
+- View Old Synopsis DetailsRE-Submission Date
+- Deadline Passed
+- Students
+- DeptChairperson
+- 20-09-2026
+- Re-Set-Up Submission  Deadline
+
+## Slide 28
+
+- User Login: Department Chairperson
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- Date not updated
+- Dept Chairperson
+- -
+- 20-09-2026
+- -
+- 1
+- 10-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 9-10-2026
+- View old synopsis details
+- 10-10-2026
+- Awaiting Approval & Approved
+- DeptChairperson
+- Co-guide
+- 9-10-2026
+- Enter synopsis detailsView old synopsis details
+- 10-10-2026
+- Approved
+- DoctoralCommitteeChairperson
+- DeptChairperson
+- 9-10-2026
+- View synopsis detailsView old synopsis details
+- 4
+- 15-10-2026
+- Send Back
+- Students
+- By any
+- 9-10-2026
+- View Old Synopsis DetailsRE-Submission Date
+- Deadline Passed
+- Students
+- DeptChairperson
+- 20-09-2026
+- Re-Set-Up Submission  Deadline
+
+## Slide 29
+
+- User Login: Department Chairperson
+- Synopsis Submissions
+- Research and Development
+- Brief details of
+- the Synopsis: *
+- Upload  Synopsis Document*
+- View/Download
+- Synopsis Details uploaded by the Student
+- Enter Remarks
+- Approve
+- Send Back/ Reject
+- Back
+- Synopsis Review Remarks
+- of the Guide
+- Synopsis Review Remarks of Guide
+- Approved
+- Synopsis Review Status
+- Date & Time:
+- Date & Time:
+- Synopsis Review Remarks
+- of the Co-Guide
+- Approved
+- Synopsis Review Status
+- Date & Time:
+- Synopsis Review Remarks of Co-Guide
+
+## Slide 30
+
+- User Login: Doctoral Committee Chairperson
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- 1
+- 10-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 9-10-2026
+- 2
+- 10-10-2026
+- Awaiting Approval
+- DoctoralCommitteeChairperson
+- DeptChairperson
+- 9-10-2026
+- Enter synopsis Details
+- 10-10-2026
+- Approved
+- --
+- DoctoralCommitteeChairperson
+- View synopsis Details
+- 4
+- 10-10-2026
+- Send Back
+- Students
+- Doctoral CommitteeChairperson
+- 9-10-2026
+- View old synopsis Details
+
+## Slide 31
+
+- User Login: Doctoral Committee Chairperson
+- Synopsis
+- Submissions
+- Synopsis Submissions
+- Research and Development
+- Academic Year*:
+- View List of Eligible Students
+- Cycle:
+- Sl. No.*
+- Academic Year
+- Program Level
+- Program Name
+- Discipline
+- Area of Research (Name & Code)
+- Cycle
+- Student USN
+- Student Name
+- Course Work Status
+- Synopsis Submission Deadline
+- Synopsis Submission Status
+- Action Pending With
+- Last updated by
+- Latest Status Updated Date & Time
+- Action
+- 1
+- 15-10-2026
+- Yet to Upload
+- Student
+- DeptChairperson
+- 12-10-2026
+- View Old Synopsis Details
+- 3
+- 15-10-2026
+- Awaiting Approval
+- DoctoralCommitteeChairperson
+- DeptChairperson
+- 12-10-2026
+- Enter synopsis DetailsView Old Synopsis Details
+- 15-10-2026
+- Approved
+- --
+- DoctoralCommitteeChairperson
+- 12-10-2026
+- View synopsis DetailsView Old Synopsis Details
+- 4
+- 15-10-2026
+- Send Back
+- Students
+- Dept Chairperson
+- 12-10-2026
+- View Old Synopsis Details
+
+## Slide 32
+
+- Synopsis Submissions
+- Research and Development
+- Brief details of
+- the Synopsis: *
+- Upload  Synopsis Document*
+- View/Download
+- Synopsis Details uploaded by the Student
+- Approve
+- Send Back/Reject
+- Back
+- Synopsis Review Remarks
+- of the Guide
+- Synopsis Review Remarks of Guide
+- Approved
+- Synopsis Review Status
+- Date & Time:
+- Date & Time:
+- Synopsis Review Remarks
+- of the Co-Guide
+- Approved
+- Synopsis Review Status
+- Date & Time:
+- Synopsis Review Remarks of Co-Guide
+- User Login: Doctoral Committee Chairperson
+- Synopsis Review Remarks
+- of the Department Chairperson
+- Synopsis Review Remarks of Department Chairperson
+- Approved
+- Synopsis Review Status
+- Date & Time:
+- Enter Remarks
+- Upload Pre-Register Colloquium Details (If held)
+- Upload
+
+## Slide 33
+
+- Validations
+- The Send back provision should be given the hierarchies and send back done at any stage should be re-directed to student login.
+- Again the hierarchial way of step by step approval process should be followed.
+- All the communication details including send back, approve between the hierarchies should be recorded and displayed to all the users at any given point of time while clicked on View Synopsis Details.
+
+## Slide 34
+
+- Changes in the Admission module to be implemented – part 3
+- If the synopsis submitted by the candidate is approved in the R&D module, then the University Admin based on the approval and recommendation can send the provisional USN for Superintendent approval to make them permanent USN.
+- Superintendent approves and sends to Registrar Admin for Permanent USN Approval.
+- Registrar (Admin) approves it and the permanent USN will be assigned and notified to the student and he is considered as PhD scholar.

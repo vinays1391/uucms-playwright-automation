@@ -1,0 +1,142 @@
+{
+  "mapped_list": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Mapped Areas of Research"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "list_columns": [
+      "Sl. No.", "Academics Year", "Program Level", "Program Name",
+      "Discipline", "Action"
+    ],
+    "row_actions": [
+      "Map Areas of Research to Faculties",
+      "View Mapped Areas of Research to Faculties",
+      "Modify Mapped Areas of Research to Faculties",
+      "Map Areas of Research to Committees and Students",
+      "View Mapped Areas of Research to Committees and Students",
+      "Modify Mapped Areas of Research to Committees and Students"
+    ],
+    "discipline_select": "REPLACE_WITH_DISCIPLINE_SELECT",
+    "discipline_present": ["REPLACE_WITH_DISCIPLINE_WITH_AOR"],
+    "discipline_absent": ["REPLACE_WITH_DISCIPLINE_WITHOUT_AOR"]
+  },
+  "map_aor": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Mapped Areas of Research"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "aor_row": "REPLACE_WITH_AOR_ROW",
+    "map_action": "REPLACE_WITH_MAP_AOR_TO_COMMITTEES_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_NAME_CODE_SELECT", "value": "REPLACE_WITH_AOR_1 (REPLACE_WITH_AOR_CODE)"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_COMMITTEE_TYPE_SELECT", "value": "Doctoral Committee"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_COMMITTEE_ID_SELECT", "value": "DC18001"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_STUDENT_SELECT", "value": "REPLACE_WITH_USN_1"}
+    ],
+    "add_selector": "REPLACE_WITH_AOR_MAP_ADD_BUTTON",
+    "submit_selector": "REPLACE_WITH_AOR_MAP_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_AOR_MAP_SUCCESS_SELECTOR",
+    "mapped_row": "REPLACE_WITH_MAPPED_AOR_ROW",
+    "expected_row_values": [
+      "REPLACE_WITH_AOR_CODE", "REPLACE_WITH_AOR_1", "REPLACE_WITH_USN_1",
+      "Doctoral Committee", "DC18001"
+    ]
+  },
+  "mapped_reports": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Research Progress", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_DCC_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "present": ["REPLACE_WITH_USN_1", "REPLACE_WITH_STUDENT_REPORT_MARKER"],
+    "absent": []
+  },
+  "view_mapped": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Mapped Areas of Research"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "aor_row": "REPLACE_WITH_AOR_ROW",
+    "view_action": "REPLACE_WITH_VIEW_AOR_COMMITTEE_MAPPING_ACTION",
+    "actions": [
+      {"type": "select_labels", "selector": "REPLACE_WITH_AOR_MULTISELECT_SELECT", "value": "REPLACE_WITH_AOR_1 (REPLACE_WITH_AOR_CODE), REPLACE_WITH_AOR_2 (REPLACE_WITH_AOR_2_CODE)"}
+    ],
+    "view_button": "REPLACE_WITH_AOR_VIEW_BUTTON",
+    "list_columns": [
+      "Area of Research Code", "Area of Research Name", "Student USN",
+      "Student Name", "Committee Type", "Committee ID & Name",
+      "Committee Chairperson Name", "Committee Chairperson Phone Number",
+      "Committee Chairperson Email ID"
+    ],
+    "delete_action_check": "REPLACE_WITH_VIEW_SCREEN_DELETE_ACTION_CHECK",
+    "submit_action_check": "REPLACE_WITH_VIEW_SCREEN_SUBMIT_ACTION_CHECK",
+    "back_selector": "REPLACE_WITH_AOR_VIEW_BACK_BUTTON",
+    "list_check": "REPLACE_WITH_MAPPED_AOR_LIST_SELECTOR"
+  },
+  "modify_allowed": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Mapped Areas of Research"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "aor_row": "REPLACE_WITH_AOR_ROW",
+    "modify_action": "REPLACE_WITH_MODIFY_AOR_COMMITTEE_MAPPING_ACTION",
+    "mapping_row": "REPLACE_WITH_AOR_3_MAPPING_ROW",
+    "committee_select": "REPLACE_WITH_AOR_COMMITTEE_ID_SELECT",
+    "new_committee": "DC18002",
+    "submit_selector": "REPLACE_WITH_AOR_MODIFY_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_AOR_MODIFY_SUCCESS_SELECTOR",
+    "expected_row_values": ["DC18002"]
+  },
+  "modify_restricted": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Mapped Areas of Research"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "aor_row": "REPLACE_WITH_AOR_ROW",
+    "modify_action": "REPLACE_WITH_MODIFY_AOR_COMMITTEE_MAPPING_ACTION",
+    "mapping_row": "REPLACE_WITH_AOR_1_MAPPING_ROW",
+    "committee_select": "REPLACE_WITH_AOR_COMMITTEE_ID_SELECT",
+    "new_committee": "DC18002",
+    "submit_selector": "REPLACE_WITH_AOR_MODIFY_SUBMIT_BUTTON",
+    "expected_message": "REPLACE_WITH_MODIFY_RESTRICTED_MESSAGE",
+    "unchanged_row_values": ["DC18001"]
+  },
+  "blank_committee_type": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Governing Bodies", "Set-Up", "Mapped Areas of Research"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "aor_row": "REPLACE_WITH_AOR_ROW",
+    "map_action": "REPLACE_WITH_MAP_AOR_TO_COMMITTEES_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_NAME_CODE_SELECT", "value": "REPLACE_WITH_AOR_1 (REPLACE_WITH_AOR_CODE)"},
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_STUDENT_SELECT", "value": "REPLACE_WITH_USN_1"}
+    ],
+    "add_selector": "REPLACE_WITH_AOR_MAP_ADD_BUTTON",
+    "expected_message": "REPLACE_WITH_COMMITTEE_TYPE_REQUIRED_MESSAGE"
+  }
+}

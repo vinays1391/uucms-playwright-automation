@@ -3,7 +3,14 @@ __pycache__/
 .pytest_cache/
 .env
 test_data/loginData.json
+test_data/login/LoginData.json
+test_data/login/LoginData.xlsx
 test_data/createNotificationData.json
+test_data/rnd/*.json
+!test_data/rnd/*.example.json
+test_data/admission/*.json
+!test_data/admission/*.example.json
+test_data/admission/candidates_roster.csv
 *.pyc
 *.egg-info/
 recordings/*.py

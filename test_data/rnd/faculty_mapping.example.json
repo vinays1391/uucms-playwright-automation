@@ -1,0 +1,153 @@
+{
+  "list": {
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "view_button": "REPLACE_WITH_FACULTY_MAPPING_VIEW_BUTTON",
+    "list_selector": "REPLACE_WITH_FACULTY_MAPPING_LIST_SELECTOR",
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Action"
+    ],
+    "row_actions": [
+      "Map Areas of Research to Faculties",
+      "View Mapped Areas of Research to Faculties",
+      "Modify Mapped Areas of Research to Faculties"
+    ]
+  },
+  "discipline_rule": {
+    "discipline_select": "REPLACE_WITH_DISCIPLINE_SELECT",
+    "present": ["REPLACE_WITH_DISCIPLINE_A"],
+    "absent": ["REPLACE_WITH_DISCIPLINE_B"]
+  },
+  "academic_year_required": {
+    "partial_filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"}
+    ],
+    "view_button": "REPLACE_WITH_FACULTY_MAPPING_VIEW_BUTTON",
+    "list_selector": "REPLACE_WITH_FACULTY_MAPPING_LIST_SELECTOR",
+    "required_mark": "REPLACE_WITH_ACADEMIC_YEAR_REQUIRED_MARK"
+  },
+  "map_guide": {
+    "map_action": "REPLACE_WITH_MAP_FACULTIES_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_AOR_SELECT", "value": "REPLACE_WITH_AOR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FACULTY_TYPE_SELECT", "value": "Permanent"},
+      {"type": "select_label", "selector": "REPLACE_WITH_DEPARTMENT_SELECT", "value": "REPLACE_WITH_DEPT"},
+      {"type": "select_label", "selector": "REPLACE_WITH_EMPLOYEE_SELECT", "value": "REPLACE_WITH_EMP_ID"},
+      {"type": "multiselect_labels", "selector": "REPLACE_WITH_RESEARCH_FACULTY_TYPE_SELECT", "value": "Guide"}
+    ],
+    "add_row_button": "REPLACE_WITH_FACULTY_MAPPING_ADD_ROW_BUTTON",
+    "submit_button": "REPLACE_WITH_FACULTY_MAPPING_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_FACULTY_MAPPING_SUCCESS_SELECTOR",
+    "expected_row_values": [
+      "REPLACE_WITH_AOR_CODE", "REPLACE_WITH_AOR", "REPLACE_WITH_DEPT",
+      "REPLACE_WITH_EMP_ID", "Guide"
+    ]
+  },
+  "teaching_staff_only": {
+    "map_action": "REPLACE_WITH_MAP_FACULTIES_ACTION",
+    "faculty_type_select": "REPLACE_WITH_FACULTY_TYPE_SELECT",
+    "faculty_type": "Permanent",
+    "department_select": "REPLACE_WITH_DEPARTMENT_SELECT",
+    "department": "REPLACE_WITH_DEPT",
+    "employee_select": "REPLACE_WITH_EMPLOYEE_SELECT",
+    "present": ["REPLACE_WITH_TEACHING_EMPLOYEE"],
+    "absent": ["REPLACE_WITH_NON_TEACHING_EMPLOYEE"]
+  },
+  "department_limit": {
+    "map_action": "REPLACE_WITH_MAP_FACULTIES_ACTION",
+    "aor_select": "REPLACE_WITH_AOR_SELECT",
+    "aor": "REPLACE_WITH_AOR",
+    "department_select": "REPLACE_WITH_DEPARTMENT_SELECT",
+    "present": ["REPLACE_WITH_DEPT_A", "REPLACE_WITH_DEPT_B"],
+    "absent": ["REPLACE_WITH_DEPT_C"]
+  },
+  "map_multi": {
+    "map_action": "REPLACE_WITH_MAP_FACULTIES_ACTION",
+    "aor_select": "REPLACE_WITH_AOR_SELECT",
+    "aor": "REPLACE_WITH_AOR",
+    "department_select": "REPLACE_WITH_DEPARTMENT_SELECT",
+    "department": "REPLACE_WITH_DEPT",
+    "employee_select": "REPLACE_WITH_EMPLOYEE_SELECT",
+    "research_type_select": "REPLACE_WITH_RESEARCH_FACULTY_TYPE_SELECT",
+    "add_row_button": "REPLACE_WITH_FACULTY_MAPPING_ADD_ROW_BUTTON",
+    "submit_button": "REPLACE_WITH_FACULTY_MAPPING_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_FACULTY_MAPPING_SUCCESS_SELECTOR",
+    "employees": [
+      {"employee": "REPLACE_WITH_EMP_A", "types": "Guide, Co-Guide"},
+      {"employee": "REPLACE_WITH_EMP_B", "types": "Principal Investigator"},
+      {"employee": "REPLACE_WITH_EMP_C", "types": "Mentor"}
+    ]
+  },
+  "view_mapped": {
+    "view_mapped_action": "REPLACE_WITH_VIEW_MAPPED_FACULTIES_ACTION",
+    "code_actions": [
+      {"type": "select_labels", "selector": "REPLACE_WITH_AOR_CODE_SELECT", "value": "REPLACE_WITH_AOR_CODE_1, REPLACE_WITH_AOR_CODE_2"}
+    ],
+    "view_button": "REPLACE_WITH_VIEW_MAPPED_VIEW_BUTTON",
+    "list_columns": [
+      "Sl. No.", "Area of Research Code", "Area of Research Name",
+      "Department", "Faculty Type", "Employee ID & Name", "Research Faculty Type"
+    ]
+  },
+  "print": {
+    "view_mapped_action": "REPLACE_WITH_VIEW_MAPPED_FACULTIES_ACTION",
+    "code_actions": [
+      {"type": "select_labels", "selector": "REPLACE_WITH_AOR_CODE_SELECT", "value": "REPLACE_WITH_AOR_CODE"}
+    ],
+    "view_button": "REPLACE_WITH_VIEW_MAPPED_VIEW_BUTTON",
+    "print_button": "REPLACE_WITH_FACULTY_MAPPING_PRINT_BUTTON",
+    "print_view_selector": "REPLACE_WITH_FACULTY_MAPPING_PRINT_VIEW_SELECTOR"
+  },
+  "modify_delete": {
+    "modify_action": "REPLACE_WITH_MODIFY_MAPPED_FACULTIES_ACTION",
+    "mapping_row": "REPLACE_WITH_EMP_ID_MAPPING_ROW",
+    "delete_action": "REPLACE_WITH_MODIFY_MAPPING_DELETE_ACTION",
+    "confirm_selector": "REPLACE_WITH_MODIFY_MAPPING_DELETE_CONFIRM_BUTTON",
+    "submit_button": "REPLACE_WITH_MODIFY_MAPPING_SUBMIT_BUTTON"
+  },
+  "delete_blocked_student": {
+    "modify_action": "REPLACE_WITH_MODIFY_MAPPED_FACULTIES_ACTION",
+    "mapping_row": "REPLACE_WITH_EMP_GUIDE_MAPPING_ROW",
+    "delete_action": "REPLACE_WITH_MODIFY_MAPPING_DELETE_ACTION",
+    "expected_message": "REPLACE_WITH_BLOCKED_GUIDE_OF_STUDENT_MESSAGE"
+  },
+  "delete_blocked_project": {
+    "modify_action": "REPLACE_WITH_MODIFY_MAPPED_FACULTIES_ACTION",
+    "mapping_row": "REPLACE_WITH_EMP_PI_MAPPING_ROW",
+    "delete_action": "REPLACE_WITH_MODIFY_MAPPING_DELETE_ACTION",
+    "expected_message": "REPLACE_WITH_BLOCKED_PI_OF_PROJECT_MESSAGE"
+  },
+  "back_discards": {
+    "map_action": "REPLACE_WITH_MAP_FACULTIES_ACTION",
+    "aor_select": "REPLACE_WITH_AOR_SELECT",
+    "aor": "REPLACE_WITH_AOR",
+    "employee_select": "REPLACE_WITH_EMPLOYEE_SELECT",
+    "employee": "REPLACE_WITH_EMP_ID",
+    "back_button": "REPLACE_WITH_FACULTY_MAPPING_BACK_BUTTON",
+    "list_selector": "REPLACE_WITH_FACULTY_MAPPING_LIST_SELECTOR"
+  },
+  "fee_invitation_allowed": {
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "invitation_action": "REPLACE_WITH_FEE_INVITATION_ROW_ACTION",
+    "send_button": "REPLACE_WITH_SEND_FEE_INVITATION_BUTTON",
+    "success_selector": "REPLACE_WITH_FEE_INVITATION_SUCCESS_SELECTOR"
+  },
+  "fee_invitation_blocked": {
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "invitation_action": "REPLACE_WITH_FEE_INVITATION_ROW_ACTION",
+    "send_button": "REPLACE_WITH_SEND_FEE_INVITATION_BUTTON",
+    "expected_message": "REPLACE_WITH_FEE_INVITATION_BLOCKED_MESSAGE"
+  },
+  "offline_payment_blocked": {
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "approval_action": "REPLACE_WITH_OFFLINE_PAYMENT_ROW_ACTION",
+    "approve_button": "REPLACE_WITH_APPROVE_OFFLINE_PAYMENT_BUTTON",
+    "expected_message": "REPLACE_WITH_OFFLINE_PAYMENT_BLOCKED_MESSAGE",
+    "unapproved_status": "REPLACE_WITH_OFFLINE_PAYMENT_UNAPPROVED_STATUS"
+  }
+}

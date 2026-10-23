@@ -1,0 +1,181 @@
+{
+  "dcc_list": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_SYM_VIEW_SCHOLARS_BUTTON",
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Scholar USN", "Scholar Name", "Research Title Name",
+      "Total No. Of Reports Submitted", "Approved Final Report Details",
+      "Choose Panel of Examiners", "Select Date and Time",
+      "Duration Allocated (In Minutes)", "Conduction Mode (Online/Offline)",
+      "Venue/Online Link", "Name of the Panel of Examiners", "Status", "Action"
+    ],
+    "view_report_action": "REPLACE_WITH_SYM_VIEW_APPROVED_FINAL_REPORT_ACTION"
+  },
+  "invite": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_SYM_SCHOLAR_ROW",
+    "initial_status": "Yet to Send",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_PANEL_SELECT", "value": "REPLACE_WITH_PANEL"},
+      {"type": "fill", "selector": "REPLACE_WITH_SYM_DATE_TIME_FIELD", "value": "REPLACE_WITH_DATE"},
+      {"type": "fill", "selector": "REPLACE_WITH_SYM_DURATION_FIELD", "value": "60"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_MODE_SELECT", "value": "Offline"},
+      {"type": "fill", "selector": "REPLACE_WITH_SYM_VENUE_FIELD", "value": "REPLACE_WITH_VENUE"}
+    ],
+    "send_selector": "REPLACE_WITH_SYM_SEND_INVITATION_BUTTON",
+    "success_selector": "REPLACE_WITH_SYM_INVITATION_SENT_SUCCESS_SELECTOR",
+    "scholar_check": {
+      "login": "scholar",
+      "menu_path": ["R&D", "Symposium", "Invitation for Final Viva Voce, Colloquium or Symposium"],
+      "event_row": "REPLACE_WITH_SCHOLAR_EVENT_ROW"
+    }
+  },
+  "edit_schedule": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_SYM_SCHOLAR_ROW",
+    "edit_action": "REPLACE_WITH_SYM_EDIT_SCHEDULE_ACTION",
+    "date_time_field": "REPLACE_WITH_SYM_DATE_TIME_FIELD",
+    "new_date_time": "REPLACE_WITH_DATE_2",
+    "duration_field": "REPLACE_WITH_SYM_DURATION_FIELD",
+    "new_duration": "90",
+    "save_selector": "REPLACE_WITH_SYM_SCHEDULE_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_SYM_SCHEDULE_SAVED_SUCCESS_SELECTOR",
+    "expected_row_values": ["REPLACE_WITH_DATE_2", "90"]
+  },
+  "upload_disabled_before": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_FUTURE_EVENT_ROW",
+    "status": "Scheduled",
+    "upload_action": "REPLACE_WITH_SYM_UPLOAD_DETAILS_ACTION"
+  },
+  "event_details_screen": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_EVENT_DETAILS_ROW",
+    "upload_action": "REPLACE_WITH_SYM_UPLOAD_DETAILS_ACTION",
+    "detail_fields": [
+      "Department", "Name of Panel of Examiners", "Research Title Name",
+      "Total No. Of Reports Submitted", "Event Type", "Date & Time",
+      "Duration", "Venue/Online Link", "Conduction Mode"
+    ],
+    "media_input": "REPLACE_WITH_SYM_MEDIA_FILE_INPUT",
+    "media_label": "Media of the Scholar's Event",
+    "media_link_field": "REPLACE_WITH_SYM_MEDIA_LINK_FIELD",
+    "support_input": "REPLACE_WITH_SYM_SUPPORTING_DOC_INPUT",
+    "approve_selector": "REPLACE_WITH_SYM_EVENT_APPROVE_BUTTON",
+    "reject_selector": "REPLACE_WITH_SYM_EVENT_REJECT_BUTTON"
+  },
+  "event_details": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_EVENT_DETAILS_ROW",
+    "upload_action": "REPLACE_WITH_SYM_UPLOAD_DETAILS_ACTION",
+    "event_type_select": "REPLACE_WITH_SYM_EVENT_TYPE_SELECT",
+    "event_type": "Viva Voce",
+    "media_input": "REPLACE_WITH_SYM_MEDIA_FILE_INPUT",
+    "media": "REPLACE_WITH_MEDIA.PDF",
+    "media_link_field": "REPLACE_WITH_SYM_MEDIA_LINK_FIELD",
+    "media_link": "REPLACE_WITH_MEDIA_LINK",
+    "support_input": "REPLACE_WITH_SYM_SUPPORTING_DOC_INPUT",
+    "support": "REPLACE_WITH_SUPPORTING.PDF",
+    "approve_selector": "REPLACE_WITH_SYM_EVENT_APPROVE_BUTTON",
+    "reject_selector": "REPLACE_WITH_SYM_EVENT_REJECT_BUTTON",
+    "success_selector": "REPLACE_WITH_SYM_EVENT_ACTION_SUCCESS_SELECTOR",
+    "view_details_action": "REPLACE_WITH_SYM_SCHOLAR_VIEW_DETAILS_ACTION"
+  },
+  "approve_missing_details": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_EVENT_DETAILS_ROW",
+    "upload_action": "REPLACE_WITH_SYM_UPLOAD_DETAILS_ACTION",
+    "approve_selector": "REPLACE_WITH_SYM_EVENT_APPROVE_BUTTON",
+    "expected_message": "REPLACE_WITH_SYM_DETAILS_REQUIRED_MESSAGE",
+    "still_status": "Yet to Upload Details"
+  },
+  "scholar_list": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Symposium", "Invitation for Final Viva Voce, Colloquium or Symposium"],
+    "event_row": "REPLACE_WITH_SCHOLAR_EVENT_ROW",
+    "view_details_action": "REPLACE_WITH_SCHOLAR_SYM_VIEW_DETAILS_ACTION",
+    "detail_fields": [
+      "Area of Research", "Existing guide", "Program Name", "Program Level",
+      "Discipline", "Student USN", "Current Term/Year", "Department",
+      "Name of Panel of Examiners", "Research Title Name",
+      "Total No. Of Reports Submitted", "Event Type", "Date & Time",
+      "Duration", "Venue/Online Link", "Conduction Mode"
+    ],
+    "media_view_selector": "REPLACE_WITH_SCHOLAR_SYM_MEDIA_VIEW_SELECTOR",
+    "media_download_selector": "REPLACE_WITH_SCHOLAR_SYM_MEDIA_DOWNLOAD_SELECTOR",
+    "support_view_selector": "REPLACE_WITH_SCHOLAR_SYM_SUPPORT_VIEW_SELECTOR",
+    "support_download_selector": "REPLACE_WITH_SCHOLAR_SYM_SUPPORT_DOWNLOAD_SELECTOR"
+  },
+  "scholar_status_updates": {
+    "login": "scholar",
+    "menu_path": ["R&D", "Symposium", "Invitation for Final Viva Voce, Colloquium or Symposium"],
+    "event_row": "REPLACE_WITH_SCHOLAR_EVENT_ROW",
+    "scheduled_status": "Scheduled",
+    "yet_to_upload_status": "Yet to Upload Details",
+    "approved_status": "Approved"
+  },
+  "re_invite": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "scholar_row": "REPLACE_WITH_REJECTED_EVENT_ROW",
+    "re_invite_action": "REPLACE_WITH_SYM_SEND_RE_INVITATION_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_PANEL_SELECT", "value": "REPLACE_WITH_PANEL"},
+      {"type": "fill", "selector": "REPLACE_WITH_SYM_DATE_TIME_FIELD", "value": "REPLACE_WITH_DATE_3"},
+      {"type": "fill", "selector": "REPLACE_WITH_SYM_DURATION_FIELD", "value": "60"}
+    ],
+    "send_selector": "REPLACE_WITH_SYM_SEND_INVITATION_BUTTON",
+    "success_selector": "REPLACE_WITH_SYM_RE_INVITATION_SUCCESS_SELECTOR"
+  },
+  "only_approved_visible": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Symposium", "Invite Scholars for Final Viva Voce, Colloquium or Symposium"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_SYM_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "present": ["REPLACE_WITH_USN_X"],
+    "absent": ["REPLACE_WITH_USN_Y"]
+  }
+}

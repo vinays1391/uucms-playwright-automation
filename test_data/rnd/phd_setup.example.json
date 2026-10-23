@@ -1,0 +1,161 @@
+{
+  "program_area_mapping": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Program Details"],
+    "menu_index": 1,
+    "search_selector": "role=searchbox[name='Search:']",
+    "search_term": "REPLACE_WITH_PROGRAM_SEARCH_TERM",
+    "program_cell": "REPLACE_WITH_PROGRAM_CELL",
+    "map_area_link": "Map Area Of Research",
+    "map_area_link_index": 2,
+    "discipline_button": "REPLACE_WITH_DISCIPLINE_BUTTON",
+    "research_name_field": "#researchName",
+    "research_name": "REPLACE_WITH_RESEARCH_NAME",
+    "research_short_name_field": "#researchShortName",
+    "research_short_name": "REPLACE_WITH_RESEARCH_SHORT_NAME",
+    "add_selector": "role=button[name='Add']",
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "delete_text": "Delete",
+    "delete_index": 2,
+    "delete_count": 3,
+    "back_selector": "role=button[name='Back']",
+    "success_selector": "REPLACE_WITH_PROGRAM_AREA_MAPPING_SUCCESS"
+  },
+  "faculty_mapping": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Areas of Research", "Area of Research Mapping to"],
+    "list_item_selector": "role=listitem[name='Area of Research Mapping to Faculty and Student']",
+    "filters": [
+      { "type": "select_value", "selector": "#programLevelID", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#programNameID", "value": "REPLACE_WITH_PROGRAM" }
+    ],
+    "view_selector": "role=button[name='View']",
+    "program_row_cell": "REPLACE_WITH_PROGRAM_ROW_CELL",
+    "map_action": "REPLACE_WITH_MAP_FACULTY_ACTION",
+    "map_action_index": 0,
+    "fields": [
+      { "type": "select_value", "selector": "#areaofResearchNameID", "value": "REPLACE_WITH_AOR" },
+      { "type": "select_value", "selector": "#facultyFromID", "value": "REPLACE_WITH_FACULTY_FROM" },
+      { "type": "click", "selector": "text=Department* --Select--" },
+      { "type": "select_value", "selector": "#departmentID", "value": "REPLACE_WITH_DEPARTMENT" },
+      { "type": "select_value", "selector": "#facultyTypeID", "value": "REPLACE_WITH_FACULTY_TYPE" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='Select all']" },
+      { "type": "select_value", "selector": "#researchFacultyTypeID", "value": "REPLACE_WITH_RESEARCH_FACULTY_TYPE" }
+    ],
+    "add_selector": "role=button[name='Add']",
+    "submit_selector": "role=button[name='Submit']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_FACULTY_MAPPING_SUCCESS"
+  },
+  "faculty_mapping_view": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Areas of Research", "Area of Research Mapping to"],
+    "list_item_selector": "role=listitem[name='Area of Research Mapping to Faculty and Student']",
+    "filters": [
+      { "type": "select_value", "selector": "#programLevelID", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#programNameID", "value": "REPLACE_WITH_PROGRAM" }
+    ],
+    "view_selector": "role=button[name='View']",
+    "view_action": "REPLACE_WITH_VIEW_MAPPED_FACULTY_ACTION",
+    "view_action_index": 2,
+    "actions": [
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_AOR_SHORT_NAME']" }
+    ],
+    "view_button": "role=button[name='View']",
+    "back_selector": "role=link[name='Back']",
+    "success_selector": "REPLACE_WITH_FACULTY_VIEW_MAPPED_SUCCESS"
+  },
+  "faculty_mapping_modify_delete": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Areas of Research", "Area of Research Mapping to"],
+    "list_item_selector": "role=listitem[name='Area of Research Mapping to Faculty and Student']",
+    "filters": [
+      { "type": "select_value", "selector": "#programLevelID", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#programNameID", "value": "REPLACE_WITH_PROGRAM" }
+    ],
+    "view_selector": "role=button[name='View']",
+    "modify_action": "REPLACE_WITH_MODIFY_MAPPED_FACULTY_ACTION",
+    "modify_action_index": 0,
+    "actions": [
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_AOR_NAME']" }
+    ],
+    "view_button": "role=button[name='View']",
+    "delete_selector": "role=button[name='Delete']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "back_selector": "role=link[name='Back']",
+    "success_selector": "REPLACE_WITH_FACULTY_DELETE_SUCCESS"
+  },
+  "faculty_mapping_remap": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Areas of Research", "Area of Research Mapping to"],
+    "list_item_selector": "role=listitem[name='Area of Research Mapping to Faculty and Student']",
+    "filters": [
+      { "type": "select_value", "selector": "#programLevelID", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#programNameID", "value": "REPLACE_WITH_PROGRAM" }
+    ],
+    "view_selector": "role=button[name='View']",
+    "map_action": "REPLACE_WITH_MAP_FACULTY_ACTION",
+    "map_action_index": 0,
+    "fields": [
+      { "type": "select_value", "selector": "#areaofResearchNameID", "value": "REPLACE_WITH_AOR" },
+      { "type": "select_value", "selector": "#facultyFromID", "value": "REPLACE_WITH_FACULTY_FROM" },
+      { "type": "select_value", "selector": "#departmentID", "value": "REPLACE_WITH_DEPARTMENT" },
+      { "type": "select_value", "selector": "#facultyTypeID", "value": "REPLACE_WITH_FACULTY_TYPE" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='Select all']" },
+      { "type": "select_value", "selector": "#researchFacultyTypeID", "value": "REPLACE_WITH_RESEARCH_FACULTY_TYPE" }
+    ],
+    "add_selector": "role=button[name='Add']",
+    "submit_selector": "role=button[name='Submit']",
+    "ok_selector": "role=button[name='OK']",
+    "back_selector": "role=link[name='Back']",
+    "success_selector": "REPLACE_WITH_FACULTY_REMAP_SUCCESS"
+  },
+  "student_committee_mapping": {
+    "login": "university_admin",
+    "menu_path": ["Administration", "Academics", "Areas of Research", "Area of Research Mapping to"],
+    "filters": [
+      { "type": "select_value", "selector": "#programLevelID", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#programNameID", "value": "REPLACE_WITH_PROGRAM" }
+    ],
+    "view_selector": "role=button[name='View']",
+    "map_student_action": "REPLACE_WITH_MAP_STUDENT_ACTION",
+    "map_student_action_index": 2,
+    "fields": [
+      { "type": "select_value", "selector": "#areaofResearchNameID", "value": "REPLACE_WITH_AOR" },
+      { "type": "select_value", "selector": "#academicYearID", "value": "REPLACE_WITH_ACADEMIC_YEAR" }
+    ],
+    "student_select_selector": "role=textbox[name='--Select--']",
+    "student_option": "REPLACE_WITH_STUDENT_OPTION",
+    "committee_fields": [
+      { "type": "select_value", "selector": "#CommitteeTypeId", "value": "REPLACE_WITH_COMMITTEE_TYPE" },
+      { "type": "select_value", "selector": "#sc_CommitteeId", "value": "REPLACE_WITH_COMMITTEE_ID" }
+    ],
+    "submit_selector": "REPLACE_WITH_STUDENT_COMMITTEE_SUBMIT",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_STUDENT_COMMITTEE_SUCCESS"
+  },
+  "create_committee": {
+    "login": "university_admin",
+    "menu_path": ["Research And Development", "Set-up"],
+    "create_committees_button": "role=button[name='Create Committees']",
+    "committee_type_selector": "#CommitteeTypeId",
+    "committee_type_value": "REPLACE_WITH_COMMITTEE_TYPE",
+    "create_committee_button": "role=button[name='Create Committee']",
+    "committee_name_field": "#CommitteeName",
+    "committee_name": "REPLACE_WITH_COMMITTEE_NAME",
+    "committee_name_kannada_field": "#CommitteeNameKannada",
+    "committee_name_kannada": "",
+    "committee_purpose_field": "#CommitteePurpose",
+    "committee_purpose": "REPLACE_WITH_COMMITTEE_PURPOSE",
+    "add_selector": "role=link[name='Add']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_COMMITTEE_CREATED_SUCCESS"
+  }
+}

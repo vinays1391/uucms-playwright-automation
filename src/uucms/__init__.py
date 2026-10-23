@@ -1,0 +1,1 @@
+"""UUCMS Playwright automation package."""

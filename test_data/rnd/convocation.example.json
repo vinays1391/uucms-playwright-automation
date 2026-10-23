@@ -1,0 +1,147 @@
+{
+  "eligibility_list": {
+    "login": "registrar_evaluation",
+    "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Scholar USN", "Scholar Name",
+      "Final Viva Voce, Colloquium or Symposium Details", "Mark as eligible",
+      "Action"
+    ],
+    "submit_action": "REPLACE_WITH_CONV_SUBMIT_ACTION"
+  },
+  "rejected_absent": {
+    "login": "registrar_evaluation",
+    "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+    "present": ["REPLACE_WITH_USN_A"],
+    "absent": ["REPLACE_WITH_USN_Y"]
+  },
+  "mark_eligible": {
+    "login": "registrar_evaluation",
+    "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+    "checks": [
+      "REPLACE_WITH_SCHOLAR_A_ELIGIBLE_CHECKBOX",
+      "REPLACE_WITH_SCHOLAR_B_ELIGIBLE_CHECKBOX"
+    ],
+    "submit_action": "REPLACE_WITH_CONV_SUBMIT_ACTION",
+    "success_selector": "REPLACE_WITH_CONV_ELIGIBILITY_SUCCESS_SELECTOR"
+  },
+  "view_details": {
+    "login": "registrar_evaluation",
+    "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+    "scholar_row": "REPLACE_WITH_APPROVED_SCHOLAR_ROW",
+    "view_action": "REPLACE_WITH_CONV_VIEW_DETAILS_ACTION",
+    "detail_fields": [
+      "Event Type", "Date & Time", "Duration", "Venue/Online Link",
+      "Conduction Mode", "Name of Panel of Examiners"
+    ],
+    "media_view_selector": "REPLACE_WITH_CONV_MEDIA_VIEW_SELECTOR"
+  },
+  "apply_indian_fee": {
+    "scholar": {
+      "login": "scholar",
+      "menu_path": ["REPLACE_WITH_CONVOCATION_APPLICATION_MENU"],
+      "apply_action": "REPLACE_WITH_CONV_APPLY_ACTION",
+      "apply_actions": [
+        {"type": "select_label", "selector": "REPLACE_WITH_CONV_FEE_STRUCTURE_SELECT", "value": "Indian"}
+      ],
+      "fee_amount_field": "REPLACE_WITH_CONV_FEE_AMOUNT_FIELD",
+      "expected_fee": "REPLACE_WITH_INDIAN_FEE",
+      "pay_selector": "REPLACE_WITH_CONV_PAY_BUTTON",
+      "payment_actions": [
+        {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+      ],
+      "payment_success_selector": "REPLACE_WITH_CONV_PAYMENT_SUCCESS_SELECTOR"
+    },
+    "registrar_check": {
+      "login": "registrar_evaluation",
+      "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+        {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+      ],
+      "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+      "scholar_row": "REPLACE_WITH_SCHOLAR_A_ROW",
+      "paid_check": "REPLACE_WITH_CONV_FEE_PAID_CHECK"
+    }
+  },
+  "apply_foreign_fee": {
+    "scholar": {
+      "login": "REPLACE_WITH_FOREIGN_SCHOLAR_ROLE",
+      "menu_path": ["REPLACE_WITH_CONVOCATION_APPLICATION_MENU"],
+      "apply_action": "REPLACE_WITH_CONV_APPLY_ACTION",
+      "apply_actions": [
+        {"type": "select_label", "selector": "REPLACE_WITH_CONV_FEE_STRUCTURE_SELECT", "value": "Foreign"}
+      ],
+      "fee_amount_field": "REPLACE_WITH_CONV_FEE_AMOUNT_FIELD",
+      "expected_fee": "REPLACE_WITH_FOREIGN_FEE",
+      "pay_selector": "REPLACE_WITH_CONV_PAY_BUTTON",
+      "payment_actions": [
+        {"type": "click", "selector": "REPLACE_WITH_PAYMENT_GATEWAY_STEP_1"}
+      ],
+      "payment_success_selector": "REPLACE_WITH_CONV_PAYMENT_SUCCESS_SELECTOR"
+    },
+    "registrar_check": {
+      "login": "registrar_evaluation",
+      "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+        {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+      ],
+      "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+      "scholar_row": "REPLACE_WITH_SCHOLAR_B_ROW",
+      "paid_check": "REPLACE_WITH_CONV_FEE_PAID_CHECK"
+    }
+  },
+  "pdc_print": {
+    "login": "registrar_evaluation",
+    "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+    "scholar_row": "REPLACE_WITH_PDC_SCHOLAR_ROW",
+    "pdc_action": "REPLACE_WITH_CONV_PDC_PRINT_ACTION",
+    "success_selector": "REPLACE_WITH_CONV_PDC_PRINT_SUCCESS_SELECTOR"
+  },
+  "degree_certificate": {
+    "login": "registrar_evaluation",
+    "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility", "PhD Scholars – Eligible for Convocation"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CONV_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "view_button": "REPLACE_WITH_CONV_VIEW_SCHOLARS_BUTTON",
+    "scholar_row": "REPLACE_WITH_DEGREE_SCHOLAR_ROW",
+    "issue_action": "REPLACE_WITH_CONV_DEGREE_ISSUE_ACTION",
+    "print_action": "REPLACE_WITH_CONV_DEGREE_PRINT_ACTION",
+    "success_selector": "REPLACE_WITH_CONV_DEGREE_PRINT_SUCCESS_SELECTOR"
+  },
+  "access_denied": {
+    "roles": ["department_chairperson", "scholar"],
+    "menu_path": ["R&D", "PhD Scholars", "Convocation Eligibility"],
+    "denied_message": "REPLACE_WITH_ACCESS_DENIED_MESSAGE"
+  }
+}

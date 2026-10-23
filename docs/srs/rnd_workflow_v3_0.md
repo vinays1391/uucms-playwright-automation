@@ -1,0 +1,131 @@
+- Research and Development Module Workflow:
+- Pre-requisites:
+- State Admin:
+- State Admin creates the Programme as Doctor of Philosophy under the Programme Level of Ph.D and enter the pre-requisites details.
+- The duration is specified as 6 Years at present. This will be considered as Minimum Years
+- SSP Code is present. Even if the SSP for scholarship fetched the data, it will be awarded.
+- Once programme has been created, the disciplines along with department discipline codes are mapped to the Doctor of Philosophy Programme. (The department discipline codes are used to generate USN only.) 463 Disciplines have been already mapped in the state admin login.
+- University Admin:
+- Map the Programme as Doctor of Philosophy and sets the maximum duration up to which the programme duration can be allowed (including year extension, maternity leave etc). The minimum duration will be fetched from the state admin.
+- Sets up the minimum eligibility criteria based on Gender and category for the students to take the admissions for three cycles in a year. The minimum eligibility criteria will be for Percentage and CGPA. The students who have entered percentage, percentage will be considered, else CGPA will be considered to check the eligibility.
+- Similarly, sets criteria for exemption students based on the external exams such as UGC NET, CSIR, GATE etc which are accepted by the University to take the admissions for three cycles in a year.
+- Sets the academic year-wise designation wise maximum limit for Professor, Associate Professor and Assistant Professor of many category students they are eligibility to guide.
+- Details for online payment account to  be set for Ph.D and R&D along with service ID for the which the online payments should be happening through PayGov.
+- Maps the mapped disciplines under PhD to the respective departments.
+- Maps the departments to the respective department chairpersons.
+- Department Chairperson:
+- Department Chairperson sets the minimum entrance exam marks required for the entrance exam which the University takes apart from the general public exams.
+- Department Chairperson sets the minimum interview marks required.
+- Department Chairperson enters the obtained Entrance Exam marks for each student and sends this for approval to Registrar Admin.
+- Department Chairperson invites the students for interview with schedule and date.
+- Department Chairperson enters the obtained interview marks for each student and sends this for approval to Registrar Admin.
+- Department Chairperson sets the category wise seat matrix details to the guides assigned to his departments and sends this for approval to Registrar Admin. Guide Creation happens here.
+- Department Chairperson can see the seat matrix created approval status.
+- Department Chairperson views the category wise seat matrix to the guides assigned to his departments.
+- Registrar (Admin):
+- Registrar (Admin) can approve or reject the entered entrance exam marks, entered interview marks and vacancy matrix for the created guides.
+- Student:
+- The candidates apply for PHD using the provision. They will be entering the, PG marks, External exams undertaken details with uploading supporting documents.
+- Department Chairperson:
+- The candidates who are eligible after passing all the criterias of , Minimum PG Percentage/CGPA, Minumum Cutoff in external/internal exams and minimum interview marks will be allowed to make the admission payment. Once, the admission has been completed, Department chairperson will check and approves the payment. Along with this, two additional features happen,
+- Area of research will be created and will be mapped to the Guide.
+- Guide allocation based on the approved vacancy matrix and student’s matching category will be done. The student’s Area of Research will also been entered here.
+- Provisional USN generation.
+- From here, the data will be flowing to R&D module.
+- R&D module
+- Phase 1
+- Pending things to be implemented in the Admission Module to facilitate data flow for R & D module:
+- i. Payment Details for PhD level and R&D to be implemented and all the payments should be happening to the respective module. Dev
+- ii. Superintendent and University Registrar Approval for Provisional USN to be removed if implemented for PhD. Dev
+- ii. Areas of Research list must be created by the Universities through the University Admin Login and need to be mapped to the disciplines. (Areas of Research -> Discipline -> Department -> Faculty)
+- iii. The Faculties should be mapped to the Areas of Research.
+- iv. The students should be mapped to the faculty and the area of research mapped under the primary guide before admission payment.
+- Actors involved:
+- Candidate: From Registration to Admission
+- Student: From Admission Approved to Course Work Completion using provisional USN.
+- Scholar: From generation of the USN to awarding of P.hd certificate.
+- Guide/Co-Guide AKA Faculty, Scientist or Supervisor
+- Department Chairperson
+- Board of Studies which recommends what to study for PhD
+- Doctoral Committee/RAC acts as research advisory committee and oversees by assessing and reviewing the research work.
+- Panel of Examiners:  Panel of Examiners for adjudicating the PhD thesis of the scholar
+- University Admin: Administrative Provision Authorities.
+- Academics Module:
+- The University Admin configures the coursework courses curriculum with credits and details – Discipline Wise & Programme Wise. (This is usually for 1 semester only. Under special circumstances, this will be extended for 2 Semesters – BU Regulations 2024 – Pg 17)
+- If the Course Work courses is only of IA, then the Department Chairperson will enter the IA and Attendance (Mysore University Guidelines and BU Regulations).
+- If there are any courses related to the areas of research chosen and student has to take that, such courses should be offered as elective under the curriculum designed discipline basis. All the electives will be visible to the students enrolled under the discipline. They should select the relevant courses associated to their area of research.
+- Else, the SEE will be conducted as usual and if required, they can also additionally configure it as one of the already available audit paper types to display the results specially in the examination results.
+- BU Sample as per 2024:
+- UoM sample 2017:
+- Examination Module:
+- Once the Details have been completed, the courses will be moved to examination as usual and the examination process remains same.
+- The courses can utilise the other components marks entry provision to decide the marks entry process for SEE in exam.
+- Once, exam is completed, the results can be published and if any audit type is configured, the same will be displayed in the results.
+- The marks-cards can be printed as usual without any changes.
+- Further the results data of this coursework can be pushed to NAD too, if required.
+- The SSP can also take this data, if they wish to provide the scholarship for the students.
+- R&D Module - 2:
+- Once the course-work is completed, the list of passed students should be shown in the R&D module, where the Department chairperson can set date for the students to submit the Synopsis. (UoM- Pg. 7) (BU- Pg. 19)
+- Once the synopsis is submitted, it moves to Guide -> DC-> Doctoral committee for approval and vice-versa send back/rejected with comments/suggestions etc will be allowed. If the Co-Guide is assigned, his approval/rejection with remarks along with guide will be allowed.
+- The pre-registered Colloquium details (If held) can be additionally added while the Doctoral committee is going to approve/reject.
+- Once the synopsis is submitted and approved by doctoral committee, next process continues.
+- Phase 3:
+- Admission Module - 3:
+- If the synopsis submitted by the candidate is approved in the R&D module, then the University Admin based on the approval and recommendation can send the provisional USN for Superintendent approval to make them permanent USN.
+- Superintendent approves and sends to Registrar Admin for Permanent USN Approval.
+- Registrar (Admin) approves it and the permanent USN will be assigned and notified to the student and he is considered as PhD scholar.
+- R&D Module - 4:
+- Department Chairperson to set the frequency. And co-guide to be decided along with the guide.
+- The Department Chairperson sets the scholar-wise progress report submission frequency starting from the start date and frequency (bi-weekly, Monthly/three months/six months/ one year)
+- Based on the frequency, the scholar is supposed to submit his progress report with additional details every time for which the Guide ->Department Chairperson-> Doctoral Committee approves and sends the feedback. If the Co-Guide is assigned, his approval/rejection with remarks along with guide will be allowed.
+- This process continues until the maximum duration of the PhD in years configured by the University Admin, Maternity leave, extension requests etc.
+- When the final progress report/thesis is submitted, the guide Guide ->Department Chairperson-> Doctoral Committee marks the research work has completed. If the Co-Guide is assigned, his approval/rejection with remarks along with guide will be allowed. Doctoral Committee convenes Board of Examiners, and schedules the date, time and venue for Final Viva Voce, Colloquium or Symposium to defend his thesis.
+- Finally, after the date and time of the scheduled Final Viva Voce, Colloquium or Symposium, the Doctoral committee, uploads the supporting documents and marks the thesis of the student as approved/rejected.
+- If approved, the students will be further sent to RE for approval and once RE approves, the student will be eligible to apply for Convocation.
+- Examination Module 2:
+- Once the notification is configured for the convocation for PHD, these RE marked eligible students are allowed to apply with their respective fee structure (Indian and Foreign).
+- Post Fee payment, these students will be available in the Convocation eligibility list.
+- PDC to be printed.
+- These students are eligible for the Degree Certificate issuance and printing.
+- The format for the Degree Certificate printing for PhD scholars must be given by UUCMS SPMU Team.
+- The Following functionalities will be provided to the students right after the admission until the submission of thesis with the following fee head configuration – Category & Gender wise.
+- Request for Guide Change Student -> Guide -> Chairperson Changes-> Doctoral Committee -Approves.
+- Request for Co-Guide allocation Student -> Guide -> Chairperson allocates-> Doctoral Committee -Approves
+- Request for Co-Guide Change Student ->Co-Guide -> Chairperson Changes-> Doctoral Committee -Approves
+- Request for Guide Change Guide (Special Circumstances) Student -> Guide -> Chairperson Changes-> Doctoral Committee – Approves
+- (Special Circumstances – Master List to be given by PMU)
+- Request for Co-Guide Change Guide (Special Circumstances) Student -> Guide -> Chairperson Changes-> Doctoral Committee -Approves
+- Request for Guide /Co-Guide Change (Special Circumstances – Master List to be given by PMU and the fee applicability to each master list should be happening.
+- Request to change the mode of study (Fellowship – Full Time/Non-Fellowship - Part time) Student -> Guide -> Chairperson Changes-> Doctoral Committee -Approves
+- Request for extension of expected end date Student -> Guide -> Chairperson Changes-> Doctoral Committee -Approves
+- Request for Maternity Leave Female Student -> Guide -> Chairperson Changes-> Doctoral Committee -Approves
+- Request for additional year of extension Student -> Guide -> Chairperson Changes-> Doctoral Committee -Approves
+- *******************************************************************
+- Phase 2
+- Faculty & Student research projects
+- Part 1
+- The University Admin creates the research funding agency.
+- The University Admin creates the research review committee under the area of research.
+- The faculties who are mapped to the Areas of Research by the University Admin are eligible to become Principal Investigator (PI) and Mentors. Hence, the University Admin maps the faculties as PI/Mentor to the projects created under the area of research.
+- Once, the PI has been mapped to the project, the PI/Mentor creates a research project and submits research proposal under the area of research he is allocated under. The additional field such as funding and non-funding will also be chosen. The estimated cost and the funding type as internal/external will also be submitted along with the research funding agency.
+- The submission will go to the research review committee -> Registrar (Admin) -> Vice Chancellor for approval/rejection/send backs with comments.
+- Along with the final approval, if the project is of funding, the Vice-Chancellor selects the HOA in the finance module through which the fundings will flow. This is applicable to both internal and external funding types.
+- Once, approved the sanction letter is uploaded by VC and the project will be allowed to go to the next process.
+- Part 2
+- Onboarding of Project Fellowships, JRFs,  SRFs, Research Assistants will happen like the flow of contract workers with an additional drop-down to choose the type. (Out of SRS)
+- Project Fellowships, JRFs, SRFs, Research Assistants, Faculties (Permanent and Temporary), contract workers, mentors, and students (of all program levels) will be allowed to be mapped to projects specifying their role and remuneration.
+- Once onboarded, the new Project Fellowships, JRFs, SRFs, Research Assistants will be allocated with a login and a menu will be displayed of the mapped project progress. For others, a menu section within the same login will be displayed. (Out of SRS)
+- Part 3
+- Equipment required for research will be raised in the Asset Module stating the purpose of the asset. (This has already covered in the procurement flow which are currently under discussions with PMU)
+- Part 4
+- Upload of MoU (whenever required) and Yearly Utilization Certificate (Once every year until the project is marked as completed) will be provided to PI.
+- Part 5
+- PI and mentor sets the frequency progress report submission frequency starting from the start date and frequency (bi-weekly, monthly/three months/six months/ one year)
+- Based on the frequency, the project Fellowships, JRFs, SRFs, Research Assistants, Faculties (Permanent and Temporary), contract workers, mentors, and students are supposed to submit his progress report with additional details every time as set.
+- Once the reports have been submitted, PI will assess the project Fellowships, JRFs, SRFs, Research Assistants, Faculties (Permanent and Temporary), contract workers, mentors, and students.
+- Once the final reports have been submitted, PI will mark project Fellowships, JRFs, SRFs, Research Assistants, Faculties (Permanent and Temporary), contract workers, mentors, and students as completed/fulfilled. For Faculties, once completed, this will be shown in their accolades under HRMS.
+- Part 6
+- The final report, utilization certificate will be submitted by PI. The submissions will be sent to research review committee -> Registrar (Admin) -> Vice Chancellor for approval/rejection/send backs with comments.
+- Once VC approves, the research project is marked as completed.
+- The Universities can find the list of projects undertaken with their status under in a particular academic year.
+- **********************************************************

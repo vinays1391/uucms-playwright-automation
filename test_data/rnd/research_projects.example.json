@@ -1,0 +1,204 @@
+{
+  "details_list": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Research Projects Details"],
+    "heading": "Research Project",
+    "create_link": "get_by_role(\"link\", name=\"Create a New Research Project\")",
+    "view_button": "get_by_role(\"button\", name=\"View\")",
+    "aor_filter": "REPLACE_WITH_RPD_LIST_AOR_FILTER",
+    "aor_filter_value": "AS",
+    "list_columns": [
+      "Sl. No.", "Research Project ID", "Research Project Name",
+      "Research Project Objective", "Project Type", "Project Funding Type",
+      "Funding Agency", "Estimated Cost (Amount in Rs.)", "Project Status",
+      "Report/Certification Submission Status", "Action"
+    ]
+  },
+  "create_form": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Research Projects Details"],
+    "create_link": "get_by_role(\"link\", name=\"Create a New Research Project\")",
+    "heading": "Create Research Project",
+    "breadcrumb": ["Home", "Create Research Project"],
+    "field_labels": [
+      "Area of Research*", "Research Project ID*", "Research Project Name*",
+      "Research Project Objective*", "Project Type*", "Funding Type*",
+      "Funding Agency*", "Estimated Cost (Amount in Rs.)*",
+      "Estimated Project Duration (in Months)*", "Add Remarks*",
+      "Project Proposal Document*", "Cost Proposal Document*"
+    ],
+    "known_fields": [
+      "get_by_placeholder(\"Enter project title\")",
+      "get_by_placeholder(\"Brief objective...\")",
+      "get_by_placeholder(\"e.g. 12\")",
+      "get_by_placeholder(\"Enter remarks...\")"
+    ],
+    "upload_hint": "PDF(less than 1MB)",
+    "submit_selector": "get_by_role(\"button\", name=\"Submit\")",
+    "back_selector": "get_by_role(\"button\", name=\"Back\")"
+  },
+  "create_project": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Research Projects Details"],
+    "create_link": "get_by_role(\"link\", name=\"Create a New Research Project\")",
+    "actions": [
+      {"type": "select_labels", "selector": "REPLACE_WITH_RPD_FORM_AOR", "value": "AS"},
+      {"type": "fill", "selector": "REPLACE_WITH_RPD_PROJECT_ID_FIELD", "value": "REPLACE_WITH_PROJECT_ID"},
+      {"type": "fill", "selector": "get_by_placeholder(\"Enter project title\")", "value": "REPLACE_WITH_PROJECT_NAME"},
+      {"type": "fill", "selector": "get_by_placeholder(\"Brief objective...\")", "value": "REPLACE_WITH_PROJECT_OBJECTIVE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_RPD_PROJECT_TYPE", "value": "External"},
+      {"type": "select_label", "selector": "REPLACE_WITH_RPD_FUNDING_TYPE", "value": "Funding"},
+      {"type": "select_label", "selector": "REPLACE_WITH_RPD_FUNDING_AGENCY", "value": "REPLACE_WITH_FUNDING_AGENCY"},
+      {"type": "fill", "selector": "REPLACE_WITH_RPD_ESTIMATED_COST", "value": "REPLACE_WITH_ESTIMATED_COST"},
+      {"type": "fill", "selector": "get_by_placeholder(\"e.g. 12\")", "value": "12"},
+      {"type": "fill", "selector": "get_by_placeholder(\"Enter remarks...\")", "value": "REPLACE_WITH_REMARKS"},
+      {"type": "upload", "selector": "REPLACE_WITH_RPD_PROJECT_PROPOSAL_DOC", "value": "REPLACE_WITH_PROJECT_PROPOSAL.PDF"},
+      {"type": "upload", "selector": "REPLACE_WITH_RPD_COST_PROPOSAL_DOC", "value": "REPLACE_WITH_COST_PROPOSAL.PDF"}
+    ],
+    "submit_selector": "get_by_role(\"button\", name=\"Submit\")",
+    "success_selector": "REPLACE_WITH_RPD_CREATE_SUCCESS",
+    "project_name": "REPLACE_WITH_PROJECT_NAME",
+    "expected_row_values": ["REPLACE_WITH_PROJECT_ID", "REPLACE_WITH_PROJECT_NAME", "External", "Funding"]
+  },
+  "internal_no_funding_agency": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Research Projects Details"],
+    "create_link": "get_by_role(\"link\", name=\"Create a New Research Project\")",
+    "project_type_select": "REPLACE_WITH_RPD_PROJECT_TYPE",
+    "project_type": "Internal",
+    "funding_agency_select": "REPLACE_WITH_RPD_FUNDING_AGENCY"
+  },
+  "submission_configuration": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Submission Configuration"],
+    "heading": "Research Project Submission Configuration",
+    "breadcrumb": ["Home", "Research & Development", "Submission Configuration"],
+    "area_select": "#ddlAreaOfResearch",
+    "area_options": ["AS", "sss", "xccz"],
+    "project_select": "#ddlProject",
+    "view_button": "get_by_role(\"button\", name=\"View\")",
+    "back_link": "get_by_role(\"link\", name=\"Back\")"
+  },
+  "submission_configuration_project": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Submission Configuration"],
+    "filters": [
+      {"type": "select_label", "selector": "#ddlAreaOfResearch", "value": "AS"},
+      {"type": "select_label", "selector": "#ddlProject", "value": "REPLACE_WITH_RPC_PROJECT_LABEL"}
+    ],
+    "view_button": "get_by_role(\"button\", name=\"View\")",
+    "info_card_heading": "Research Project Information",
+    "project_info_labels": [
+      "Project ID", "Project Name", "Project Type", "Funding Type",
+      "Funding Agency", "Estimated Cost ₹", "Project Status", "Project Objective"
+    ],
+    "member_columns": [
+      "Sl. No.", "Employee ID / USN", "Member Name", "Role",
+      "Submission from date*", "Frequency of submission*",
+      "Days allowed for submission*", "Total reports*",
+      "Projected Final Report Submission Date", "Action"
+    ],
+    "member_row": "REPLACE_WITH_RPC_MEMBER_ROW",
+    "edit_action": "REPLACE_WITH_RPC_EDIT_ACTION",
+    "frequency_select": "REPLACE_WITH_RPC_FREQUENCY_SELECT",
+    "frequency_options": [
+      "1 Day", "3 Day", "Weekly", "Bi-Weekly", "Monthly",
+      "Bi-Monthly", "Three Months", "Six Months", "Nine Months", "One Year"
+    ]
+  },
+  "edit_submission_configuration": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Submission Configuration"],
+    "filters": [
+      {"type": "select_label", "selector": "#ddlAreaOfResearch", "value": "AS"},
+      {"type": "select_label", "selector": "#ddlProject", "value": "REPLACE_WITH_RPC_PROJECT_LABEL"}
+    ],
+    "view_button": "get_by_role(\"button\", name=\"View\")",
+    "member_row": "REPLACE_WITH_RPC_MEMBER_ROW",
+    "edit_action": "REPLACE_WITH_RPC_EDIT_ACTION",
+    "actions": [
+      {"type": "fill", "selector": "REPLACE_WITH_RPC_FROM_DATE_FIELD", "value": "REPLACE_WITH_FROM_DATE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_RPC_FREQUENCY_SELECT", "value": "Six Months"},
+      {"type": "fill", "selector": "REPLACE_WITH_RPC_DAYS_FIELD", "value": "3"},
+      {"type": "fill", "selector": "REPLACE_WITH_RPC_TOTAL_REPORTS_FIELD", "value": "6"},
+      {"type": "fill", "selector": "REPLACE_WITH_RPC_FINAL_DATE_FIELD", "value": "REPLACE_WITH_FINAL_DATE"}
+    ],
+    "save_selector": "REPLACE_WITH_RPC_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_RPC_SAVE_SUCCESS",
+    "expected_row_text": "Six Months"
+  },
+  "project_submissions": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Submissions"],
+    "heading": "Progress Report Submissions",
+    "breadcrumb": ["Home", "Research & Development", "Progress Report Submissions"],
+    "aor_filter": "get_by_label(\"Area of Research\")",
+    "aor_default_option": "--All Areas of Research--",
+    "project_filter": "get_by_label(\"Research Project ID & Name\")",
+    "view_button": "get_by_role(\"button\", name=\"View\")",
+    "export_buttons": ["Excel", "PDF", "Print"],
+    "list_columns": [
+      "Sl. No.", "Employee ID / USN", "Member Name", "Member Type",
+      "Area of Research", "Research Project ID", "Research Project Name",
+      "Total Approved Submissions Till Date", "Progress Report ID",
+      "Submission Deadline", "Submission Status", "Action Pending With",
+      "Latest Status Updated Date & Time", "Action"
+    ]
+  },
+  "view_details_modal": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Submissions"],
+    "row_selector": "REPLACE_WITH_RPS_ROW",
+    "report_id_cell": "REPLACE_WITH_RPS_REPORT_ID_CELL",
+    "view_action": "REPLACE_WITH_RPS_VIEW_DETAILS_ACTION",
+    "modal": "#reviewModalContainer",
+    "title_prefix": "View Research Progress Report - ",
+    "field_labels": ["Progress Report ID", "Research Project", "Member Name", "Employee ID / USN"],
+    "section_title": "Current Submission Details",
+    "detail_labels": ["Brief Details of Work Done", "Submitted Date & Time", "Uploaded Document"],
+    "close_selector": "get_by_label(\"Close\")"
+  },
+  "progress_completion": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Progress Completion"],
+    "heading": "Member Progress Completion Marking",
+    "breadcrumb": ["Home", "Research & Development", "Progress Completion"],
+    "area_select": "#ddlAreaOfResearch",
+    "project_select": "#ddlProject",
+    "view_members_button": "get_by_role(\"button\", name=\"View Project Members\")",
+    "back_link": "get_by_role(\"link\", name=\"Back\")"
+  },
+  "progress_completion_members": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Progress Completion"],
+    "filters": [
+      {"type": "select_label", "selector": "#ddlAreaOfResearch", "value": "AS"},
+      {"type": "select_label", "selector": "#ddlProject", "value": "REPLACE_WITH_RPC_COMPLETION_PROJECT_LABEL"}
+    ],
+    "view_members_button": "get_by_role(\"button\", name=\"View Project Members\")",
+    "member_columns": [
+      "Sl. No.*", "Research Project ID", "Research Project Name",
+      "Research Project Objective", "Project Type", "Project Funding Type",
+      "Funding Agency", "Estimated Cost (Amount in Rs.)", "Project Status",
+      "Member Type", "Emp ID/USN", "Name", "Select"
+    ],
+    "empty_state": "No PI-approved project member progress records found for completion marking under the selected project.",
+    "member_row": "REPLACE_WITH_RPC_COMPLETION_MEMBER_ROW"
+  },
+  "mark_completion": {
+    "login": "department_chairperson",
+    "menu_path": ["Research And Development", "Research Projects", "Progress Completion"],
+    "filters": [
+      {"type": "select_label", "selector": "#ddlAreaOfResearch", "value": "AS"},
+      {"type": "select_label", "selector": "#ddlProject", "value": "REPLACE_WITH_RPC_COMPLETION_PROJECT_LABEL"}
+    ],
+    "view_members_button": "get_by_role(\"button\", name=\"View Project Members\")",
+    "member_row": "REPLACE_WITH_RPC_COMPLETION_MEMBER_ROW",
+    "completion_checkboxes": [
+      "REPLACE_WITH_RPC_COMPLETION_CHECKBOX_1",
+      "REPLACE_WITH_RPC_COMPLETION_CHECKBOX_2"
+    ],
+    "mark_button": "get_by_role(\"button\", name=\"Mark as Completion\")",
+    "success_selector": "REPLACE_WITH_RPC_COMPLETION_SUCCESS"
+  }
+}

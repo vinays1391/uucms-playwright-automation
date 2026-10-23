@@ -1,0 +1,184 @@
+{
+  "list": {
+    "menu_path": ["R&D", "Synopsis", "Submissions", "Synopsis Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "list_columns": [
+      "Sl. No.", "Academic Year", "Program Level", "Program Name",
+      "Discipline", "Area of Research (Name & Code)", "Cycle",
+      "Student USN", "Student Name", "Course Work Status",
+      "Synopsis Submission Deadline", "Synopsis Submission Status",
+      "Action Pending With", "Last updated by",
+      "Latest Status Updated Date & Time", "Action"
+    ]
+  },
+  "pending_after_student": "Guide & Co-Guide",
+  "pending_after_guide": "Co-Guide",
+  "pending_after_guide_no_coguide": "Department Chairperson",
+  "eligible_students": {
+    "action": "REPLACE_WITH_VIEW_ELIGIBLE_STUDENTS_ACTION",
+    "present": ["REPLACE_WITH_ELIGIBLE_STUDENT_A"],
+    "absent": ["REPLACE_WITH_INELIGIBLE_STUDENT_B"]
+  },
+  "set_deadline": {
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "edit_action": "REPLACE_WITH_EDIT_SUBMISSION_DETAILS_ACTION",
+    "deadline_field": "REPLACE_WITH_DEADLINE_FIELD",
+    "deadline": "REPLACE_WITH_DEADLINE_DATE",
+    "save_selector": "REPLACE_WITH_DEADLINE_SAVE_BUTTON",
+    "updated_by": "REPLACE_WITH_DEPT_CHAIRPERSON_NAME"
+  },
+  "deadline_passed": {
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "reset_action": "REPLACE_WITH_RESET_SUBMISSION_DEADLINE_ACTION",
+    "deadline_field": "REPLACE_WITH_DEADLINE_FIELD",
+    "new_deadline": "REPLACE_WITH_NEW_DEADLINE_DATE",
+    "save_selector": "REPLACE_WITH_DEADLINE_SAVE_BUTTON"
+  },
+  "student": {
+    "login": "student",
+    "menu_path": ["R&D", "Synopsis", "Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_STUDENT_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "enter_synopsis_action": "REPLACE_WITH_ENTER_SYNOPSIS_DETAILS_ACTION",
+    "reenter_synopsis_action": "REPLACE_WITH_REENTER_SYNOPSIS_DETAILS_ACTION",
+    "view_old_action": "REPLACE_WITH_VIEW_OLD_SYNOPSIS_DETAILS_ACTION",
+    "brief_details_field": "REPLACE_WITH_BRIEF_DETAILS_FIELD",
+    "brief_details": "REPLACE_WITH_BRIEF_DETAILS",
+    "synopsis_document_input": "REPLACE_WITH_SYNOPSIS_DOCUMENT_FILE_INPUT",
+    "synopsis_document": "REPLACE_WITH_SYNOPSIS_DOC.pdf",
+    "submit_selector": "REPLACE_WITH_SYNOPSIS_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_SYNOPSIS_SUBMIT_SUCCESS_SELECTOR",
+    "blank_brief_message": "REPLACE_WITH_BRIEF_DETAILS_REQUIRED_MESSAGE",
+    "missing_document_message": "REPLACE_WITH_SYNOPSIS_DOCUMENT_REQUIRED_MESSAGE"
+  },
+  "old_synopsis_details": {
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "view_old_action": "REPLACE_WITH_VIEW_OLD_SYNOPSIS_DETAILS_ACTION",
+    "previous_dropdown": "REPLACE_WITH_PREVIOUS_SUBMISSION_DROPDOWN",
+    "latest_marker": "REPLACE_WITH_LATEST_SENT_BACK_SUBMISSION_MARKER",
+    "detail_sections": [
+      "Synopsis Review Remarks of the Guide",
+      "Synopsis Review Remarks of the Co-Guide",
+      "Synopsis Review Remarks of the Department Chairperson",
+      "Synopsis Review Remarks of the Doctoral Committee Chairperson"
+    ],
+    "document_view_selector": "REPLACE_WITH_OLD_SYNOPSIS_DOC_VIEW_SELECTOR",
+    "document_download_selector": "REPLACE_WITH_OLD_SYNOPSIS_DOC_DOWNLOAD_SELECTOR"
+  },
+  "guide": {
+    "login": "guide",
+    "menu_path": ["R&D", "Synopsis", "Submissions", "Synopsis Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "review_action": "REPLACE_WITH_GUIDE_REVIEW_ROW_ACTION",
+    "document_view_selector": "REPLACE_WITH_GUIDE_DOC_VIEW_SELECTOR",
+    "document_download_selector": "REPLACE_WITH_GUIDE_DOC_DOWNLOAD_SELECTOR",
+    "remarks_field": "REPLACE_WITH_GUIDE_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_GUIDE_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_GUIDE_SEND_BACK_BUTTON",
+    "reject_selector": "REPLACE_WITH_GUIDE_REJECT_BUTTON",
+    "success_selector": "REPLACE_WITH_GUIDE_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_GUIDE_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_GUIDE_SEND_BACK_REMARKS",
+    "reject_remarks": "REPLACE_WITH_GUIDE_REJECT_REMARKS",
+    "next_pending_with": "Co-Guide",
+    "coguide_review_section": "Synopsis Review Remarks of the Co-Guide",
+    "coguide_review_remarks": "REPLACE_WITH_COGUIDE_REMARKS"
+  },
+  "coguide": {
+    "login": "coguide",
+    "menu_path": ["R&D", "Synopsis", "Submissions", "Synopsis Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "review_action": "REPLACE_WITH_COGUIDE_REVIEW_ROW_ACTION",
+    "remarks_field": "REPLACE_WITH_COGUIDE_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_COGUIDE_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_COGUIDE_SEND_BACK_BUTTON",
+    "success_selector": "REPLACE_WITH_COGUIDE_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_COGUIDE_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_COGUIDE_SEND_BACK_REMARKS",
+    "next_pending_with": "Department Chairperson",
+    "guide_review_section": "Synopsis Review Remarks of the Guide",
+    "guide_review_remarks": "REPLACE_WITH_GUIDE_REMARKS"
+  },
+  "department_chairperson": {
+    "login": "department_chairperson",
+    "menu_path": ["R&D", "Synopsis", "Submissions", "Synopsis Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_CYCLE_SELECT", "value": "REPLACE_WITH_CYCLE"}
+    ],
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "review_action": "REPLACE_WITH_DEPT_CHAIR_REVIEW_ROW_ACTION",
+    "remarks_field": "REPLACE_WITH_DEPT_CHAIR_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_DEPT_CHAIR_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_DEPT_CHAIR_SEND_BACK_BUTTON",
+    "success_selector": "REPLACE_WITH_DEPT_CHAIR_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_DEPT_CHAIR_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_DEPT_CHAIR_SEND_BACK_REMARKS",
+    "next_pending_with": "Doctoral Committee Chairperson",
+    "expected_sections": [
+      "Synopsis Review Remarks of the Guide",
+      "Synopsis Review Remarks of the Co-Guide"
+    ],
+    "expected_remarks": [
+      "REPLACE_WITH_GUIDE_REMARKS",
+      "REPLACE_WITH_COGUIDE_REMARKS"
+    ]
+  },
+  "doctoral_committee_chairperson": {
+    "login": "doctoral_committee_chairperson",
+    "menu_path": ["R&D", "Synopsis", "Submissions", "Synopsis Submissions"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "review_action": "REPLACE_WITH_DCC_REVIEW_ROW_ACTION",
+    "remarks_field": "REPLACE_WITH_DCC_REMARKS_FIELD",
+    "approve_selector": "REPLACE_WITH_DCC_APPROVE_BUTTON",
+    "send_back_selector": "REPLACE_WITH_DCC_SEND_BACK_BUTTON",
+    "success_selector": "REPLACE_WITH_DCC_ACTION_SUCCESS_SELECTOR",
+    "approve_remarks": "REPLACE_WITH_DCC_REMARKS",
+    "send_back_remarks": "REPLACE_WITH_DCC_SEND_BACK_REMARKS",
+    "final_status": "Approved",
+    "final_pending_with": "None",
+    "expected_sections": [
+      "Synopsis Review Remarks of the Guide",
+      "Synopsis Review Remarks of the Co-Guide",
+      "Synopsis Review Remarks of the Department Chairperson"
+    ],
+    "expected_remarks": [
+      "REPLACE_WITH_GUIDE_REMARKS",
+      "REPLACE_WITH_COGUIDE_REMARKS",
+      "REPLACE_WITH_DEPT_CHAIR_REMARKS"
+    ],
+    "colloquium_input": "REPLACE_WITH_PRE_REGISTER_COLLOQUIUM_FILE_INPUT",
+    "colloquium_document": "REPLACE_WITH_COLLOQUIUM_DETAILS.pdf",
+    "colloquium_submit_selector": "REPLACE_WITH_COLLOQUIUM_SUBMIT_BUTTON"
+  },
+  "communication_trail": {
+    "view_action": "REPLACE_WITH_VIEW_SYNOPSIS_DETAILS_ACTION",
+    "roles": [
+      "student", "guide", "coguide",
+      "department_chairperson", "doctoral_committee_chairperson"
+    ],
+    "expected_entries": [
+      "REPLACE_WITH_GUIDE_APPROVE_REMARK",
+      "REPLACE_WITH_COGUIDE_SEND_BACK_REMARK",
+      "REPLACE_WITH_RESUBMISSION_BRIEF_DETAILS"
+    ]
+  },
+  "master_table": {
+    "status_cells": "REPLACE_WITH_SYNOPSIS_STATUS_CELLS_SELECTOR",
+    "pending_cells": "REPLACE_WITH_ACTION_PENDING_WITH_CELLS_SELECTOR"
+  }
+}

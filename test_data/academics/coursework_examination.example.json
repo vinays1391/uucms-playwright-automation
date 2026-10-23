@@ -1,0 +1,150 @@
+{
+  "review_approve": {
+    "login": "department_chairperson",
+    "menu_path": ["Admissions", "Ph.D-Candidate Offline"],
+    "menu_index": 2,
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "approval_cycles": 1,
+    "review_action_selector": "role=button[name='Review & Approve']",
+    "confirm_selector": "role=button[name='Yes']",
+    "approve_selector": "role=button[name='Approve']",
+    "ok_selector": "role=button[name='OK']"
+  },
+  "course_registration": {
+    "login": "student",
+    "menu_path": ["Academics", "Course Registration"],
+    "menu_index": 1,
+    "scheme_selector": "#ddlSchemeList",
+    "scheme_value": "REPLACE_WITH_SCHEME",
+    "save_selector": "role=button[name='Save']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "course_list_selector": "role=link[name='Course Registration']",
+    "row_action_clicks": ["tr:nth-child(5) > td:nth-child(12)"],
+    "courses": [
+      { "row_selector": "REPLACE_WITH_COURSE_ROW_1", "checkbox_selector": "REPLACE_WITH_COURSE_CHECKBOX_1" },
+      { "row_selector": "REPLACE_WITH_COURSE_ROW_2", "checkbox_selector": "REPLACE_WITH_COURSE_CHECKBOX_2" }
+    ],
+    "submit_selector": "role=button[name='Submit']",
+    "success_selector": "REPLACE_WITH_COURSE_REGISTRATION_SUCCESS"
+  },
+  "modify_student_courses": {
+    "login": "registrar_evaluation",
+    "menu_path": ["Academics", "Modify Student Courses"],
+    "menu_index": 1,
+    "student_reg_no_field": "#studentRegNo",
+    "student_reg_no_value": "REPLACE_WITH_STUDENT_REG_NO",
+    "submit_selector": "role=button[name='Submit']",
+    "course_registration_selector": "role=link[name='Course Registration']",
+    "submit_cycles": 2,
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_COURSE_MODIFICATION_SUCCESS",
+    "back_selector": "role=button[name='Back']"
+  },
+  "ia_marks": {
+    "login": "registrar_evaluation",
+    "menu_path": ["Academics", "Internal Assessment Marks"],
+    "edit_selector": "role=button[name='Edit']",
+    "marks_fields": [
+      { "selector": "#marks_1", "value": "REPLACE_WITH_IA_MARK_1" },
+      { "selector": "#marks_2", "value": "REPLACE_WITH_IA_MARK_2" }
+    ],
+    "save_selector": "role=button[name='Save']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_IA_MARKS_SAVED_SUCCESS",
+    "back_selector": "role=button[name='Back']"
+  },
+  "attendance": {
+    "login": "registrar_evaluation",
+    "menu_path": ["Academics", "Attendance"],
+    "edit_selector": "role=button[name='Edit']",
+    "classes_field": "#txtnoClasses",
+    "attended_field": "#txtnoAttended",
+    "lectures": [
+      { "row_selector": "REPLACE_WITH_LECTURE_ROW_1", "classes_value": "20", "attended_value": "20" },
+      { "row_selector": "REPLACE_WITH_LECTURE_ROW_2", "classes_value": "20", "attended_value": "20" },
+      { "row_selector": "REPLACE_WITH_LECTURE_ROW_3", "classes_value": "20", "attended_value": "20" }
+    ],
+    "student_header_selector": "REPLACE_WITH_STUDENT_HEADER",
+    "save_selector": "role=button[name='Save']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_ATTENDANCE_SAVED_SUCCESS"
+  },
+  "permit_exam": {
+    "menu_path": ["Exam", "Permit Students To Exam"],
+    "menu_index": 1,
+    "filters": [
+      { "type": "select_value", "selector": "#academicYearListID", "value": "REPLACE_WITH_ACADEMIC_YEAR" },
+      { "type": "select_value", "selector": "#ExamMonthId", "value": "REPLACE_WITH_EXAM_MONTH" },
+      { "type": "select_value", "selector": "select[name='term']", "value": "REPLACE_WITH_TERM" },
+      { "type": "select_value", "selector": "#CollegeId", "value": "REPLACE_WITH_COLLEGE" },
+      { "type": "select_value", "selector": "#StudID", "value": "REPLACE_WITH_STUDENT_ID" }
+    ],
+    "declaration_checkbox": "#checkboxdeclarebox",
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "success_selector": "REPLACE_WITH_PERMIT_EXAM_SUCCESS"
+  },
+  "exam_center_students": {
+    "menu_path": ["Exam", "Exam Center Students"],
+    "filters": [
+      { "type": "select_value", "selector": "#academic_year", "value": "REPLACE_WITH_ACADEMIC_YEAR" }
+    ],
+    "exam_month_selector": "REPLACE_WITH_EXAM_MONTH_SELECTOR",
+    "confirm_selector": "role=button[name='Yes']",
+    "success_selector": "REPLACE_WITH_EXAM_CENTER_APPROVAL_SUCCESS"
+  },
+  "exam_qp_codes": {
+    "menu_path": ["Exam", "Exam QPCodes"],
+    "menu_index": 1,
+    "filters": [
+      { "type": "select_value", "selector": "#academic_yearID", "value": "REPLACE_WITH_ACADEMIC_YEAR" },
+      { "type": "select_value", "selector": "#exmMonthId", "value": "REPLACE_WITH_EXAM_MONTH" }
+    ],
+    "view_selector": "role=button[name='View']",
+    "update_selector": "role=button[name='Update QPCodes']",
+    "success_selector": "REPLACE_WITH_QP_CODES_UPDATED_SUCCESS"
+  },
+  "hall_tickets": {
+    "menu_path": ["Hall Tickets"],
+    "menu_index": 1,
+    "filters": [
+      { "type": "select_value", "selector": "#academicYrID", "value": "REPLACE_WITH_ACADEMIC_YEAR" },
+      { "type": "select_value", "selector": "#enbs_id", "value": "REPLACE_WITH_EXAM_MONTH" }
+    ],
+    "view_details_selector": "role=button[name='View Hall Ticket Details']",
+    "check_eligibility_selector": "role=link[name='Check Eligibility']",
+    "success_selector": "REPLACE_WITH_HALL_TICKET_SUCCESS"
+  },
+  "evaluation_marks": {
+    "menu_path": ["Exam", "Evaluation", "Evaluation Marks Direct Entry"],
+    "filters": [
+      { "type": "select_value", "selector": "#academicYrID", "value": "REPLACE_WITH_ACADEMIC_YEAR" },
+      { "type": "select_value", "selector": "#exammonthListId", "value": "REPLACE_WITH_EXAM_MONTH" }
+    ],
+    "view_selector": "role=button[name='View']",
+    "enter_marks_selector": "role=link[name='Enter marks']",
+    "college_filters": [
+      { "type": "select_value", "selector": "#College_id", "value": "REPLACE_WITH_COLLEGE" },
+      { "type": "select_value", "selector": "#ProgramLevel_id", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#ProgramName_id", "value": "REPLACE_WITH_PROGRAM" }
+    ],
+    "present_checkbox": "REPLACE_WITH_PRESENT_CHECKBOX",
+    "marks_fields": [
+      { "selector": "REPLACE_WITH_MARKS_FIELD_1", "value": "REPLACE_WITH_EVALUATION_MARK_1" },
+      { "selector": "REPLACE_WITH_MARKS_FIELD_2", "value": "REPLACE_WITH_EVALUATION_MARK_2" }
+    ],
+    "save_cycles": 2,
+    "save_selector": "role=button[name='Save']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_EVALUATION_MARKS_SAVED_SUCCESS"
+  }
+}

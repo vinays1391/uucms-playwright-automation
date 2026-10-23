@@ -1,0 +1,4107 @@
+- Unified University and College Management
+- System (UUCMS)
+- Research and Development Module
+- System Requirement Specification (SRS)
+- Version: 1.0
+- Prepared by
+- Centre for Smart Governance (CSG)
+- 1st floor, TTMC Yeswanthpur, BMTC Bus Station,
+- Bengaluru – 560022
+- Table of Contents
+- Revision History27
+- Abbreviations27
+- About the UUCMS27
+- 1.Use Case 1: setup Doctoral Committee28
+- 2.Use Case 2: Request for Guide/Co-Guide Change28
+- 2.1.User: Student28
+- 2.2.Purpose:29
+- 2.3.Pre-Requisites:29
+- 2.5.Step wise approaches:29
+- 2.6.Controls and Validations:29
+- 2.7.Changes/Modification of Data:29
+- 3.Use Case 3: Approve/Rejection of Guide Change Request30
+- 3.1.User:  User: Department Chairperson30
+- 3.2.Purpose:30
+- 3.3.Pre-Requisites:30
+- 3.4.Work Flow:30
+- 3.5.Step wise Approaches:30
+- 3.6.Controls and Validations:31
+- 3.7.Changes/Modifications of data31
+- 4.Use Case 4: Change of Guide – Special Cases31
+- 4.1.User: Department Chairperson31
+- 4.2.Purpose:31
+- 4.3.Pre-Requisites:31
+- 4.4.Workflow:31
+- 4.5.Stepwise Approach:31
+- 4.6.Controls and Validations:32
+- 4.7.Changes/Modifications of data:32
+- 5.Use Case 5: Setup PhD Duration32
+- 5.1.User: University Admin32
+- 5.2.Purpose:32
+- 5.3.Pre-Requisites:32
+- 5.4.Workflow:32
+- 5.5.Stepwise Approach:32
+- 5.6.Controls and Validations:33
+- 5.7.Changes/Modifications of data:33
+- 6.Use Case 6: Set up mode of study, type of PhD.33
+- 6.1.User: Department Chairperson33
+- 6.2.Purpose:33
+- 6.3.Pre-Requisites:33
+- 6.4.Workflow:33
+- 6.5.Stepwise Approach:33
+- 6.6.Controls and Validations:34
+- 6.7.Changes/Modifications of data:34
+- 7.Use Case 7: Request to change the mode of study.34
+- 7.1.User: Student34
+- 7.2.Purpose:34
+- 7.3.Pre-Requisites:34
+- 7.4.Workflow:34
+- 7.5.Stepwise Approach:34
+- 7.6.Controls and Validations:35
+- 7.7.Changes/Modifications of data:35
+- 8.Use Case 8: Request for extension of expected end date.35
+- 8.1.User: Student35
+- 8.2.Purpose:35
+- 8.3.Pre-Requisites:35
+- 8.4.Workflow:35
+- 8.5.Stepwise Approach:35
+- 8.6.Controls and Validations:36
+- 8.7.Changes/Modifications of data:36
+- 9.Use Case 9: Request for maternity leave.36
+- 9.1.User: Women scholars36
+- 9.2.Purpose:36
+- 9.3.Pre-Requisites:36
+- 9.4.Workflow:36
+- 9.5.Stepwise Approach:36
+- 9.6.Controls and validations:37
+- 9.7.Changes/Modifications of data:37
+- 10.Use Case 10: Request for additional year of extension.37
+- 10.1.User: Student37
+- 10.2.Purpose:37
+- 10.3.Pre-Requisites:37
+- 10.4.Workflow:37
+- 10.5.Stepwise Approach:37
+- 10.6.Controls and Validations:38
+- 10.7.Changes/Modifications of data:38
+- 11.Use Case 11: First level of approvals/rejection mode of change/end date/Year extension request by Guide38
+- 11.1.User: Guide38
+- 11.2.Purpose:38
+- 11.3.Pre-Requisites:38
+- 11.4.Workflow:38
+- 11.5.Stepwise Approach:39
+- 11.6.Controls and validations:39
+- 11.7.Changes/Modifications of data:39
+- 12.Second level of approvals/rejection mode of change/end date/Year extension request by Guide40
+- 12.1.User: Department Chairperson40
+- 12.2.Purpose:40
+- 12.3.Pre-Requisites:40
+- 12.4.Workflow:40
+- 12.5.Stepwise Approach:40
+- 12.6.Controls and validations:41
+- 12.7.Changes/Modifications of data:41
+- 13.Approve/Reject maternity leave request.42
+- 13.1.User: Guide42
+- 13.2.Purpose:42
+- 13.3.Pre-Requisites:42
+- 13.4.Workflow:42
+- 13.5.Stepwise Approach:42
+- 13.6.Controls and validations:43
+- 13.7.Changes/Modifications of data:43
+- 14.Assign Co-guide.43
+- 14.1.User: Department Chairperson43
+- 14.2.Purpose:43
+- 14.3.Pre-Requisites:43
+- 14.4.Workflow:43
+- 14.5.Stepwise Approach:43
+- 14.6.Controls and validations:44
+- 14.7.Changes/Modifications of data:44
+- 15.R & D fee setup44
+- 15.1.User: University Admin44
+- 15.2.Purpose:44
+- 15.3.Pre-Requisites:44
+- 15.4.Workflow:44
+- 15.5.Stepwise Approach:44
+- 15.6.Controls and validations:45
+- 15.7.Changes/Modifications of data:45
+- 17.1.User: Finance Officer45
+- 17.2.Purpose:45
+- 17.3.Pre-Requisites:45
+- 17.4.Workflow:45
+- 17.5.Stepwise Approach:46
+- 17.6.Controls and validations:46
+- 17.7.Changes/Modifications of data:46
+- 18.Use Case 18: Course Work46
+- 19.Use Case 19: Synopsis Submission46
+- 19.1.User: Student47
+- 19.2.Purpose:47
+- 19.3.Pre-Requisites:47
+- 19.4.Workflow:47
+- 19.5.Stepwise Approach:47
+- 19.6.Controls and Validations:47
+- 19.7.Changes/Modifications of data:47
+- 20.Use Case 20: First level Approval/Rejection of synopsis by Guide.47
+- 20.1.User: Guide48
+- 20.2.Purpose:48
+- 20.3.Pre-Requisites:48
+- 20.4.Workflow:48
+- 20.5.Stepwise Approach:48
+- 20.6.Controls and Validations:49
+- 20.7.Changes/Modifications of data:49
+- 21.Use Case 21: Send colloquium Invite49
+- 21.1.User: Department Chairperson49
+- 21.2.Purpose:49
+- 21.3.Pre-Requisites:49
+- 21.4.Workflow:49
+- 21.5.Stepwise Approach:49
+- 21.6.Controls and Validations:50
+- 21.7.Changes/Modifications of data:50
+- 22.Use Case 22: Upload Colloquium Document.50
+- 22.1.User: Student50
+- 22.2.Purpose:50
+- 22.3.Pre-Requisites:50
+- 22.4.Workflow:50
+- 22.5.Stepwise Approach:50
+- 22.6.Controls and Validations:50
+- 22.7.Changes/Modifications of data:50
+- 23.Use Case 23: Review/Approve Colloquium Documents.51
+- 23.1.User: Department Chairperson51
+- 23.2.Purpose:51
+- 23.3.Pre-Requisites:51
+- 23.4.Workflow:51
+- 23.5.Stepwise Approach:51
+- 23.6.Controls and Validations:52
+- 23.7.Changes/Modifications of data:52
+- 24.Use Case 24: Second level of Approval/Rejection of Synopsis.52
+- 24.1.User: Department Chairperson52
+- 24.2.Purpose:52
+- 24.3.Pre-Requisites:52
+- 24.4.Workflow:52
+- 24.5.Stepwise Approach:52
+- 24.6.Controls and Validations:53
+- 24.7.Changes/Modifications of data:53
+- 25.Use Case 25: Setup Board of studies (BOS)53
+- 25.1.User: Vice Chancellor53
+- 25.2.Purpose:53
+- 25.3.Pre-Requisites:53
+- 25.4.Workflow:53
+- 25.5.Stepwise Approach:53
+- 25.6.Controls and Validations:54
+- 25.7.Changes/Modifications of data:54
+- 26.Use Case 26: Create Eligibility Questioner54
+- 26.1.Users: State Admin54
+- 26.2.Purpose:54
+- 26.3.Pre-Requisites:54
+- 26.4.Workflow:54
+- 26.5.Stepwise Approach:55
+- 26.6.Controls and Validations:55
+- 26.7.Changes/Modifications of data:55
+- 27.Use Case 27: Mapping of Eligibility Questioner and setup answer by Universities.56
+- 27.1.Users: University admin56
+- 27.2.Purpose:56
+- 27.3.Pre-Requisites:56
+- 27.4.Workflow:56
+- 27.5.Stepwise Approach:56
+- 27.6.Controls and Validations:57
+- 27.7.Changes/Modifications of data:57
+- 28.Use Case 28: Check Eligibility for guideship.57
+- 28.1.Users: Faculty (Employee)57
+- 28.2.Purpose:57
+- 28.3.Pre-Requisites:57
+- 28.4.Workflow:57
+- 28.5.Stepwise Approach:58
+- 28.6.Controls and Validations:59
+- 28.7.Changes/Modifications of data:59
+- 29.Use Case 29: Setup area of research59
+- 29.1.Users:  State Admin59
+- 29.2.Purpose:59
+- 29.3.Pre-Requisites:59
+- 29.4.Workflow:59
+- 29.5.Stepwise Approach:59
+- 29.6.Controls and validations:60
+- 29.7.Changes/Modifications of data:60
+- 30.Use Case 30: Mapping of Area of research by University60
+- 30.1.Users: University Admin60
+- 30.2.Purpose:60
+- 30.3.Pre-Requisites:60
+- 30.4.Workflow:60
+- 30.5.Stepwise Approach:60
+- 30.6.Controls/Validations:61
+- 30.7.Changes/Modifications of data:61
+- 30.8.61
+- 31.Use Case 31: Application for Guideship61
+- 31.1.Users: Faculty (Employee)61
+- 31.2.Purpose:61
+- 31.3.Pre-Requisites:61
+- 31.4.Workflow:61
+- 31.5.Stepwise Approach:61
+- 31.6.Controls/Validations:62
+- 31.7.Changes/Modifications of data:62
+- 32.Use Case 32: First level of Approval/Rejection of Application by Board of Studies (BOS)62
+- 32.1.Users: BoS Chairperson.62
+- 32.2.Purpose:62
+- 32.3.Pre-Requisites:62
+- 32.4.Workflow:62
+- 32.5.Stepwise Approach:63
+- 32.6.Controls and validations:63
+- 32.7.Changes/Modifications of data:63
+- 33.Use Case 33: Final Approval/Rejection of Application by Registrar (Admin)63
+- 33.1.Users: Registrar (Admin)63
+- 33.2.Purpose:63
+- 33.3.Pre-Requisites:63
+- 33.4.Workflow:63
+- 33.5.Stepwise Approach:64
+- 33.6.Controls and validations:64
+- 33.7.Changes/Modifications of data:64
+- 34.Use Case 34: Setup External funding Agencies64
+- 34.1.User: State Admin64
+- 34.2.Purpose:65
+- 34.3.Pre-Requisites:65
+- 34.4.Workflow:65
+- 34.5.Stepwise Approach:65
+- 34.6.Controls and Validations:65
+- 34.7.Changes/Modifications of data:65
+- 35.Use Case 35: Creation and submission of Research projects65
+- 35.1.User: Employee65
+- 35.2.Purpose:65
+- 35.3.Pre-Requisites:66
+- 35.4.Workflow:66
+- 35.5.Stepwise Approach:66
+- 35.6.Controls and Validations:67
+- 35.7.Changes/Modifications of data:67
+- 36.Use Case 36: Create research Review Committee67
+- 36.1.User: Vice Chancellor67
+- 36.2.Purpose:67
+- 36.3.Pre-Requisites:67
+- 36.4.Workflow:67
+- 36.5.Stepwise Approach:67
+- 36.6.Controls and Validations:68
+- 36.7.Changes/Modifications of data:68
+- 37.Use Case 37: First Level Approval/Rejection of Research Proposal (Internal) by Research Review Committee.68
+- 37.1.User: Research Review Committee chairperson68
+- 37.2.Purpose:68
+- 37.3.Pre-Requisites:68
+- 37.4.Workflow:68
+- 37.5.Stepwise Approach:69
+- 37.6.Controls and validations:70
+- 37.7.Changes/Modifications of data:70
+- 38.Use Case 38: Second Level Approval/Rejection of Research Proposal (Internal) by Vice Chancellor.70
+- 38.1.User: Vice Chancellor70
+- 38.2.Purpose:70
+- 38.3.Pre-Requisites:70
+- 38.4.Workflow:70
+- 38.5.Stepwise Approach:70
+- 38.6.Controls/Validations:71
+- 38.7.Changes/Modifications of data:71
+- 39.Use Case 39: Third Level Approval/Rejection of Research Proposal (Internal) by Project Management Section.71
+- 39.1.User: Admin- Project Management Section71
+- 39.2.Purpose:71
+- 39.3.Pre-Requisites:71
+- 39.4.Workflow:71
+- 39.5.Stepwise Approach:72
+- 39.6.Controls and validations:72
+- 39.7.Changes/Modifications of data:72
+- 40.Use Case 40: Final Approval/Rejection of Research Proposal (Internal) by Registrar.72
+- 40.1.User: Registrar admin:73
+- 40.2.Purpose:73
+- 40.3.Pre-Requisites:73
+- 40.4.Workflow:73
+- 40.5.Stepwise Approach:73
+- 40.6.Controls and validations:73
+- 40.7.Changes/Modifications of data:74
+- 41.Use Case 41: Upload sanction letter -External Research Project.74
+- 41.1.User: Principal Investigator74
+- 41.2.Purpose:74
+- 41.3.Pre-Requisites:74
+- 41.4.Workflow:74
+- 41.5.Stepwise Approach:74
+- 41.6.Controls and validations:74
+- 41.7.Changes/Modifications of data:74
+- 42.Use Case 42: Approve/Rejection of Fund Sanction.75
+- 42.1.User: Finance Officer75
+- 42.2.Purpose:75
+- 42.3.Pre-Requisites:75
+- 42.4.Workflow:75
+- 42.5.Stepwise Approach:75
+- 42.6.Controls and validations:76
+- 42.7.Changes/Modifications of data:76
+- 43.Use Case 43: Request Fund Allocation.76
+- 43.1.User: Principal Investigator76
+- 43.2.Purpose:76
+- 43.3.Pre-Requisites:76
+- 43.4.Workflow:76
+- 43.5.Stepwise Approach:76
+- 43.6.Controls and validations:77
+- 43.7.Changes/Modifications of data:77
+- 44.Use Case 44: First level Approval/Rejection of Fund Allocation Request by Project Management Section.77
+- 44.1.User: Project Management Section admin77
+- 44.2.Purpose:77
+- 44.3.Pre-Requisites:77
+- 44.4.Workflow:77
+- 44.5.Stepwise Approach:77
+- 44.6.Controls and validations:78
+- 44.7.Changes/Modifications of data:78
+- 45.Use Case 45: Second level Approval/Rejection of Fund Allocation Request by Registrar.78
+- 45.1.User: Registrar78
+- 45.2.Purpose:78
+- 45.3.Pre-Requisites:78
+- 45.4.Stepwise Approach:79
+- 45.5.Controls and validations:79
+- 45.6.Changes/Modifications of data:79
+- 46.Use Case 46: Final Approval/Rejection of Fund Allocation Request by Vice Chancellor.79
+- 46.1.User: Vice Chancellor79
+- 46.2.Purpose:80
+- 46.3.Pre-Requisites:80
+- 46.4.Workflow:80
+- 46.5.Stepwise Approach:80
+- 46.6.Controls and validations:80
+- 46.7.Changes/Modifications of data:80
+- 47.Use Case 47: Enter Project Payment details.81
+- 47.1.User: Finance Officer81
+- 47.2.Purpose:81
+- 47.3.Pre-Requisites:81
+- 47.4.Workflow:81
+- 47.5.Stepwise Approach:81
+- 47.6.Controls and validations:81
+- 47.7.Changes/Modifications of data:81
+- 48.Use Case 48: Setup Frequency of Progress Report Submission.82
+- 48.1.User: Project Management Section Admin82
+- 48.2.Purpose:82
+- 48.3.Pre-Requisites:82
+- 48.4.Workflow:82
+- 48.5.Stepwise Approach:82
+- 48.6.Controls and Validations:82
+- 48.7.Changes/Modifications of data:82
+- 49.Use Case 49: Reminder for Submission of Mid Term Progress Report.82
+- 50.Use Case 50: Progress Report Submission.83
+- 50.1.User: Principal Investigator83
+- 50.2.Purpose:83
+- 50.3.Pre-Requisites:83
+- 50.4.Workflow:83
+- 50.5.Stepwise Approach:83
+- 50.6.Controls and Validations:83
+- 50.7.Changes/Modifications of data:83
+- 51.Use Case 51: Submit Project Evaluation Report - Internal.84
+- 51.1.User: Project Management Section Admin84
+- 51.2.Purpose:84
+- 51.3.Pre-Requisites:84
+- 51.4.Workflow:84
+- 51.5.Stepwise Approach:84
+- 51.6.Controls and Validations:84
+- 51.7.Changes/Modifications of data:84
+- 52.Use Case 52: Submit Project Evaluation Report - External.85
+- 52.1.User: Principal Investigator85
+- 52.2.Purpose:85
+- 52.3.Pre-Requisites:85
+- 52.4.Workflow:85
+- 52.5.Stepwise Approach:85
+- 52.6.Controls and Validations:85
+- 52.7.Changes/Modifications of data:85
+- 53.Use Case 53: Upload MoU.85
+- 53.1.User: Principal Investigator86
+- 53.2.Purpose:86
+- 53.3.Pre-Requisites:86
+- 53.4.Workflow:86
+- 53.5.Stepwise Approach:86
+- 53.6.Controls and Validations:86
+- 53.7.Changes/Modifications of data:86
+- 54.Use Case 54: Upload Yearly Utilization Certificate.86
+- 54.1.User: Principal Investigator86
+- 54.2.Purpose:86
+- 54.3.Pre-Requisites:87
+- 54.4.Workflow:87
+- 54.5.Stepwise Approach:87
+- 54.6.Controls and Validations:87
+- 54.7.Changes/Modifications of data:87
+- 55.Use Case 55: Approval/Rejection of MoU.87
+- 55.1.User: PMS Admin87
+- 55.2.Purpose:87
+- 55.3.Pre-Requisites:87
+- 55.4.Workflow:87
+- 55.5.Stepwise Approach:88
+- 55.6.Controls and Validations:88
+- 55.7.Changes/Modifications of data:88
+- 56.Use Case 56: Approval/Rejection of UC.89
+- 56.1.User: PMS Admin89
+- 56.2.Purpose:89
+- 56.3.Pre-Requisites:89
+- 56.4.Workflow:89
+- 56.5.Stepwise Approach:89
+- 56.6.Controls and Validations:89
+- 56.7.Changes/Modifications of data:89
+- 57.Use Case 57: Submit Research Publication Details.90
+- 57.1.User: Principal Investigator90
+- 57.2.Purpose:90
+- 57.3.Pre-Requisites:90
+- 57.4.Workflow:90
+- 57.5.Stepwise Approach:90
+- 57.6.Controls and Validations:90
+- 57.7.Changes/Modifications of data:90
+- 58.Use Case 58: Submit MOOC E-Content/Book contribution Details.91
+- 58.1.User: Principal Investigator91
+- 58.2.Purpose:91
+- 58.3.Pre-Requisites:91
+- 58.4.Workflow:91
+- 58.5.Stepwise Approach:91
+- 58.6.Controls and Validations:91
+- 58.7.Changes/Modifications of data:91
+- 59.Use Case 59: Submit Membership (Professional Bodies) Details.91
+- 59.1.User: Principal Investigator91
+- 59.2.Purpose:91
+- 59.3.Pre-Requisites:92
+- 59.4.Workflow:92
+- 59.5.Stepwise Approach:92
+- 59.6.Controls and Validations:92
+- 59.7.Changes/Modifications of data:92
+- 60.Use Case 60: Submit Editorial Board Membership Details.92
+- 60.1.User: Principal Investigator92
+- 60.2.Purpose:92
+- 60.3.Pre-Requisites:92
+- 60.4.Workflow:92
+- 60.5.Stepwise Approach:93
+- 60.6.Controls and Validations:93
+- 60.7.Changes/Modifications of data:93
+- 61.Use Case 61: Submit paper presentation/Seminar/Conferences Details.93
+- 61.1.User: Principal Investigator93
+- 61.2.Purpose:93
+- 61.3.Pre-Requisites:93
+- 61.4.Workflow:93
+- 61.5.Stepwise Approach:94
+- 61.6.Controls and Validations:94
+- 61.7.Changes/Modifications of data:94
+- 62.Use Case 62: Submit Patent Details.94
+- 62.1.User: Principal Investigator94
+- 62.2.Purpose:94
+- 62.3.Pre-Requisites:94
+- 62.4.Workflow:94
+- 62.5.Stepwise Approach:94
+- 62.6.Controls and Validations:95
+- 62.7.Changes/Modifications of data:95
+- 63.Use Case 63: Submit Membership (Policy Making Committee) Details.95
+- 63.1.User: Principal Investigator95
+- 63.2.Purpose:95
+- 63.3.Pre-Requisites:95
+- 63.4.Workflow:95
+- 63.5.Stepwise Approach:95
+- 63.6.Controls and Validations:96
+- 63.7.Changes/Modifications of data:96
+- 64.Use Case 64: Submit Research guidance Details.96
+- 64.1.User: Principal Investigator96
+- 64.2.Purpose:96
+- 64.3.Pre-Requisites:96
+- 64.4.Workflow:96
+- 64.5.Stepwise Approach:96
+- 64.6.Controls and Validations:96
+- 64.7.Changes/Modifications of data:97
+- 65.Use Case 65: Submit Lecturers Conducted details.97
+- 65.1.User: Principal Investigator97
+- 65.2.Purpose:97
+- 65.3.Pre-Requisites:97
+- 65.4.Workflow:97
+- 65.5.Stepwise Approach:97
+- 65.6.Controls and Validations:97
+- 65.7.Changes/Modifications of data:97
+- 66.Use Case 66: View faculty Accolade details.98
+- 66.1.User: RRC Chairperson98
+- 66.2.Purpose:98
+- 66.3.Pre-Requisites:98
+- 66.4.Workflow:98
+- 66.5.Stepwise Approach:98
+- 66.6.Controls and Validations:98
+- 66.7.Changes/Modifications of data:98
+- 67.Use Case 67: Undertaking of Research Project Completion.98
+- 67.1.User: Principal Investigator99
+- 67.2.Purpose:99
+- 67.3.Pre-Requisites:99
+- 67.4.Workflow:99
+- 67.5.Stepwise Approach:99
+- 67.6.Controls and Validations:99
+- 67.7.Changes/Modifications of data:99
+- 68.Use Case 68: Upload Project Utilization certificate.99
+- 68.1.User: Principal Investigator99
+- 68.2.Purpose:100
+- 68.3.Pre-Requisites:100
+- 68.4.Workflow:100
+- 68.5.Stepwise Approach:100
+- 68.6.Controls and Validations:100
+- 68.7.Changes/Modifications of data:100
+- 69.Use Case 69: Upload Statement of Expenditure.100
+- 69.1.User: Principal Investigator100
+- 69.2.Purpose:100
+- 69.3.Pre-Requisites:101
+- 69.4.Workflow:101
+- 69.5.Stepwise Approach:101
+- 69.6.Controls and Validations:101
+- 69.7.Changes/Modifications of data:101
+- 70.Use Case 70: Upload final Project Report.101
+- 70.1.User: Principal Investigator101
+- 70.2.Purpose:101
+- 70.3.Pre-Requisites:101
+- 70.4.Workflow:101
+- 70.5.Stepwise Approach:102
+- 70.6.Controls and Validations:102
+- 70.7.Changes/Modifications of data:102
+- 71.Use Case 71: Approval/Rejection of Project Completion.102
+- 71.1.User: Project Management Section Admin102
+- 71.2.Purpose:102
+- 71.3.Pre-Requisites:102
+- 71.4.Workflow:102
+- 71.5.Stepwise Approach:103
+- 71.6.Controls and Validations:103
+- 71.7.Changes/Modifications of data:103
+- 72.Use Case 72: Project Transfer Request.103
+- 72.1.User: Principal Investigator104
+- 72.2.Purpose:104
+- 72.3.Pre-Requisites:104
+- 72.4.Workflow:104
+- 72.5.Stepwise Approach:104
+- 72.6.Controls and Validations:104
+- 72.7.Changes/Modifications of data:104
+- 73.Use Case 73: First Approval/Rejection of Transfer Request.104
+- 73.1.User: Registrar104
+- 73.2.Purpose:104
+- 73.3.Pre-Requisites:105
+- 73.4.Workflow:105
+- 73.5.Stepwise Approach:105
+- 73.6.Controls and Validations:105
+- 73.7.Changes/Modifications of data:105
+- 74.Use Case 74: Final Level Approval/Rejection of Transfer Request.106
+- 74.1.User: Vice Chancellor106
+- 74.2.Purpose:106
+- 74.3.Pre-Requisites:106
+- 74.4.Workflow:106
+- 74.5.Stepwise Approach:106
+- 74.6.Controls and Validations:107
+- 74.7.Changes/Modifications of data:107
+- 75.Use Case 75: Email Transfer Details funding Agency.107
+- 76.Use Case 76: Upload Approval Document from Funding Agency.107
+- 76.1.User: Principal Investigator107
+- 76.2.Purpose:107
+- 76.3.Pre-Requisites:107
+- 76.4.Workflow:107
+- 76.5.Stepwise Approach:107
+- 76.6.Controls and Validations:108
+- 76.7.Changes/Modifications of data:108
+- 77.Use Case 77: Student project creation.108
+- 77.1.User: Department Chairperson/College Admin108
+- 77.2.Purpose:108
+- 77.3.Pre-Requisites:108
+- 77.5.Stepwise Approach:108
+- 77.6.Controls and Validations:109
+- 77.7.Changes/Modifications of data:109
+- 78.Use Case 78: Allocate Student to project.109
+- 78.1.User: Department Chairperson/College Admin109
+- 78.2.Purpose:109
+- 78.3.Pre-Requisites:109
+- 78.5.Stepwise Approach:109
+- 78.6.Controls and Validations:109
+- 78.7.Changes/Modifications of data:109
+- 79.Use Case 79: Enter Project Funding Details.110
+- 79.1.User: Department Chairperson/College Admin110
+- 79.2.Purpose:110
+- 79.3.Pre-Requisites:110
+- 79.5.Stepwise Approach:110
+- 79.6.Controls and Validations:110
+- 79.7.Changes/Modifications of data:110
+- 80.Use Case 80: Allocate mentors to Project.111
+- 80.1.User: Department Chairperson/College Admin111
+- 80.2.Purpose:111
+- 80.3.Pre-Requisites:111
+- 80.4.Workflow: Purpose:111
+- 80.5.Stepwise Approach:111
+- 80.6.Controls and Validations:111
+- 80.7.Changes/Modifications of data:111
+- 81.Use Case 81: Setup Frequency of progress Report Submissions.112
+- 81.1.User: Employee (Mentor)112
+- 81.2.Purpose:112
+- 81.3.Pre-Requisites:112
+- 81.4.Workflow:112
+- 81.5.Stepwise Approach:112
+- 81.6.Controls and Validations:112
+- 81.7.Changes/Modifications of data:112
+- 82.Use Case 82: Upload progress Report.113
+- 82.1.User: Student113
+- 82.2.Purpose:113
+- 82.3.Pre-Requisites:113
+- 82.4.Workflow:113
+- 82.5.Stepwise Approach:113
+- 82.6.Controls and Validations:113
+- 82.7.Changes/Modifications of data:113
+- 83.Use Case 83: Provide Feedback to Progress Report.114
+- 83.1.User: Employee (Mentor)114
+- 83.2.Purpose:114
+- 83.3.Pre-Requisites:114
+- 83.4.Workflow:114
+- 83.5.Stepwise Approach:114
+- 83.6.Controls and Validations:114
+- 83.7.Changes/Modifications of data:114
+- 84.Use Case 84: Upload Final Report.115
+- 84.1.User: Student115
+- 84.2.Purpose:115
+- 84.3.Pre-Requisites:115
+- 84.4.Workflow:115
+- 84.5.Stepwise Approach:115
+- 84.6.Controls and Validations:115
+- 84.7.Changes/Modifications of data:115
+- 85.Use Case 85: Approve/Reject Final Report.115
+- 85.1.User: Employee (Mentor)115
+- 85.2.Purpose:115
+- 85.3.Pre-Requisites:116
+- 85.4.Workflow:116
+- 85.5.Stepwise Approach:116
+- 85.6.Controls and Validations:117
+- 85.7.Changes/Modifications of data:117
+- 86.Use Case 86: Upload Statement Expenditure.117
+- 86.1.User: Employee (Mentor)117
+- 86.2.Purpose:117
+- 86.3.Pre-Requisites:117
+- 86.4.Workflow:117
+- 86.5.Stepwise Approach:117
+- 86.6.Controls and Validations:118
+- 86.7.Changes/Modifications of data:118
+- 87.Use Case 87: Acknowledge Student Research Project Completion.118
+- 87.1.User: Principal/Department Chairperson/HOD118
+- 87.2.Purpose:118
+- 87.3.Pre-Requisites:118
+- 87.4.Workflow:118
+- 87.5.Stepwise Approach:118
+- 87.6.Controls and Validations:119
+- 87.7.Changes/Modifications of data:119
+- 88.Use Case 88: Set Frequency of Progress report Submission.119
+- 88.1.User: Principal Investigator119
+- 88.2.Purpose:119
+- 88.3.Pre-Requisites:119
+- 88.4.Workflow:119
+- 88.5.Stepwise Approach:119
+- 88.6.Controls and Validations:120
+- 88.7.Changes/Modifications of data:120
+- 89.Use Case 89: Upload Progress Report.120
+- 89.1.User: Research Fellow120
+- 89.2.Purpose:120
+- 89.3.Pre-Requisites:120
+- 89.4.Workflow:120
+- 89.5.Stepwise Approach:120
+- 89.6.Controls and Validations:121
+- 89.7.Changes/Modifications of data:121
+- 90.Use Case 90: Provide Feedback to Progress Report.121
+- 90.1.User: Principal Investigator121
+- 90.2.Purpose:121
+- 90.3.Pre-Requisites:121
+- 90.4.Workflow:121
+- 90.5.Stepwise Approach:121
+- 90.6.Controls and Validations:121
+- 90.7.Changes/Modifications of data:122
+- 91.Use Case 91: Requisition for Procurement of the Equipment.122
+- 91.1.User: Principal Investigator122
+- 91.2.Purpose:122
+- 91.3.Pre-Requisites:122
+- 91.4.Workflow:122
+- 91.5.Stepwise Approach:122
+- 91.6.Controls and Validations:123
+- 91.7.Changes/Modifications of data:123
+- 92.Use Case 92: First level Approval/Rejection of the Procurement request raised by Research Review Committee.123
+- 92.1.User: Research Review Committee Chairperson123
+- 92.2.Purpose:123
+- 92.3.Pre-Requisites:123
+- 92.4.Workflow:123
+- 92.5.Stepwise Approach:123
+- 92.6.Controls and Validations:124
+- 92.7.Changes/Modifications of data:124
+- 93.Use Case 93: Final Level Approval/Rejection of the Procurement request by Registrar.124
+- 93.1.User: Registrar124
+- 93.2.Purpose:124
+- 93.3.Pre-Requisites:124
+- 93.4.Workflow:124
+- 93.5.Stepwise Approach:125
+- 93.6.Controls and Validations:125
+- 93.7.Changes/Modifications of data:125
+- 94.Use Case 94: Procurement of Equipment.125
+- 94.1.User: Registrar125
+- 94.2.Purpose:125
+- 94.3.Pre-Requisites:125
+- 94.4.Workflow:125
+- 94.5.Stepwise Approach:126
+- 94.6.Controls and Validations:126
+- 94.7.Changes/Modifications of data:126
+- 95.Use Case 95: View Letter of Issuance.126
+- 95.1.User: Finance Officer126
+- 95.2.Purpose:126
+- 95.3.Pre-Requisites:126
+- 95.4.Workflow:127
+- 95.5.Stepwise Approach:127
+- 95.6.Controls and Validations:127
+- 95.7.Changes/Modifications of data:127
+- 96.Use Case 96: Upload progress Report.127
+- 96.1.User: Guide127
+- 96.2.Purpose:127
+- 96.3.Pre-requisites:127
+- 96.4.Workflow:127
+- 128
+- 96.5.Step wise Approach:128
+- 96.6.Condition and Validations:128
+- 96.7.Changes/Modification of data:128
+- 97.Use Case 97: Upload progress Report by Student128
+- 97.1.User: Student128
+- 97.2.Purpose:128
+- 98.Use Case 98: Guide – provide feedback on Progress Report129
+- 98.1.User: Guide129
+- 98.2.Purpose:129
+- 98.3.Pre-requisites:129
+- 98.4.Workflow:129
+- 129
+- 98.5.Step by approaches:130
+- 98.6.Conditions and Validations:130
+- 98.7.Changes/Modifications of data:130
+- 99.Use Case 99: Set Notice Period days, min and max of years, examiners.130
+- 99.1.User: University Admin130
+- 99.2.Purpose:130
+- 99.3.Pre-requisites:130
+- 99.4.Workflow:130
+- 130
+- 99.5.Step by approaches:130
+- 99.6.Conditions and Validations:131
+- 99.7.Changes/Modifications of data:131
+- 1.Changes or modifications are allowed until further action taken in other logins.131
+- 100.Use Case 100: Create request for cancellation.131
+- 100.1.User: Student/Guide131
+- 100.2.Purpose:131
+- 100.3.Pre-Requisites:131
+- 100.4.Workflow:131
+- 100.5.Step by Approaches:132
+- 100.6.Conditions and Validations:132
+- 100.7.Changes/Modification of Data:133
+- 101.Use Case 101: Approval of Cancellation request by Registrar.133
+- 101.1.User: Student/Guide133
+- 101.2.Purpose:133
+- 101.3.Pre-Requisites:133
+- 101.4.Workflow:133
+- 101.5.Step by Approaches:134
+- 101.6.Conditions and Validations:134
+- 101.7.Changes/Modification of Data:134
+- 102.Use Case 102: Submit Final Synopsis134
+- 102.1.User: Student/Guide/Department chairperson/PhD section/RE134
+- 102.2.Purpose:134
+- 102.3.Pre-Requisites:135
+- 102.4.Workflow:135
+- 135
+- 102.5.Step by Approaches:135
+- 102.6.Conditions and Validations:135
+- 102.7.Changes/Modifications of Data:135
+- 103.Use Case 103: Approval/Rejection of Final Synopsis by Doctoral Committee/PhD Section.135
+- 103.1.User: Doctoral committee/ PhD section135
+- 103.2.Purpose:135
+- 103.3.Pre-Requisites:135
+- 103.4.Workflow:136
+- 103.5.Step by Approaches:136
+- 103.6.Conditions and Validations:136
+- 103.7.Changes/Modifications of data:136
+- 104.Use Case 104: Create Panel of Examiners.136
+- 104.1.User: RE/COE136
+- 104.2.Purpose:136
+- 104.3.Pre-Requisites:136
+- 104.4.Workflow:137
+- 137
+- 104.5.Step by approaches: Purpose:137
+- 104.6.Conditions and validations:137
+- 104.7.Changes/Modifications of data:137
+- 105.Use Case 105: Submit Thesis - Report.137
+- 105.1.User: Student137
+- 105.2.Purpose:137
+- 105.3.Pre-Requisites:137
+- 105.4.Workflow:137
+- 105.5.Step by Approaches:138
+- 105.6.Conditions and Validations:138
+- 105.7.Changes/Modification of data:138
+- 106.Use Case 106: Forward Thesis Guide to Dept chairperson.138
+- 106.1.User: Guide138
+- 106.2.Purpose:138
+- 106.3.Pre-Requisites:138
+- 106.4.Workflow:138
+- 106.5.Step by approaches:139
+- 106.6.Conditions and validations:139
+- 106.7.Change/Modification of data:139
+- 107.Use Case 107: Create Panel of examiners – RE – per thesis one panel.139
+- 107.1.User: Voice chancellor139
+- 107.2.Purpose:139
+- 107.3.Pre-Requisites:139
+- 107.4.Workflow:139
+- 107.5.Step by approaches:139
+- 107.6.Conditions and Validations:140
+- 107.7.Changes/Modifications of data:140
+- 108.Use Case 108: Submit Evaluation Report140
+- 108.1.User: Examination Panel140
+- 108.2.Purpose:140
+- 108.3.Pre-Requisites:140
+- 108.4.Workflow:140
+- 108.5.Step by approaches:140
+- 108.6.Conditions and validations:141
+- 108.7.Change/Modification of data:141
+- 109.Use Case 109: Submit Evaluation Report – Guide (Accepted Consolidated Report)141
+- 109.1.User: Guide141
+- 109.2.Purpose:141
+- 109.3.Pre-Requisites:141
+- 109.4.Workflow:141
+- 109.5.Step by approaches:141
+- 109.6.Conditions and validations:141
+- 109.7.Change/Modification of data:141
+- 110.Use Case 110: Approval/modification/resubmission/Rejection Evaluation report – Registrar (Evaluation)142
+- 110.1.User: Registrar Evaluation142
+- 110.2.Purpose:142
+- 110.3.Pre-Requisites:142
+- 110.4.Workflow:142
+- 110.5.Step by approaches:142
+- 110.6.Conditions and validations:142
+- 110.7.Change/Modification of data:142
+- 111.Use Case 111: Intimation to Guide to Conduct Viva Voce – RE143
+- 111.1.User: Registrar Evaluation143
+- 111.2.Purpose:143
+- 111.3.Pre-Requisites:143
+- 111.4.Workflow:143
+- 143
+- 111.5.Step by approaches:143
+- 111.6.Conditions and validations:143
+- 111.7.Change/Modification of data:143
+- 112.Use Case 112: Enter viva details – Guide (Attendance, Proceedings) proceedings to be submitted to RE143
+- 112.1.User: Guide143
+- 112.2.Purpose:143
+- 112.3.Pre-Requisites:143
+- 112.4.Workflow:143
+- 112.5.Step by Approaches:144
+- 112.6.Conditions and Validations:144
+- 112.7.Changes/Modification of data:144
+- 113.Use Case 113: Create PhD Notification – RE144
+- 113.1.User: Registrar Evaluator144
+- 113.2.Purpose:144
+- 113.3.Pre-Requisites:144
+- 113.4.Workflow:144
+- 113.5.Step by Approaches:145
+- 113.6.Conditions and Validations:145
+- 113.7.Changes/Modifications of data:145
+- 114.Use Case 114: Acknowledgement of Thesis Upload UGC Website by Librarian145
+- 114.1.User: Librarian145
+- 114.2.Purpose:145
+- 114.3.Pre-Requisites:145
+- 114.4.Workflow:145
+- 114.5.Step by Approaches:145
+- 114.6.Conditions and Validations:146
+- 114.7.Changes/Modifications of the data:146
+- 115.Use Case 115: Student login to enter the funding agency Details, Duration, Fellowship Amount, Contingency etc.146
+- 115.1.User: Student146
+- 115.2.Purpose:146
+- 115.3.Pre-Requisites:146
+- 115.4.Workflow:146
+- 115.5.Step by Approaches:146
+- 115.6.Conditions and Validations:146
+- 115.7.Changes/Modification of data:147
+- 116.Use Case 116: Verification of Fellowship Details – chairman.147
+- 116.1.User: Chairman147
+- 116.2.Purpose:147
+- 116.3.Pre-Requisites:147
+- 116.4.Workflow:147
+- 116.5.Step by Approaches:147
+- 116.6.Conditions and Validations:147
+- 116.7.Changes/Modification of data:147
+- 117.Use Case 117: Registrar Login148
+- 118.Use Case 118: State Admin Login148
+- Revision History
+- Version
+- Date
+- Description
+- Approved By
+- V0.1
+- 09-09-2025
+- Captured Requirement specifications
+- Abbreviations
+- Sl.No.
+- Abbreviations
+- Explanation
+- 1
+- BoS
+- Board of Studies
+- 2
+- kB
+- Kilobytes
+- 3
+- MOOC
+- Massive Open Online Course
+- 4
+- MoU
+- Memorandum of Understanding
+- 5
+- PDC
+- Provisional Degree Certificate
+- 6
+- PhD
+- Doctor of Philosophy
+- 7
+- PI
+- Principal Investigator
+- 8
+- PMS
+- Project Management Section
+- 9
+- R&D
+- Research and Development
+- 10
+- RRC
+- Research Review Committee
+- 11
+- UC
+- Utilization Certificate
+- 12
+- UUCMS
+- Unified University and College Management System
+- About the UUCMS
+- UUCMS (Unified University & College Management System) is an application envisioned by the Higher Education Department, Government of Karnataka to bring all the various public universities and colleges affiliated to those universities under one umbrella. This UUCMS software will be used by students, parents, faculty, employees / administrators / leadership within colleges, universities and the state government.
+- The entire student journey from admission to academics to examination to awarding the degree are tracked within the system.
+- The faculty journey from joining to performance assessment and management to promotion is tracked within the system. The faculty’s academics related activities such as lesson plan, class monitoring, attendance capture, etc are also part of the UUCMS system.
+- This application also involves various aspects of University / College administration and management such as
+- Asset Management
+- Library Management
+- Finance Planning and Monitoring
+- Affiliation Management
+- Research & Development
+- Use Case 1: Setup Doctoral Committee
+- User: Department Chairperson
+- Purpose:
+- To allow the Department Chairperson to set up Doctoral Committee for each student.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approaches:
+- Step 1:
+- Department Chairperson logs in to the system.
+- Step 2:
+- User clicks on “Setup Doctoral Committee” link from the R&D menu.
+- Step 3:
+- User selects the Department and Discipline from the dropdown and clicks on ‘View Student List’ button.
+- Step 4:
+- User clicks on ‘Setup Doctoral Committee’ in the action column of the grid corresponding to the USN of the student.
+- Step 5:
+- The user enters the member details: Employee Name, Designation, University, and Role, Address, Phone number, field of study and Duration (3 years) then clicks on ‘Save’ button.
+- Step 6:
+- User can modify the member details as and when required.
+- Controls and Validations:
+- Each student will have one doctoral committee.
+- User can edit & delete the overall committee.
+- Data related to employee will be fetch from HRM module.
+- Role – Options are Chairman, Member, External Expert and Convener.
+- Changes / Modification of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 2: Request for Guide/Co-Guide Change
+- User: Student
+- Purpose:
+- To allow the student to raise a request for change in guide/co-guide.
+- Pre-Requisites:
+- The status of the student USN must be “Provisional”.
+- The student should have a guide assigned at the time of admission to request for guide change.
+- The student should have a co-guide assigned by the Department Chairperson to request for co-guide change.
+- Workflow:
+- Step wise approaches:
+- Step 1:
+- Students log in to the UUCMS portal.
+- Step 2:
+- Student clicks on the “Guide/Co-Guide Change” link under the “R&D” menu.
+- Step 3:
+- Student selects the Guide Type – Guide/Co-Guide.
+- Step 4:
+- User selects a proper reason for a change in guide from the dropdown or selects “Other” if they wish to enter the reason manually.
+- Step 5:
+- User uploads the request letter.
+- Step 6:
+- User selects preferred faculty names for the new guide, according to their priority.
+- Step 7:
+- User clicks on “Submit” button.
+- Controls and Validations:
+- The dropdown where the user selects the reason for the change request should contain pre-loaded reasons as options along with “Other” option.
+- In case the user selects “Other” option, the system should display a text area that takes maximum of 100 characters.
+- Users can enter a maximum of 5 preferred faculty names, of which 1 is mandatory.
+- File type for uploads: pdf/jpeg, Maximum file size: 200kB.
+- Changes/Modification of Data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, the original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 3: Approve/Rejection of Guide Change Request
+- User:  User: BOS Chairman
+- Purpose:
+- To allow the BOS chairman to approve/reject the guide change request raised by the student.
+- Pre-Requisites:
+- The student should have a guide assigned at the time of admission to request for guide change.
+- The student should have a co-guide assigned by the BOS chairman to request for co-guide change.
+- Work Flow:
+- Step wise Approaches:
+- Step 1:
+- BOS chairman logs in to the system.
+- Step 2:
+- BOS chairman clicks on “Approve/Reject Guide Change Requests” link under the “R&D” menu.
+- Step 3:
+- User selects the Guide Type from the dropdown.
+- Step 4:
+- To approve the request:
+- The BOS chairman clicks on “Approve” action button in the grid.
+- User selects the new guide.
+- User uploads the Guide Change letter given by the University
+- User enters remarks and clicks on ‘Invite for Fee Payment’ button.
+- Or,
+- To reject the request:
+- The BOS chairman clicks on “Reject” action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and Validations:
+- The dropdown options for “New guide” field must consist of faculty names who are eligible for guideship.
+- Each approval should trigger SMS and mail notification with updated details.
+- Changes/Modifications of data
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 4: Change of Guide – Special Cases
+- User: Department Chairperson
+- Purpose:
+- To allow the Department Chairperson to change the guide/co-guide of a student under special circumstances such as death, health issues etc.
+- Pre-Requisites:
+- The student should have a guide assigned at the time of admission to request for guide change.
+- The student should have a co-guide assigned by the Department Chairperson to request for co-guide change.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson logs in to the UUCMS portal.
+- Step 2:
+- Department Chairperson clicks on “Change of Guide – Special Cases” link under R&D menu.
+- Step 3:
+- User clicks on “Change Guide” sub menu.
+- Step 4:
+- Department Chairperson can search the student details either by discipline or by name of the allotted guide.
+- Step 5:
+- The system displays a grid containing the student details. User clicks on ‘Edit’ in the action column.
+- Step 6:
+- System displays a pop-up where user selects the guide type to be changed, enters the reason for a change in guide, then selects the new guide from the dropdown, and clicks on “Submit” button.
+- Controls and Validations:
+- The dropdown options for “New guide” field must consist of faculty names who are eligible for guideship.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 5: Setup PhD Duration
+- User: University Admin
+- Purpose:
+- To allow the University Admin to set the duration of course based on Type of PhD and Mode of Study.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- University Admin logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Set up PhD Duration” link under the “R&D” menu.
+- Step 3:
+- User selects the type of PhD and Mode of Study.
+- Step 4:
+- User enters the Duration in years and months and Max no. of Extension time and  clicks on ‘Save’ button.
+- Controls and Validations:
+- Discipline Dropdown – Multi Selection.
+- Type of PhD field – dropdown with options: Fellowship and Non-Fellowship
+- Mode of Study field – dropdown with options: Full-time and Part-time
+- Duration field – takes value in two fields – Year field and Month Field. Year field takes single digit integer number between 0 and 9 and month field takes two-digit integer number between 0 and 11.
+- The details are editable as and when required.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 6: Set up mode of study, type of PhD.
+- User: Department Chairperson
+- Purpose:
+- To allow the Department Chairperson to set the mode of study and type of PhD for each student.
+- Pre-Requisites:
+- University Admin should have set up the duration of PhD.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department chairperson logs in to the UUCMS portal.
+- Step 2:
+- Department chairperson clicks on “Set up type of PhD and mode of study” link under the “R&D” menu.
+- Step 3:
+- User selects the type of PhD and Mode of Study.
+- Step 4:
+- System displays the Duration and Expected End Date and user clicks on ‘Save’ button.
+- Controls and Validations:
+- Type of PhD field – dropdown with options: Fellowship and Non-Fellowship
+- Mode of Study field – dropdown with options: Full-time and Part-time
+- Duration field – takes value in two fields – Year field and Month Field. Year field takes single digit integer number between 0 and 9 and month field takes two-digit integer number between 0 and 11.
+- Expected end date should be calculated based on the Date of Admission and Duration of the course.
+- The details are editable as and when required.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 7: Request to change the mode of study.
+- User: Student
+- Purpose:
+- To allow the student to raise a request to change the mode of study.
+- Pre-Requisites:
+- The student must already have a mode of study set up by the Department Chairperson.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS portal.
+- Step 2:
+- Student clicks on “Request mode change/end date extension/year extension” link under the “R&D” menu.
+- Step 3:
+- User clicks on “Request mode of study change” button.
+- Step 4:
+- User selects the ‘change mode of study from’ and ‘change mode of study to’ fields, enters the reason for request, and uploads the supporting documents.
+- Step 5:
+- User clicks on “Submit” button.
+- Controls and Validations:
+- A student can upload only one document.
+- File type for uploads: pdf, Maximum file size: 200kB.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 8: Request for extension of expected end date.
+- User: Student
+- Purpose:
+- To allow the student to raise a request to extend the expected end date of the course.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The student must have a current expected end date.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Request mode change/end date extension/year extension” link under R&D menu.
+- Step 3:
+- User clicks on “Request extension of end date” button.
+- Step 4:
+- User enters the preferred expected end date, enters the reason for request, and uploads the supporting documents.
+- Step 5:
+- User clicks on “Submit” button.
+- Controls and Validations:
+- A student can upload only one document.
+- Preferred Expected end date field – date field (dd/mm/yyyy format)
+- File type for uploads: pdf, Maximum file size: 200kB.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 9: Request for maternity leave.
+- User: Women scholars
+- Purpose:
+- To allow the women scholars to apply for maternity leave during their tenure of PhD.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Request mode change/extension of end date/year extension” link under R&D menu.
+- Step 3:
+- User clicks on “Request extension of end date” button.
+- Step 4:
+- User checks the box for “Maternity Leave”.
+- Step 5:
+- User enters the details such as the number of days of maternity leave, and expected delivery date.
+- Step 6:
+- User uploads the supporting documents and clicks on “Submit” button.
+- Controls and validations:
+- The checkbox must be accessible only to Female Scholars.
+- The number of days of maternity leave field must take a number between 1 & 240 only.
+- The expected delivery date is a date field (dd/mm/yyyy).
+- File type for uploads: pdf, Maximum file size: 200kB.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 10: Request for additional year of extension.
+- User: Student
+- Purpose:
+- To allow the student to raise a request for additional year of extension.
+- Pre-Requisites:
+- The student must have a current duration.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Request mode change/end date extension/year extension” link under R&D menu.
+- Step 3:
+- User clicks on “Request year extension” button.
+- Step 4:
+- User enters the preferred duration in terms of years and months, and the reason for requesting the extension.
+- Step 5:
+- User uploads the supporting documents and clicks on “Submit” button.
+- Controls and Validations:
+- Preferred duration entered by the user must be in two fields - Year field and Month Field. Year field takes single digit integer number between 0 and 9 and month field takes two-digit integer number between 0 and 11.
+- A student can upload only one document.
+- File type for uploads: pdf, Maximum file size: 200kB.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 11: First level of approvals/rejection mode of change/end date/Year extension request by Guide
+- User: Guide
+- Purpose:
+- To allow the Guide to approve/reject the mode change/end date extension/year extension requests raised by the students.
+- Pre-Requisites:
+- The student must have raised a request for mode change/end date extension/year extension.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Guide logs in to the system.
+- Step 2:
+- Guide clicks on “Approve/Reject mode change, end date/year extension requests” link under the “R&D” menu.
+- Step 3:
+- User clicks on “Mode of Study Change” button:
+- The system displays three action buttons: Download, Approve, and Reject.
+- User clicks on “Download” button to download the document uploaded by the student at the time of raising the request.
+- User clicks on “Approve” button to approve the request. System displays a pop-up where the user enters his/her remarks and clicks on “Submit” button.
+- User clicks on “Reject” button to reject the request. System displays a pop-up where the user enters the reason for rejection.
+- and/or
+- User clicks on “Extension of End Date” button:
+- The system displays three action buttons: Download, Approve, and Reject.
+- User clicks on “Download” button to download the document uploaded by the student at the time of raising the request.
+- User clicks on “Approve” button to approve the request. System displays start date in read only mode and  a pop-up where the user enters his/her remarks along with extended End Date and clicks on “Submit” button.
+- User clicks on “Reject” button to reject the request. System displays a pop-up where the user enters the reason for rejection.
+- and/or
+- User clicks on “Year Extension” button:
+- The system displays three action buttons: Download, Approve, and Reject.
+- User clicks on “Download” button to download the document uploaded by the student at the time of raising the request.
+- User clicks on “Approve” button to approve the request. System displays a pop-up where the user enters his/her remarks and clicks on “Submit” button.
+- User clicks on “Reject” button to reject the request. System displays a pop-up where the user enters the reason for rejection.
+- Controls and validations:
+- System should display the request number (1st request/2nd request, etc.)
+- The user must be able to view the status report of the requests.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 12: Second level of approvals/rejection mode of change/end date/Year extension request by Guide
+- User: Department Chairperson
+- Purpose:
+- To allow the department chairperson to approve/reject the mode change/end date extension/year extension requests raised by the students.
+- Pre-Requisites:
+- The student must have raised a request for mode change/end date extension/year extension.
+- Guide must have approved the request.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department chairperson logs in to the system.
+- Step 2:
+- Department chairperson clicks on “Approve/Reject mode change, end date/year extension requests” link under the “R&D” menu. In that system display the Guide name who Approved the request.
+- Step 3:
+- User clicks on “Mode of Study Change” button:
+- The system displays three action buttons: Download, Approve, and Reject.
+- User clicks on “Download” button to download the document uploaded by the student at the time of raising the request.
+- User clicks on “Approve” button to approve the request. System displays a pop-up where the user selects new mode of study from the dropdown, enters remarks and clicks on ‘Invite for Fee Payment’ button.
+- User clicks on “Reject” button to reject the request. System displays a pop-up where the user enters the reason for rejection.
+- and/or
+- User clicks on “Extension of End Date” button:
+- The system displays three action buttons: Download, Approve, and Reject.
+- User clicks on “Download” button to download the document uploaded by the student at the time of raising the request.
+- User clicks on “Approve” button to approve the request. System displays a pop-up where the user enters approved expected end date, enters remarks, and clicks on “Invite for Fee Payment” button.
+- User clicks on “Reject” button to reject the request. System displays a pop-up where the user enters the reason for rejection.
+- and/or
+- User clicks on “Year Extension” button:
+- The system displays three action buttons: Download, Approve, and Reject.
+- User clicks on “Download” button to download the document uploaded by the student at the time of raising the request.
+- User clicks on “Approve” button to approve the request. System displays a pop-up where the user enters approved duration, approved expected end date, remarks, and clicks on “Invite for Fee Payment” button.
+- User clicks on “Reject” button to reject the request. System displays a pop-up where the user enters the reason for rejection.
+- Controls and validations:
+- System should display the request number (1st request/2nd request, etc.)
+- Mode of Study field – dropdown with Part-Time and Full-Time as options.
+- Approved Duration field – takes value in two fields – Year field and Month Field. Year field takes single digit integer number between 0 and 9 and month field takes two-digit integer number between 0 and 11.
+- Approved Expected end date field – date field (dd/mm/yyyy format)
+- Only after the student completes the fee payment, the system should update the requested changes.
+- In case of offline payment, the system should update the requested changes only after the approval by Finance Officer.
+- Maximum number of extension to be set by the university admin to extend the date.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use case 13: Approve/Reject maternity leave request.
+- User: Guide
+- Purpose:
+- To allow the guide to approve/reject the maternity leave request raised by the women scholars.
+- Pre-Requisites:
+- The student must have raised the leave request.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Guide logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Approve/Reject Maternity Leave Requests” link under R&D menu.
+- Step 3:
+- The system displays the grid with the list of requests and “Review” action button.
+- Step 4:
+- To approve the request:
+- User clicks on “Approve” action button in the grid.
+- The system displays a pop-up where the user enters the approved number of leave days, rejoin date, and clicks on “Submit” button.
+- Or
+- To reject the request:
+- User clicks on “Reject” action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and validations:
+- System should display the request number (1st request/2nd request, etc.)
+- Rejoin Date field – date field (dd/mm/yyyy format)
+- Approved number of Leave Days field must take a number between 1 & 240 only.
+- Each approval should trigger SMS and mail notification.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use case 14: Assign Co-guide.
+- User: Department Chairperson
+- Purpose:
+- To allow the Department Chairperson to assign co-guide to the student.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Assign Co-Guide” link under R&D menu.
+- Step 3:
+- User clicks on ‘Assign Co-Guide” under the Action column.
+- Step 4:
+- User selects the Co-Guide from the dropdown.
+- Step 5:
+- User uploads the supporting documents and clicks on ‘Submit’ button.
+- Controls and validations:
+- The dropdown options for “New guide” field must consist of faculty names who are eligible for guideship.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use case 15: R & D fee setup
+- User: University Admin
+- Purpose:
+- To allow the University Admin to map the fee head and enter fee details for change activities.
+- Pre-Requisites:
+- State admin must have created the appropriate fee heads.
+- Workflow:
+- Stepwise Approach:
+- Fee Head Mapping
+- Step 1:
+- University Admin logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “R&D fee details” link under R&D menu.
+- Step 3:
+- User clicks on “Fee Head Mapping” button.
+- Step 4:
+- User selects the Fee Head from the dropdown and clicks on ‘Add’.
+- Enter New Fee
+- Step 1:
+- University Admin logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “R&D fee details” link under R&D menu.
+- Step 3:
+- User clicks on “Enter New fee” button.
+- Step 4:
+- User selects the Department and Discipline from the dropdown and clicks on ‘Add’.
+- Step 5:
+- User enters the Fee details for the respective Fee Heads based on Category, gender, and clicks on ‘Save’ button.
+- Controls and validations:
+- Discipline dropdown must allow multi-selection.
+- Zero fee amount must be allowed to save
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use case 16: Fee payment for each change activity.
+- The payment workflow is same as PG/UG fee collection.
+- Approval of offline fee payment by finance officer.
+- User: Finance Officer
+- Purpose:
+- To allow the Finance Officer to approve the offline fee payments made by the student for change activities.
+- Pre-Requisites:
+- Student must have chosen ‘Offline’ as mode of payment.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Finance Officer logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Approval of Offline Fee Payments” link under R&D menu.
+- Step 3:
+- User clicks on the type of change activity from the respective buttons (change in guide/co-guide, mode of study, extension of end date, year extension).
+- Step 4:
+- User selects academic year, program name, program level, department, and discipline.
+- Step 5:
+- User clicks on ‘Approve’ to approve the request. System displays a pop-up where the user approves the payment details and clicks on ‘Submit’ button.
+- and\or
+- User clicks on ‘Reject’ to approve the request. System displays a pop-up where the user enters the remarks and clicks on ‘Submit’ button.
+- Controls and validations:
+- In case of offline payments, only after the approval from Finance Officer, the system should update the requested changes.
+- Once rejected, student must be allowed to resubmit the payment details.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 18: Course Work
+- The Academics and Class Monitoring Module of UUCMS address the purpose of this Use Case.
+- Use Case 19: Synopsis Submission
+- User: Student
+- Purpose:
+- To allow the PhD scholar to upload the synopsis for their research topic to the guide.
+- Pre-Requisites:
+- The student must have successfully completed the course work.
+- For Resubmission, either the guide/Department Chairperson has sent the synopsis back for modifications.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Upload Synopsis” link under R&D menu.
+- Step 3:
+- User clicks on ‘Upload Initial Synopsis’ button.
+- Step 4:
+- User enters the title of research topic and uploads the synopsis document.
+- Step 5:
+- User clicks on “Submit” button.
+- Controls and Validations:
+- Type of Synopsis should have two options: Initial and Final Synopsis.
+- Only after Department Chairperson approves the synopsis, and after colloquium enable the Final option in the dropdown.
+- The text area to enter the Title of Research Topic should take maximum of 200 characters.
+- File type: pdf, Max size: 1MB.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 20: First level Approval/Rejection of synopsis by Guide.
+- User: Guide
+- Purpose:
+- To allow the guide to approve/reject the synopsis uploaded by the PhD scholar.
+- Pre-Requisites:
+- The student should have submitted the initial synopsis or the student should have uploaded the modified synopsis.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Guide logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Approve/Reject Synopsis” link under R&D menu.
+- Step 3:
+- In case, the user wants to send the synopsis back for modifications:
+- User clicks on ‘Review’ action button in the grid. System displays a pop-up with synopsis details where user clicks on ‘Send back for modifications’ button.
+- System displays a pop-up where the user enters the suggested modifications for the synopsis and clicks on ‘Submit’ button.
+- In case, the user wants to approve the synopsis:
+- User clicks on ‘Approve’ action button in the grid. System displays a pop-up where the user confirms the approval of initial synopsis.
+- In case, the user wants to reject the synopsis:
+- User clicks on ‘Reject’ action button in the grid. System displays a pop-up where user enters the reason for rejection and clicks on ‘Submit’ button.
+- Controls and Validations:
+- Once approved, there is no modifications/no re submission allowed.
+- Once rejected user student can re-upload the modified document.
+- Each approval/rejection should be intimated to the student via mail/SMS
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 21: Send colloquium Invite
+- User: Department Chairperson
+- Purpose:
+- To allow the Department Chairperson to set the pre-registration colloquium dates for the PhD scholars.
+- Pre-Requisites:
+- Guide should have approved the initial synopsis.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Invite for Colloquium” link under R&D menu.
+- Step 3:
+- User can set the colloquium date for scholars individually or can choose to set the colloquium date for all the scholars based on department/discipline.
+- Step 4:
+- User sets minimum time frame for colloquium and clicks on “Send All” button and the system send the invite link to the respective scholars via E-mail and SMS.
+- Controls and Validations:
+- User can modify the invite date.
+- Each invite should trigger SMS and mail notification.
+- Report should be provided for the tracking.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 22: Upload Colloquium Document.
+- User: Student
+- Purpose:
+- To allow the PhD scholar to upload the documents related to the colloquium such as presentations materials/abstract etc.
+- Pre-Requisites:
+- The student must have attended a colloquium or the student must have uploaded the modified documents after a colloquium.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Upload Colloquium Documents” link under R&D menu.
+- Step 3:
+- User clicks on ‘Add’ button under the action column in the grid.
+- Step 4:
+- User uploads the relevant documents such as presentation materials/abstract etc., and clicks on “Submit” button.
+- Controls and Validations:
+- Once approved, there is no modifications/no re submission allowed.
+- Once rejected user can re-upload the modified document.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 23: Review/Approve Colloquium Documents.
+- User: Department Chairperson
+- Purpose:
+- To allow the Department Chairperson to either provide review or approve the colloquium documents uploaded by the scholar.
+- Pre-Requisites:
+- Scholar must have attended the colloquium.
+- Scholar must have uploaded the colloquium documents.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Colloquium Review/Approval” link under R&D menu.
+- Step 3:
+- In case, the user wants to send the colloquium documents back for modifications:
+- User clicks on “Review” action button in the grid. System displays a pop-up with colloquium details where user clicks on ‘Send back for modifications’ button.
+- System displays a pop-up where the user enters the suggested modifications for the documents and clicks on ‘Submit’ button.
+- In case, the user wants to approve the synopsis:
+- User clicks on ‘Approve’ action button in the grid. System displays a pop-up where the user confirms the approval of initial synopsis.
+- Controls and Validations:
+- Once approved, there is no modifications/no re-submission allowed.
+- If sent back for update, student should be allowed to resubmit the documents
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 24: Second level of Approval/Rejection of Synopsis.
+- User: Department Chairperson
+- Purpose:
+- To allow the department chairperson to approve/reject the synopsis uploaded by the PhD scholar after successful completion of colloquium.
+- Pre-Requisites:
+- The student must have submitted the initial synopsis.
+- Guide must have approved the initial synopsis.
+- The student must have attended the colloquium.
+- The Department Chairperson must have approved the colloquium documents.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Guide logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Approve/Reject Synopsis” link under R&D menu.
+- Step 3:
+- In case, the user wants to approve the synopsis:
+- User clicks on ‘Approve’ action button in the grid. System displays a pop-up where the user confirms the approval of initial synopsis and clicks on ‘Invite for fee payment’ button.
+- In case, the user wants to reject the synopsis:
+- User clicks on ‘Reject’ action button in the grid. System displays a pop-up where user enters the reason for rejection and clicks on ‘Submit’ button.
+- Controls and Validations:
+- Once approved, there is no modifications/no re submission allowed.
+- The status of USN will change from ‘Provisional’ to ‘Permanent’ after the student completes registration fee payment.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 25: Setup Board of studies (BOS)
+- User: Vice Chancellor
+- Purpose:
+- To allow the Vice Chancellor to set up Board of Studies.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Vice Chancellor logs in to the system.
+- Step 2:
+- User clicks on “Setup Board of Studies” link from the R&D menu.
+- Step 3:
+- User selects the Department and Discipline from the dropdown and clicks on ‘Set up Board of Studies’ button.
+- Step 4:
+- User clicks on ‘Setup Board of Studies’ in the action column of the grid corresponding to the discipline.
+- Step 5:
+- The user enters the member details: Employee Name, Designation, University, and Role and clicks on ‘Save’ button.
+- Step 6:
+- User can modify the member details as and when required.
+- Controls and Validations:
+- User can edit/delete the Board member details as and when required.
+- Role – Options are Chairperson, & Member.
+- The system should send the login credentials for BoS Chairperson Login to the employee whose role is set as Chairperson.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 26: Create Eligibility Questioner
+- Users: State Admin
+- Purpose:
+- To allow the State Admin to frame the questionnaire that determines the eligibility of a faculty member to apply for guideship, in compliance with UGC guidelines.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- State Admin logs in to the UUCMS Portal.
+- Step 2:
+- State Admin clicks on “Create Eligibility Questionnaire” link under the “R&D” menu.
+- Step 3:
+- User selects the required academic year, and clicks on ‘Add new question’ button.
+- As per the current UGC guidelines, below are the recommended questions the State Admin can add to the system.
+- Sl. No
+- Questions
+- 1
+- Are you a permanent employee of the University?
+- 2
+- Are you a Ph.D. degree holder?
+- 3
+- How many years of teaching experience do you have before obtaining Ph.D.?
+- 4
+- How many years of teaching experience do you have after obtaining Ph.D.?
+- 5
+- How many research papers have you published in UGC-recognized peer-reviewed or refereed journals? (Other than doctoral research).
+- Step 4:
+- State Admin enters the new question and clicks on “Add”.
+- Step 5:
+- Allow the system to copy the questionnaire for the subsequent years.
+- Controls and Validations:
+- The text area where the user enters the new question should take a maximum of 200 characters.
+- User can edit the questions as and when required.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 27: Mapping of Eligibility Questioner and setup answer by Universities.
+- Users: University admin
+- Purpose:
+- This page enables the university admin to map the questions that are applicable to their university/colleges from the eligibility questionnaire created by the State Admin.
+- Pre-Requisites:
+- State Admin should have defined and saved the eligibility questionnaire.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- University admin logs in to the UUCMS portal.
+- Step 2:
+- University admin clicks on “Map Eligibility Questionnaire” link under the “R&D” menu.
+- Step 3:
+- University admin clicks on “Map” action button next to the question they want to map.
+- Step 4:
+- User clicks on ‘Setup Answers’ button and the system will display the mapped questions as a form, into which the university admin will input the correct responses.
+- Sl. No
+- Questions
+- Data Type
+- Conditions
+- 1
+- Are you a permanent employee of the University?
+- Yes/No
+- NA
+- 2
+- Are you a Ph.D. degree holder?
+- Yes/No
+- NA
+- 3
+- How many years of teaching experience do you have before obtaining a Ph.D.?
+- In years and months
+- Must be specified based on designation
+- 4
+- How many years of teaching experience do you have after obtaining a Ph.D.?
+- In years and months
+- Must be specified based on designation
+- 5
+- How many research papers have you published in UGC-recognized peer-reviewed or refereed journals? (Other than doctoral research).
+- Open text field (Int data type only)
+- Must be specified based on designation
+- Step 5:
+- User clicks on “Submit”.
+- Controls and Validations:
+- All of the questions are compulsory fields.
+- The years and months fields are two separate fields.
+- (Year – 1 to 35 and Months – 0 to 11)
+- The user can answer the questions only after the mapping is completed.
+- Once the user submits the responses, there will be no modifications/changes.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 28: Check Eligibility for guideship.
+- Users: Faculty (Employee)
+- Purpose:
+- This page allows the faculty members to check their eligibility to apply for guideship/research supervisor.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Faculty logs in to the UUCMS portal.
+- Step 2:
+- Faculty clicks on “Check Guideship Eligibility” link under the “R&D” menu.
+- Step 3:
+- The system shows the following set of questions that decide the eligibility of the faculty to apply for Guideship:
+- Sl. No
+- Questions
+- Data Type
+- Conditions
+- 1
+- Are you a permanent employee of the University?
+- Yes/No
+- NA
+- 2
+- Are you a Ph.D. degree holder?
+- Yes/No
+- NA
+- 3
+- How many years of teaching experience do you have before obtaining Ph.D.?
+- In years and months
+- Must be specified based on designation
+- 4
+- How many years of teaching experience do you have after obtaining Ph.D.?
+- In years and months
+- Must be specified based on designation
+- 5
+- How many research papers have you published in UGC-recognized peer-reviewed or refereed journals? (Other than doctoral research).
+- Open text field (Int data type only)
+- Must be specified based on designation
+- Step 4:
+- Faculty enters the response for each question in the space provided and clicks on the “Check Eligibility” button.
+- Step 5:
+- System checks the answers against the answers given by the university admin and decides the eligibility status as “Eligible/Not Eligible”.
+- Step 6:
+- The system displays a message about whether the faculty is eligible for guideship or not and if not eligible mentions which of the criteria the faculty is not passing.
+- Controls and Validations:
+- All of the questions are compulsory.
+- The years and months fields are two separate fields.
+- (Year – 1 to 35 and Months – 0 to 11)
+- System should save the data even after the faculty is eligible.
+- System should delete the data once the system rejects the guideship application.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 29: Setup area of research
+- Users:  University Admin
+- Purpose:
+- This page enables the University Admin to set up areas of research that are required while applying for guideship and while allotting guides to Ph.D. scholars.
+- Pre-Requisites:
+- NA
+- Workflow:
+- User logs into the systemUser clicks on ‘Setup Areas of Research’ link under R&DUser clicks on ‘Add new area of research’ buttonUser enters the new area of research and clicks on ‘Save’User logs into the systemUser clicks on ‘Setup Areas of Research’ link under R&DUser clicks on ‘Add new area of research’ buttonUser enters the new area of research and clicks on ‘Save’
+- User logs into the system
+- User clicks on ‘Setup Areas of Research’ link under R&D
+- User clicks on ‘Add new area of research’ button
+- User enters the new area of research and clicks on ‘Save’
+- User logs into the system
+- User clicks on ‘Setup Areas of Research’ link under R&D
+- User clicks on ‘Add new area of research’ button
+- User enters the new area of research and clicks on ‘Save’
+- Stepwise Approach:
+- Step 1:
+- University Admin logs in to the UUCMS portal.
+- Step 2:
+- University Admin clicks on “Set up Areas of Research” link under the “R&D” menu.
+- Step 3:
+- User clicks on ‘Add new area of research’ button.
+- Step 4:
+- User enters the new area of research and clicks on ‘Save’ button.
+- Controls and validations:
+- Once the University maps the added areas of research, no provision for any kind of modification.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 30: Mapping of Area of research by University
+- Users: University Admin
+- Purpose:
+- This page allows the university admin to map the area of research that are applicable to their university/colleges from the list of areas of research that was setup by the State Admin.
+- Pre-Requisites:
+- State Admin must have setup the Areas of Research.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- University Admin logs in to the UUCMS portal.
+- Step 2:
+- University Admin clicks on the “Map Areas of Research” link under the “R&D” menu.
+- Step 3:
+- User clicks on ‘Map’ action button in the grid.
+- Step 4:
+- User maps all the required areas of research and clicks on ‘Save’ button.
+- Controls/Validations:
+- There is no provision to delete the mapped area of research if used by the University in other functionalities like Guideship application.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 31: Application for Guideship
+- Users: Faculty (Employee)
+- Purpose:
+- This screen enables the faculty members to submit the application for guideship.
+- Pre-Requisites:
+- The faculty must have passed the Eligibility Check. (Refer “Check Eligibility for Guideship”)
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Faculty logs in to the UUCMS portal.
+- Step 2:
+- Faculty clicks on the “Apply for Guideship” link under the “R&D” menu.
+- Step 3:
+- As part of the guideship application, the system derives the following details of the faculty from the HR module of UUCMS:
+- Personal Details
+- Academic Details
+- Professional Details
+- Achievement Details
+- Research Paper(s) Details
+- Note: All the above sections are read-only.
+- Step 4:
+- Faculty selects the interested area of research manually and Applying year for guideship and clicks on “Submit”.
+- Controls/Validations:
+- The areas of research field is a multi-select dropdown containing options the mapped areas of research. (Option for Search field as well)
+- System generates a Guideship Application ID and the system sends the same to the user via SMS & mail.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 32: First level of Approval/Rejection of Application by Board of Studies (BOS)
+- Users: BoS Chairperson.
+- Purpose:
+- This screen allows the BoS Chairperson to send back/approve/reject the guideship application submitted by the faculty.
+- Pre-Requisites:
+- Faculty should have submitted the application for guideship.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- BoS Chairperson logs in to the system.
+- Step 2:
+- User clicks on “Approve/Reject Guideship Application” link under the “R&D” menu.
+- Step 3:
+- In case, the user wants to send the application back for modifications:
+- User clicks on “Send back” action button in the grid. System displays a pop-up where the user enters the suggested modifications for the documents and clicks on ‘Submit’ button.
+- In case, the user wants to approve the guideship application:
+- User clicks on ‘Approve’ action button in the grid. System displays a pop-up where the user confirms the approval of application.
+- In case, the user wants to reject the guideship application:
+- User clicks on ‘Reject’ action button in the grid. System displays a pop-up where user enters the reason for rejection and clicks on ‘Submit’ button.
+- Controls and validations:
+- Upon rejection, system should allow the user to resubmit the application with necessary modifications.
+- User must be able to view a summary report of received guideship applications.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 33: Final Approval/Rejection of Application by Registrar (Admin)
+- Users: Registrar (Admin)
+- Purpose:
+- This screen allows the registrar (admin) to approve/reject guideship application submitted by the faculty.
+- Pre-Requisites:
+- Faculty should have submitted the application for guideship.
+- BoS must have approved the application.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Registrar logs in to the system.
+- Step 2:
+- User clicks on existing guide and their students list based on Academic year and department. And user selects the Academic year.
+- Step 3:
+- User clicks on “Approve/Reject Guideship Application” link under the “R&D” menu.
+- Step 4:
+- In case of approval,
+- User clicks on ‘Approve’ action button in the grid.
+- User selects the approved areas of research and clicks on “Submit” button.
+- Or
+- In case of rejection,
+- User clicks on ‘Reject’ action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and validations:
+- User must be able to view a summary report of received guideship applications.
+- Existing guide and their students list in read only mode.
+- New application for guideship based on academic year will display for Approval/Rejection.
+- Once rejected, the faculty must be allowed to reapply only in the next academic year.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 34: Setup External funding Agencies
+- User: Registrar Admin
+- Purpose:
+- To allow the Registrar admin to setup external funding agencies for research projects.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Registrar admin logs in to the UUCMS Portal.
+- Step 2:
+- Registrar admin clicks on ‘Setup External Funding Agencies’ link under R&D menu.
+- Step 3:
+- User clicks on ‘Add Agency’ button, enters the details of the agency along with Start date and End date  and clicks on ‘save’.
+- Step 4:
+- The system displays the details of the added agencies in the grid below.
+- Controls and Validations:
+- User can edit/delete/activate/deactivate the agencies as and when required.
+- Once employee/PI map the agency to their project then state admin cannot modify the details.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 35: Creation and submission of Research projects
+- User: Employee
+- Purpose:
+- This screen enables the Employee to create and submit the research projects proposal to research review committee.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Creation of Project:
+- Step 1:
+- Employee logs in to the UUCMS portal.
+- Step 2:
+- Employee clicks on “Creation/Submission of Research Projects” link under the “R&D” menu.
+- Step 3:
+- Employee clicks on ‘Create Research Project’ button.
+- Step 4:
+- User enters the details of the Research project and clicks on ‘Save’.
+- Step 5:
+- System displays the details of the added research projects in the grid.
+- Submission of Project for funding:
+- Step 1:
+- Employee logs in to the UUCMS portal.
+- Step 2:
+- Employee clicks on “Creation/Submission of Research Projects” link under the “R&D” menu.
+- Step 3:
+- Employee clicks on ‘Submit’ under the action column of the grid.
+- Step 4:
+- User uploads the supporting documents and clicks on ‘Submit’.
+- Controls and Validations:
+- Funding Type dropdown options: Internal, External, and Self.
+- User can view the status of the research project.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 36: Create research Review Committee
+- User: Registrar Admin
+- Purpose:
+- This screen allows the Registrar Admin to create the Research Review Committee.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Registrar Admin logs in to the UUCMS portal.
+- Step 2:
+- User clicks on “Create Research Review Committee” link under the “R&D” menu.
+- Step 3:
+- User clicks on “Setup Research Review Committee” under the action column of the grid.
+- Step 4:
+- User enters the details of the Committee members and clicks on ‘Save’ button.
+- Step 5:
+- The system displays the details of the added members in the grid.
+- Controls and Validations:
+- User can modify the member details as and when required.
+- Role – Dropdown Options: Chairman, and Member.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 37: First Level Approval/Rejection of Research Proposal (Internal) by Research Review Committee.
+- User: Research Review Committee chairperson
+- Purpose:
+- This screen allows the Research Review Committee to approve/reject the funding for the Research Projects (internal projects only).
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Type of Funding of the Research project must be ‘Internal’.
+- The Employee must submit the research project for approval.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS portal.
+- Step 2:
+- User clicks on the “Approve/Reject Internal Research Project” link under the “R&D” menu.
+- Step 3:
+- In case of modifications:
+- User clicks on ‘Send Back’ in the action column of the grid.
+- Enters the suggestions and clicks on ‘Submit’ button.
+- Or
+- In case of Approval,
+- User clicks on ‘Approve’ in the action column of the grid.
+- Confirms the approval by selecting ‘Yes’.
+- Or
+- In case of Rejection,
+- User clicks on ‘Reject’ in the action column of the grid.
+- Confirms the rejection by selecting ‘Yes’.
+- Enters the remarks and clicks on ‘Submit’ button.
+- Controls and validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 38: Second Level Approval/Rejection of Research Proposal (Internal) by Registrar Admin.
+- User: Registrar Admin
+- Purpose:
+- This screen allows the Registrar Admin to approve/reject the funding for the Research Projects (internal projects only).
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Research Review Committee has approved the Research Project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Registrar Admin logs in to the UUCMS portal.
+- Step 2:
+- User clicks on the “Approve/Reject Internal Research Project” link under the “R&D” menu.
+- Step 3:
+- In case of modifications:
+- User clicks on ‘Send Back’ in the action column of the grid.
+- Enters the suggestions and clicks on ‘Submit’ button.
+- Or
+- In case of Approval,
+- User clicks on ‘Approve’ in the action column of the grid.
+- Confirms the approval by selecting ‘Yes’.
+- Or
+- In case of Rejection,
+- User clicks on ‘Reject’ in the action column of the grid.
+- Confirms the rejection by selecting ‘Yes’.
+- Enters the remarks and clicks on ‘Submit’ button.
+- Controls/Validations:
+- NA
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 39: Third Level Approval/Rejection of Research Proposal (Internal) by Project Management Section.
+- User: PhD Admin
+- Purpose:
+- This screen allows the PhD  admin to approve/reject the funding for the Research Projects (internal projects only).
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Research Review Committee has approved the Research Project.
+- Vice Chancellor has approved the Research Project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- PhD Admin logs in to the UUCMS portal.
+- Step 2:
+- User clicks on the “Approve/Reject Internal Research Project” link under the “R&D” menu.
+- Step 3:
+- In case of approval,
+- User clicks on ‘Approve’ action button in the grid.
+- Confirms the approval by selecting ‘Yes’.
+- Or
+- In case of rejection,
+- User clicks on ‘Reject’ action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and validations:
+- NA
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 40: Final Approval/Rejection of Research Proposal (Internal) by Registrar.
+- User: Dean/Director
+- Purpose:
+- This screen allows the registrar to approve/reject the funding for the Research Projects (internal projects only).
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Research Review Committee has approved the Research Project.
+- Vice Chancellor has approved the Research Project.
+- The Project Management Section has approved the Research Project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Dean/Director logs in to the system.
+- Step 2:
+- User clicks on the “Approve/Reject Internal Research Project” link under the “R&D” menu.
+- Step 3:
+- In case of approval,
+- User clicks on ‘Approve’ action button in the grid.
+- Confirms the approval by selecting ‘Yes’.
+- User clicks on ‘Generate Allocation Order’ to generate the document with the break-up of various heads related to funding details.
+- Or
+- In case of rejection,
+- User clicks on ‘Reject’ action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and validations:
+- After approval of proposal, employee is to be updated as Principal Investigator.
+- Employee must be able to download the Allocation order for the approved research project.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 41: Upload sanction letter -External Research Project.
+- User: Principal Investigator
+- Purpose:
+- This screen allows the Principal Investigator to upload the sanction letter and enter sanctioned amount for externally funded Research Project.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Type of Funding of the Research project must be ‘External’.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the system.
+- Step 2:
+- User clicks on the “Upload Sanction Letter” link under the “R&D” menu.
+- Step 3:
+- User clicks on ‘Upload Sanction Letter’ in the action column of the grid.
+- Step 4:
+- User enters the sanctioned amount, uploads the sanction letter and clicks on ‘Submit’ button.
+- Controls and validations:
+- In case of rejection, the PI should be able to re upload the sanction letter with modified sanctioned amount.
+- Details should be displayed to the Finance Officer and Registrar Admin post submissions.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 42: Approve/Modification of Fund Sanction.
+- User: Finance Officer
+- Purpose:
+- This screen allows the Finance Officer to approve/Modification the fund sanction based on the fund sanction letter uploaded by PI.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Principal Investigator must upload the Sanction letter.
+- Workflow:
+- User logs into the systemUser enters the commentsUser clicks on Approve/Reject Fund SanctionYUser Edit button. NApprove?User clicks on submits buttonUser Enters the value. User logs into the systemUser enters the commentsUser clicks on Approve/Reject Fund SanctionYUser Edit button. NApprove?User clicks on submits buttonUser Enters the value.
+- User logs into the system
+- User enters the comments
+- User clicks on Approve/Reject Fund Sanction
+- Y
+- User Edit button.
+- N
+- Approve?
+- User clicks on submits button
+- User Enters the value.
+- User logs into the system
+- User enters the comments
+- User clicks on Approve/Reject Fund Sanction
+- Y
+- User Edit button.
+- N
+- Approve?
+- User clicks on submits button
+- User Enters the value.
+- Stepwise Approach:
+- Step 1:
+- Finance Officer logs in to the system.
+- Step 2:
+- User clicks on the “Approve/Modification of fund sanction” link under the “R&D” menu.
+- Step 3:
+- In case of approval,
+- User clicks on ‘Approve’ action button in the grid.
+- Confirms the approval by selecting ‘Yes’.
+- Enters remarks and clicks on ‘Submit’ button.
+- Or
+- In case of Modification,
+- User clicks on ‘Edit’ action button in the grid.
+- User enters the value for and clicks on “Submit” button.
+- Controls and validations:
+- In case of rejection, the PI should be able to re upload the sanction letter with modified sanctioned amount.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 43: Request Fund Allocation.
+- User: Principal Investigator
+- Purpose:
+- This screen allows the Principal Investigator to request for allocation of funds to the approved research projects.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- In case of internally funded project, the Research Project must be approved at all levels.
+- In case of externally funded project, Finance officer must approve the sanction.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the system.
+- Step 2:
+- User clicks on the “Request Fund Allocation” link under the “R&D” menu.
+- Step 3:
+- User clicks on ‘Upload Expenditure Document’ in the action column of the grid to upload the expenditure document.
+- Step 4:
+- User clicks on ‘Request Fund Allocation’ to raise a request for allocation of funds to the respective research project.
+- Controls and validations:
+- NA
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 44: First level Approval/Rejection of Fund Allocation Request by Project Management Section.
+- User: Director/Dean
+- Purpose:
+- This screen allows Director/Dean to approve/reject the fund allocation request for the research project.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Principal Investigator has requested for allocation of funds.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Director/Dean logs in to the UUCMS portal.
+- Step 2:
+- User clicks on the “Approve/Reject Fund Allocation Requests” link under the “R&D” menu.
+- Step 3:
+- In case of Approval,
+- User clicks on ‘Approve’ in the action column of the grid.
+- Confirms the approval by selecting ‘Yes’.
+- Enters the funding details such as instalment number, instalment amount/ lump sum amount and clicks on ‘Submit’ button.
+- Or
+- In case of Rejection,
+- User clicks on ‘Reject’ in the action column of the grid.
+- Confirms the rejection by selecting ‘Yes’.
+- Enters the remarks and clicks on ‘Submit’ button.
+- Controls and validations:
+- NA
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 45: Second level Approval/Send Back of Fund Allocation Request by Registrar.
+- User: Registrar
+- Purpose:
+- This screen allows the Registrar to Approve/Send Back the fund allocation request for the research project.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Principal Investigator has requested for allocation of funds.
+- The Project Management Section has approved the fund allocation request.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS portal.
+- Step 2:
+- User clicks on the “Approve/Send Back Fund Allocation Requests” link under the “R&D” menu.
+- Step 3:
+- In case of Approval,
+- User clicks on ‘Approve’ in the action column of the grid.
+- Confirms the approval by selecting ‘Yes’.
+- Or
+- In case of Send back,
+- User clicks on ‘Send Back’ in the action column of the grid.
+- Confirms the Send back by selecting ‘Yes’.
+- Enters the remarks and clicks on ‘Submit’ button.
+- Controls and validations:
+- NA
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 46: Final Approval/Rejection of Fund Allocation Request by Vice Chancellor.
+- User: Vice Chancellor
+- Purpose:
+- This screen allows the Vice Chancellor to approve/reject the fund allocation request for the research project.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The Principal Investigator has requested for allocation of funds.
+- The Project Management Section has approved the fund allocation request.
+- The Registrar has approved the fund allocation request.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS portal.
+- Step 2:
+- User clicks on the “Approve/Reject Fund Allocation Requests” link under the “R&D” menu.
+- Step 3:
+- In case of Approval,
+- User clicks on ‘Approve’ in the action column of the grid.
+- Confirms the approval by selecting ‘Yes’.
+- Or
+- In case of Rejection,
+- User clicks on ‘Reject’ in the action column of the grid.
+- Confirms the rejection by selecting ‘Yes’.
+- Enters the remarks and clicks on ‘Submit’ button.
+- Controls and validations:
+- NA
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 47: Enter Project Payment details.
+- User: Finance Officer
+- Purpose:
+- This screen allows the Finance Officer to enter the payment details of the research projects.
+- Pre-Requisites:
+- The pre-requisites are as follows:
+- The research project is approved for fund allocation.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Finance Officer logs in to the system.
+- Step 2:
+- User clicks on the “Enter Payment Details” link under the “R&D” menu.
+- Step 3:
+- User clicks on ‘Enter Payment Details’ in the action column of the grid.
+- Step 4:
+- User selects the Payment Method: Offline/Online. Enters the relevant details and clicks on ‘Submit’ button.
+- Controls and validations:
+- Upon Approval, the system should update the status of Fund Allocation Request as ‘Paid’.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 48: Setup Frequency of Progress Report Submission.
+- User: Project Management Section Admin
+- Purpose:
+- To allow the PMS Admin to setup the frequency for submission of Progress Report of Internal/Full time & External/Part time for the Faculty Research Projects.
+- Pre-Requisites:
+- Faculty creates research project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- PMS Admin logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Setup Frequency of Progress Report Submission’ link under R&D menu.
+- Step 3:
+- User selects the required details like academic year, department, and discipline. User clicks on ‘View Projects List’ button.
+- Step 4:
+- User clicks on ‘Setup Frequency of Progress Report Submission’ in the action column of the grid.
+- Step 5:
+- User selects the frequency from the dropdown for both Internal/Full time & External/Part time and clicks on ‘Save’ button.
+- Dropdown values are as follows:
+- Internal / Full Time
+- External / Part Time
+- Controls and Validations:
+- System should allow user to select only either one value from the dropdown.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 49: Reminder for Submission of Mid Term Progress Report.
+- System should send out a reminder to the Principal Investigator to submit a progress report based on the frequency set by the PMS Admin.
+- Use Case 50: Progress Report Submission.
+- User: Principal Investigator
+- Purpose:
+- To allow the Principal Investigator to submit progress report of the research project.
+- Pre-Requisites:
+- PMS Admin has set up frequency of progress report submission.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Submit Project Reports’ link under R&D menu.
+- Step 3:
+- User selects the required details like academic year, department, and discipline. User clicks on ‘Submit Progress Report’ button.
+- Step 4:
+- User clicks on ‘Submit Report’ in the action column of the grid.
+- Step 5:
+- User enters the details of the progress report, uploads the report and clicks on ‘Submit’ button.
+- Controls and Validations:
+- Percentage progress completed field – multiples of 10 up to 100.
+- Type of Progress Report field – First, Second, Third, Fourth, Fifth, and Final.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 51: Submit Project Evaluation Report - Internal.
+- User: Project Management Section Admin
+- Purpose:
+- To allow the PMS Admin to describe and upload the outcome of the evaluation conducted internally.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- PMS Admin logs in to the UUCMS Portal.
+- Step 2:
+- PMS Admin clicks on ‘Submit Project Reports’ link under R&D menu.
+- Step 3:
+- User selects the required details like academic year, department, discipline and uploads the necessary document.
+- Step 4:
+- User clicks on ‘Submit Report’ in the action column of the grid.
+- Step 5:
+- User enters the details of the internal evaluation conducted, uploads the necessary documents and clicks on ‘Save’ button.
+- Controls and Validations:
+- System should allow user to upload only PDF format with maximum size of 200KB.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 52: Submit Project Evaluation Report - External.
+- User: Principal Investigator
+- Purpose:
+- To allow the Principal Investigator to describe and upload the outcome of the evaluation conducted externally.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Submit Project Reports’ link under R&D menu.
+- Step 3:
+- User selects the required details like academic year, department, and discipline. User clicks on ‘Submit Evaluation Report’ button.
+- Step 4:
+- User clicks on ‘Submit Report’ in the action column of the grid.
+- Step 5:
+- User enters the details of the external evaluation conducted and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 53: Upload MoU.
+- User: Principal Investigator
+- Purpose:
+- To allow the Principal Investigator to upload MoUs related to the research project.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Upload MoU/UC’ link under R&D menu.
+- Step 3:
+- User selects the required details like academic year, department, and discipline. User clicks on ‘View Projects List’ button.
+- Step 4:
+- User clicks on ‘Upload MoU’ in the action column of the grid.
+- Step 5:
+- User enters the details of the MoU along with MOU valid up to field, then uploads the supporting document, and clicks on ‘Save’ button.
+- Controls and Validations:
+- The user can modify the details as and when required.
+- Uploading the documentary is not mandatory.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 54: Upload Yearly Utilization Certificate.
+- User: Principal Investigator
+- Purpose:
+- To allow the Principal Investigator to submit the Utilization certificate & statement of expenditure at the end of each financial year.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Upload MoU/UC’ link under R&D menu.
+- Step 3:
+- User clicks on ‘Upload Yearly Utilization Certificate’ button to upload the year wise Utilization Certificate. And also, user clicks on ‘Upload Final Utilization Certificate’ button to upload Final Utilization report.
+- Step 4:
+- User selects the financial year, uploads the supporting documents, and clicks on ‘Save’ button.
+- Controls and Validations:
+- The same screen should be provided for the vice Chancellor only for the view.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 55: Approval/Rejection of MoU.
+- User: Dean/Director
+- Purpose:
+- To allow the Dean/Director to Approve/Reject the MoU uploaded by the PI.
+- Pre-Requisites:
+- PI uploads the MoU.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Dean/Director logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Approve/Reject MoU’ link under R&D menu.
+- Step 3:
+- To approve the document:
+- User clicks on “Approve” action button in the grid.
+- User enters the remarks in the pop-up and clicks on “Submit” button.
+- Or,
+- To reject the document:
+- User clicks on “Reject” action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and Validations:
+- On rejection, the system should allow the PI to re-submit the document.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 56: Approval/Rejection of UC.
+- User: PMS Admin
+- Purpose:
+- To allow the PMS Admin to approve/reject the UC uploaded by the PI.
+- Pre-Requisites:
+- PI uploads the UC.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- PMS Admin logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Approve/Reject UC’ link under R&D menu.
+- Step 3:
+- To approve the document:
+- User clicks on “Approve” action button in the grid.
+- User enters the remarks in the pop-up and clicks on “Submit” button.
+- Or,
+- To reject the document:
+- User clicks on “Reject” action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and Validations:
+- On rejection, the system should allow the PI to re-submit the document.
+- Finance Officer also can view the details with status.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 57: Submit Research Publication Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the number of publications of his/her research papers.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Research Paper Publication’.
+- Step 4:
+- User enters the details of the research paper and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 58: Submit MOOC E-Content/Book contribution Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details of his/her contribution to MOOC E-Contents/Books/E-Books during the tenure of the research project.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘MOOC E-Content/E-Book’.
+- Step 4:
+- User chooses the type of work and enters the corresponding details.
+- Step 5:
+- User clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 59: Submit Membership (Professional Bodies) Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details of the professional body that he /she is a member.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Membership of Professional Bodies’.
+- Step 4:
+- User enters the details of the membership and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 60: Submit Editorial Board Membership Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details of the editorial board of a journal / book that he/she is a member.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Editorial Board Membership’.
+- Step 4:
+- User enters the details of the membership and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 61: Submit paper presentation/Seminar/Conferences Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details of the paper presentation delivered/conferences participated/Seminars participated by the faculty member during research.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Paper Presentation/Seminar/Conferences’.
+- Step 4:
+- User enters the related details and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 62: Submit Patent Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details of the filed / awarded patents.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Patents’.
+- Step 4:
+- User enters the related details and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 63: Submit Membership (Policy Making Committee) Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details regarding membership in policy-making committees.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Membership to Policy making Committees’.
+- Step 4:
+- User enters the related details and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 64: Submit Research guidance Details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details related to research guidance provided.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Research Guidance’.
+- Step 4:
+- User enters the related details and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 65: Submit Lecturers Conducted details.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to enter the details related to lectures conducted provided.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Submit Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the Accolade Type as ‘Lectures Conducted’.
+- Step 4:
+- User enters the related details and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 66: View faculty Accolade details.
+- User: RRC Chairperson
+- Purpose:
+- To allow the user to view the accolade details submitted by the PIs.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- RRC Chairperson logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Faculty Accolade Details’ link under R&D menu.
+- Step 3:
+- User selects the PI Name and Accolade Type and clicks on ‘View’ button.
+- Step 4:
+- System displays the selected Accolade Details for that PI.
+- Controls and Validations:
+- Only the accolade types that are submitted by the PI must be loaded.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 67: Submission of Research Project Completion.
+- User: Principal Investigator
+- Purpose:
+- To allow the PI to acknowledge completion of the research project.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Research Project Completion’ link under R&D menu.
+- Step 3:
+- User clicks on ‘View Research Projects List’ button.
+- Step 4:
+- User clicks on ‘Acknowledge Completion’ in the action column of the grid.
+- Step 5:
+- User self-acknowledges the project completion and uploads supporting documents.
+- Step 6:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 68: Upload Project Utilization certificate.
+- User: Principal Investigator
+- Purpose:
+- To allow the PI to upload the final Utilization certificate (duly signed by Finance Officer, auditor/CA, vice chancellor/principal).
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Research Project Completion’ link under R&D menu.
+- Step 3:
+- User clicks on ‘Upload Project UC’ button.
+- Step 4:
+- User uploads the document and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 69: Upload Statement of Expenditure.
+- User: Principal Investigator
+- Purpose:
+- To allow the PI to upload the final Statement of Expenditure (duly signed by Finance Officer, auditor/CA, vice chancellor/principal).
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Research Project Completion’ link under R&D menu.
+- Step 3:
+- User clicks on ‘Upload Statement of Expenditure’ button.
+- Step 4:
+- User uploads the document and clicks on ‘Submit’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 70: Upload final Project Report.
+- User: Principal Investigator
+- Purpose:
+- To allow the PI to submit the Final Report according to the guidelines / format decided by the funding agency.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Research Project Completion’ link under R&D menu.
+- Step 3:
+- User clicks on ‘Upload Final Report’ button.
+- Step 4:
+- User uploads the document and clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 71: Approval/Rejection of Project Completion.
+- User: Committee/Dean/RA
+- Purpose:
+- To allow the PMS Admin to approve/reject completion of the research project.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- PMS Admin logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Approve/Reject Project Completion’ link under R&D menu.
+- Step 3:
+- To approve the completion:
+- User clicks on “Approve” action button in the grid.
+- User enters the remarks in the pop-up and clicks on “Submit” button.
+- Or,
+- To reject the completion:
+- User clicks on “Reject” action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and Validations:
+- On rejection, students must be able to re-submit the completion request.
+- Flow should be following the following hierarchy.
+- Committee
+- Dean
+- RA
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 72: Project Transfer Request.
+- User: Principal Investigator
+- Purpose:
+- To allow the Principal Investigator to request for a transfer of his/her project to a fellow Principal Investigator.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Request Project Transfer’ link under R&D menu.
+- Step 3:
+- User selects the required details like academic year, department, and discipline. User clicks on ‘View’ button.
+- Step 4:
+- User clicks on ‘Request for Transfer’ in the action column of the grid.
+- Step 5:
+- User enters the reason for transfer, Employee ID of the new PI, uploads supporting document, and clicks on ‘Submit’ button.
+- Controls and Validations:
+- Once the user submits a request, no provision for any kind of modification. In case of modifications, has to raise another request.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 73: First Approval/Rejection of Transfer Request.
+- User: Registrar
+- Purpose:
+- To allow the registrar to approve/reject the transfer requests raised by the Principal Investigator.
+- Pre-Requisites:
+- Principal Investigator has submitted the transfer request.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Registrar logs in to the UUCMS Portal.
+- Step 2:
+- Registrar clicks on ‘Approve/Reject Project Transfer Requests’ link under R&D menu.
+- Step 3:
+- In case of approval,
+- •User clicks on ‘Approve’ action button in the grid.
+- •User confirms the approval by selecting ‘Yes’.
+- Or
+- In case of rejection,
+- •User clicks on ‘Reject’ action button in the grid.
+- •User confirms the rejection, enters the reason for rejection, and clicks on “Submit” button.
+- Controls and Validations:
+- No provision for re-submissions.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 74: Final Level Approval/Rejection of Transfer Request.
+- User: Vice Chancellor
+- Purpose:
+- To allow the Vice Chancellor to approve/reject the transfer requests raised by the Principal Investigator.
+- Pre-Requisites:
+- Principal Investigator has submitted the transfer request.
+- Registrar has approved the transfer requests.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Vice Chancellor logs in to the UUCMS Portal.
+- Step 2:
+- Vice Chancellor clicks on ‘Approve/Reject Project Transfer Requests’ link under R&D menu.
+- Step 3:
+- In case of approval,
+- •User clicks on ‘Approve’ action button in the grid.
+- •User confirms the approval by selecting ‘Yes’.
+- Or
+- In case of rejection,
+- •User clicks on ‘Reject’ action button in the grid.
+- •User confirms the rejection, enters the reason for rejection, and clicks on “Submit” button.
+- Controls and Validations:
+- No provision for re-submissions.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 75: Email Transfer Details funding Agency.
+- Once the Vice Chancellor approves, system should send an email to the external funding agency mentioning the details of the transfer.
+- Use Case 76: Upload Approval Document from Funding Agency.
+- User: Principal Investigator
+- Purpose:
+- To allow the Principal Investigator to upload the approval received from the funding agency for this transfer.
+- Pre-Requisites:
+- Principal Investigator has submitted the transfer request.
+- Registrar has approved the transfer requests.
+- Vice Chancellor has approved the transfer requests.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- Principal Investigator clicks on ‘Upload Transfer Approval Document’ link under R&D menu.
+- Step 3:
+- User selects the required details like academic year, department, and discipline. User clicks on ‘View’ button.
+- Step 4:
+- System displays the list of transfer-approved projects.
+- Step 5:
+- User clicks on ‘Upload Document’ in the Action column of the grid.
+- Step 6:
+- User uploads the relevant documents and clicks on ‘Save’ button.
+- Controls and Validations:
+- Only after the user uploads the approval document, the system must update the project details/transfer the project.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 77: Student project creation.
+- User: Department Chairperson/College Admin
+- Purpose:
+- To allow the Department Chairperson/College Admin to create student research projects.
+- Pre-Requisites:
+- NA
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson/College Admin logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Create Student Project’ link under R&D menu.
+- Step 3:
+- User clicks on ‘Create Research Project’ button.
+- Step 4:
+- User enters the Research Project details such as title, start date, estimated cost etc. and clicks on ‘Save’ button.
+- Controls and Validations:
+- The user can modify the details as and when required.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 78: Allocate Student to project.
+- User: Department Chairperson/College Admin
+- Purpose:
+- To allow the Department Chairperson/College Admin to allocate students to the Research Projects.
+- Pre-Requisites:
+- Department Chairperson/College Admin has created the Research Project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson/College Admin logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Allocate Student to Project’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Allocate Students’ in the grid.
+- Step 5:
+- User enters the details of the student like USN and Name and clicks on ‘Submit’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 79: Enter Project Funding Details.
+- User: Department Chairperson/College Admin
+- Purpose:
+- To allow the Department Chairperson/College Admin to allocate students to enter the details of the funding for the student research project.
+- Pre-Requisites:
+- Department Chairperson/College Admin has created the Research Project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson/College Admin logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Enter Funding Details’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Upload Approval Letter’ in the grid and uploads the Research Project Approval Letter.
+- Step 5:
+- User clicks on ‘Enter Funding Details’ in the grid and enters the Sanctioned Amount for the Research Project. User clicks on ‘Save’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 80: Allocate mentors to Project.
+- User: Department Chairperson/College Admin/Principal
+- Purpose:
+- To allow the Department Chairperson/College Admin to allocate mentors to each Student Research Projects before creation of project.
+- Pre-Requisites:
+- Department Chairperson/College Admin has created the Research Project.
+- Department Chairperson/College Admin has allotted students to the Research Project.
+- Workflow: Purpose:
+- Stepwise Approach:
+- Step 1:
+- Department Chairperson/College Admin logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Allocate Mentors’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Allocate Mentors’ in the grid and selects the Mentor names from the dropdown with Mentor names.
+- Step 5:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- System should have the list of mentors.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 81: Setup Frequency of progress Report Submissions.
+- User: Employee (Mentor)
+- Purpose:
+- To allow the Employee (Mentor) to setup the frequency of progress report submission.
+- Pre-Requisites:
+- Department Chairperson/College Admin has created the Research Project.
+- Department Chairperson/College Admin has allotted students to the Research Project.
+- Employee is Mentor for the Research Project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Employee (Mentor) logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Setup frequency of report submission’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Setup frequency of report submission’ in the grid and selects the frequency from the dropdown.
+- Step 5:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- Frequency dropdown options are Weekly, Fortnightly, Monthly, Quarterly, Half-Yearly, and Yearly.
+- System should send reminders via email and SMS to the student 2 days before the due date for the progress report submission.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 82: Upload progress Report.
+- User: Student
+- Purpose:
+- To allow student to describe the progress of the Research Project and upload Progress Report.
+- Pre-Requisites:
+- Mentor has setup frequency of Progress Report Submission.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Upload Progress Report’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Upload Progress Report’ in the grid and enters the following details:
+- Percentage Progress Completed
+- Brief Description of Progress Completed
+- Step 5:
+- User uploads the Progress Report and clicks on ‘Submit’ button.
+- Controls and Validations:
+- System should automatically send an email and SMS to the department head in case the student has not submitted his progress report 3 consecutive times.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 83: Provide Feedback to Progress Report.
+- User: Employee (Mentor)
+- Purpose:
+- To allow the Employee (Mentor) to provide descriptive feedback to the student’s progress report.
+- Pre-Requisites:
+- Student has uploaded the Progress Report.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Employee (Mentor) logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Provide Feedback to Progress Report’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Provide Feedback to Progress Report’ in the grid and enters the Feedback in the pop-up.
+- Step 5:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- Student must be able to view the feedback given by the mentor.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 84: Upload Final Report.
+- User: Student
+- Purpose:
+- To allow student to submit the Final Report once the research completes.
+- Pre-Requisites:
+- Student has completed the Research Project.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Student logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Upload Final Report’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Upload Final Report’ in the grid and enters a brief description of Progress Completed.
+- Step 5:
+- User uploads the Final Report and clicks on ‘Submit’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 85: Approve/Resubmission Final Report.
+- User: Employee (Mentor)
+- Purpose:
+- To allow the Employee (Mentor) to Sendback/Approve/Resubmission of the final project report submitted by the student.
+- Pre-Requisites:
+- Student has uploaded the Final Report.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Employee (Mentor) logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Approve/Resubmit Final Report’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- In case, the user wants to send the final report back for modifications:
+- User clicks on “Send back” action button in the grid.
+- System displays a pop-up where the user enters the suggested modifications for the report and clicks on ‘Submit’ button.
+- In case, the user wants to approve the final report:
+- User clicks on ‘Approve’ action button in the grid. System displays a pop-up where the user confirms the approval of final report.
+- In case, the user wants to Resubmit the final report:
+- User clicks on ‘Resubmit action button in the grid. System displays a pop-up where the user confirms the Resubmission along with remarks.
+- Controls and Validations:
+- On Resubmit, student must be able to re-submit the final report.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 86: Upload Statement Expenditure.
+- User: Employee (Mentor)
+- Purpose:
+- To allow the Employee (Mentor) to upload the statement of expenditure for the student research project.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Employee (Mentor) logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Upload Statement of Expenditure’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Upload Statement of Expenditure’ in the grid and uploads the document.
+- Step 5:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 87: Acknowledge Student Research Project Completion.
+- User: Principal/Department Chairperson/HOD
+- Purpose:
+- To allow the Principal/Department Chairperson/HOD to acknowledge completion of the student research projects.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal/Department Chairperson/HOD logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Acknowledge Student Research Project Completion’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Acknowledge Completion’ in the grid and uploads the project completion document.
+- Step 5:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 88: Set Frequency of Progress report Submission.
+- User: Principal Investigator
+- Purpose:
+- To allow the PI to setup the frequency of progress report submission.
+- Pre-Requisites:
+- N/A
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Setup frequency of report submission’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Setup frequency of report submission’ in the grid and selects the frequency from the dropdown.
+- Step 5:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- Frequency dropdown options are Weekly, Fortnightly, Monthly, Quarterly, Half-Yearly, and Yearly.
+- System should send reminders via email and SMS to the student 2 days before the due date for the progress report submission.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 89: Upload Progress Report.
+- User: Research Fellow
+- Purpose:
+- To allow research fellow to describe the progress of the Research Project and upload Progress Report.
+- Pre-Requisites:
+- PI has setup frequency of Progress Report Submission.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Research Fellow logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Upload Progress Report’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Upload Progress Report’ in the grid and enters the following details:
+- Percentage Progress Completed
+- Brief Description of Progress Completed
+- Step 5:
+- User uploads the Progress Report and clicks on ‘Submit’ button.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 90: Provide Feedback to Progress Report.
+- User: Principal Investigator
+- Purpose:
+- To allow the PI to provide descriptive feedback to the research fellow’s progress report.
+- Pre-Requisites:
+- Research Fellow has uploaded the Progress Report.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- Principal Investigator logs in to the UUCMS Portal.
+- Step 2:
+- User clicks on ‘Provide Feedback to Progress Report’ link under R&D menu.
+- Step 3:
+- User enters details like Academic year, program name, discipline etc. and clicks on ‘View Projects’ button.
+- Step 4:
+- User clicks on ‘Provide Feedback to Progress Report’ in the grid and enters the Feedback in the pop-up.
+- Step 5:
+- User clicks on ‘Submit’ button.
+- Controls and Validations:
+- Student must be able to view the feedback given by the PI.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 91: Requisition for Procurement of the Equipment.
+- User: Principal Investigator
+- Purpose:
+- To allow the user to raise the request for procurement of the equipment(s) required for the research project.
+- Pre-Requisites:
+- The research project should have been approved and should have assigned a principal investigator.
+- The sanction letter should have been issued by the funding agency.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS portal.
+- Step 2:
+- User Clicks on ‘Request Procurement’ under R&D.
+- Step 3:
+- User enters the details of the request such as:
+- Item Category
+- Item Name
+- Quantity of each Item
+- Price of each Item
+- Step 4:
+- User uploads the supporting document and clicks on the submit button to initiate the request.
+- Controls and Validations:
+- Once the request is raised, the system should generate a requisition ID.
+- The user should be able to request for multiple equipments under a single requisition ID.
+- The user should enter the price required for one equipment and the system should automatically calculate the total estimated cost based on the entered count of equipment required.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, the original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 92: First level Approval/Rejection of the Procurement request raised by Research Review Committee.
+- User: Research Review Committee Chairperson
+- Purpose:
+- To allow the user to approve or reject the raised procurement request.
+- Pre-Requisites:
+- The principal investigator should have raised a request for procurement of items.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS Portal.
+- Step 2:
+- User Clicks on “Approve/Reject Procurement Request” under R&D.
+- Step 3:
+- User clicks on ‘View Requests’ button.
+- Step 4:
+- To approve the request:
+- User clicks on “Approve” action button in the grid.
+- User enters the remarks in the pop-up and clicks on “Submit” button.
+- Or,
+- To reject the request:
+- User clicks on “Reject” action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and Validations:
+- Based on the approval by the user, the request should be escalated to the next level.
+- On rejection, the user must be able to submit a new request.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 93: Final Level Approval/Rejection of the Procurement request by Registrar.
+- User: Registrar
+- Purpose:
+- To allow the user to approve or reject the raised procurement request at level 2.
+- Pre-Requisites:
+- The principal investigator should have raised a request for procurement of items.
+- The raised request should have been approved at level 1.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS Portal.
+- Step 2:
+- User Clicks on “Approve/Reject Procurement Request” under R&D.
+- Step 3:
+- User clicks on ‘View Requests’ button.
+- Step 4:
+- To approve the request:
+- User clicks on “Approve” action button in the grid.
+- User enters the remarks in the pop-up and clicks on “Generate Letter of Issuance” button.
+- Or,
+- To reject the request:
+- User clicks on “Reject” action button in the grid.
+- User enters the reason for rejection and clicks on “Submit” button.
+- Controls and Validations:
+- Based on the approval by the user, the request ID is approved and closed.
+- Once the request is approved, the user must be able to download the letter of Issuance.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself, unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 94: Procurement of Equipment.
+- User: Registrar
+- Purpose:
+- To allow the user to enter the details of the procured equipments.
+- Pre-Requisites:
+- Principal Investigator should have raised a request for equipments.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS portal.
+- Step 2:
+- User Clicks on ‘Procurement Details’ under R&D.
+- Step 3:
+- User clicks on ‘Enter Purchase Details’ in the action column of the grid.
+- Step 4:
+- User enters the details of the purchase such as:
+- Item Category
+- Item Name
+- Purchased Quantity for each item
+- Price of each Item
+- Total Purchased Amount
+- Invoice Number
+- Step 5:
+- User uploads the invoice document and clicks on the submit button.
+- Controls and Validations:
+- The user should enter the price required for one equipment and the system should automatically calculate the total amount based on the entered count of equipment required.
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, the original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 95: View Letter of Issuance.
+- User: Finance Officer
+- Purpose:
+- To allow the user to enter the details of the procured equipments.
+- Pre-Requisites:
+- Principal Investigator should have raised a request for equipments.
+- Registrar should have entered the details of purchase.
+- Workflow:
+- Stepwise Approach:
+- Step 1:
+- User logs in to the UUCMS portal.
+- Step 2:
+- User clicks on ‘View Letter of Issuance’ under R&D.
+- Step 3:
+- User clicks on ‘View’ in the action column of the grid.
+- Step 4:
+- System displays the Letter of Issuance along with download option.
+- Controls and Validations:
+- N/A
+- Changes/Modifications of data:
+- Any changes to the record will be allowed only by the owner of the record himself/herself unless otherwise specified in the body of the use case. Before the modifications of a record in the master table are committed into the database, the original record in the master table has to be moved to the respective Transaction table with the modification date and time stamp captured and stored.  The “Is active” flag of the original record in the master table has to be set to “N”. The modified data of the record has to be inserted into the master table and the flag “Is active” has to be set to “Y”.
+- Use Case 96: Progress Report Upload.
+- User: PhD Admin
+- Purpose:
+- This use case allows user to set the frequency in terms of quarter, half year or year wise to submit the report to the student based on the University/UGC guidelines on academic year or admission year.
+- Pre-requisites:
+- Frequency has been already set by the principal investigator.
+- Frequency been set by the project management section.
+- Notification has to be sent by the university registrar.
+- Workflow:
+- Guide logs into the systemUser clicks on ‘Submit’ button. User set the durationGuide logs into the systemUser clicks on ‘Submit’ button. User set the duration
+- Guide logs into the system
+- User clicks on ‘Submit’ button.
+- User set the duration
+- Guide logs into the system
+- User clicks on ‘Submit’ button.
+- User set the duration
+- Step wise Approach:
+- Step 1:
+- User Logs into the system
+- Step 2:
+- User clicks on ‘set frequency’ main menu under ‘R&D’ main menu
+- Step 3:
+- User selects the frequency duration from the drop down.
+- 3 Months
+- 6 Months
+- 1 Year
+- Step 4:
+- User clicks on the submit button.
+- Condition and Validations:
+- System should not allow user to accept the report submitted post the duration
+- System should allow user to set the frequency post the admission date
+- System should not allow user to set the date post the University registrar approvals.
+- Extension of the date is allowed post the end date of each frequency.
+- Extension can be allowed only for less than equal to 7 days.
+- Only one-time extension is allowed per student.
+- Failing to the submission by student, marked as absent and not allowed to do any activity.
+- If the student not yet submitted though multiple intimation, status should be ‘Absent’ in the table grid status column.
+- Changes/Modification of data:
+- Data modification not allowed.
+- Use Case 97: Upload progress Report by Student
+- User: Student
+- Purpose:
+- This use case allows user to upload the report within the timeline set by the guide. Also allowed to reupload the revised report as per the feedback provided by the guide during review.
+- Pre-requisites:
+- Frequency has to be set by the guide.
+- Frequency date should not be ends.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User Upload the documentUser logs into the systemUser clicks on ‘Submit’ button. User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the ‘Upload report’ button.
+- Step 3:
+- User uploads the document in PDF format.
+- Step 4:
+- User clicks on the submit button.
+- Conditions and Validations:
+- System should not allow user to upload the document in any other format then PDF.
+- System should allow user to upload the document within the timeline set by the guide.
+- System should not allow user to upload the document post the timeline.
+- System should indicate the message or popup on the student’s screen before the timeline ends.
+- The student should have the provision to re-upload the document after the submission date is extended by the guide.
+- Changes/Modifications of data:
+- Data should be modified during the upload option enabled only.
+- Use Case 98: Guide – provide feedback on Progress Report
+- User: Guide
+- Purpose:
+- This use case allows user to provide feedback about the report submitted by the students, also have provision to submit for the next level to review the document.
+- Pre-requisites:
+- Frequency has to be set by the guide.
+- Frequency date should not be ends.
+- Workflow:
+- User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NVerified?User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NVerified?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Verified?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Verified?
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the ‘View report’ button.
+- Step 3:
+- User clicks on the verify button, if verified.
+- Step 4:
+- User clicks on Re-send button to resend the report to student.
+- Step 5:
+- User clicks on ‘Submit’ button to submit the report for next level verification.
+- Conditions and Validations:
+- User have provision to download the report.
+- User should have provision send back the report within the timeline.
+- Autonomous College guide send to BOS Chairman of the autonomous college
+- Deemed to be university guide send to University Department Chairperson of the Deemed to be university
+- Affiliated College / Department / main campus / PG centre – guide send to University Department Chairperson
+- Review provision to be provided twice in any particular area.
+- Changes/Modifications of data:
+- Changes are allowed.
+- Use Case 99: Set Notice Period days, min and max of years, examiners.
+- User: University Admin
+- Purpose:
+- This use case allows user to set the examiners to review the reports submitted by the students and reviewed by the guide and higher-level officers.
+- Pre-requisites:
+- Notification should be announced by the university.
+- Workflow:
+- User logs into the systemUser select the level employee.User clicks on ‘Submit’ button. User set the notice periodUser logs into the systemUser select the level employee.User clicks on ‘Submit’ button. User set the notice period
+- User logs into the system
+- User select the level employee.
+- User clicks on ‘Submit’ button.
+- User set the notice period
+- User logs into the system
+- User select the level employee.
+- User clicks on ‘Submit’ button.
+- User set the notice period
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the ‘set notice period’ button.
+- Step 3:
+- User sets the notice period for the submissions.
+- Step 4:
+- User also set the examiners details in the following format.
+- National
+- International
+- Local
+- Step 5:
+- User clicks on ‘Submit’ button to submit the report for next level verification.
+- Conditions and Validations:
+- User should set the notice period in terms days.
+- Days should have start date and end date.
+- User should set the examiners details by entering the details in the provided fields.
+- User have provision to download the report.
+- User should have provision send back the report within the timeline.
+- Autonomous College guide send to BOS Chairman of the autonomous college
+- Deemed to be university guide send to University Department Chairperson of the Deemed to be university
+- Affiliated College / Department / main campus / PG centre – guide send to University Department Chairperson
+- Review provision to be provided twice in any particular area.
+- Changes/Modifications of data:
+- Changes or modifications are allowed until further action taken in other logins.
+- Use Case 100: Create request for cancellation.
+- User: Student/Guide
+- Purpose:
+- This use case allows student/Guide to create request to cancel their Ph.D admissions.
+- Pre-Requisites:
+- Student must be taken an admission and USN should be generated.
+- Student must be allotted a guide.
+- Admission must be confirmed by the University Registrar Admin.
+- Workflow:
+- Student login:
+- User logs into the systemUser enters commentsUser clicks on ‘Submit’ button. User apply for the admissions cancellationUser logs into the systemUser enters commentsUser clicks on ‘Submit’ button. User apply for the admissions cancellation
+- User logs into the system
+- User enters comments
+- User clicks on ‘Submit’ button.
+- User apply for the admissions cancellation
+- User logs into the system
+- User enters comments
+- User clicks on ‘Submit’ button.
+- User apply for the admissions cancellation
+- User logs into the systemUser attach the document and enters commentsUser clicks on ‘Submit’ button. User apply for the admissions cancellationUser logs into the systemUser attach the document and enters commentsUser clicks on ‘Submit’ button. User apply for the admissions cancellationGuide login:
+- User logs into the system
+- User attach the document and enters comments
+- User clicks on ‘Submit’ button.
+- User apply for the admissions cancellation
+- User logs into the system
+- User attach the document and enters comments
+- User clicks on ‘Submit’ button.
+- User apply for the admissions cancellation
+- Step by Approaches:
+- Student Login:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User apply for the ‘Admission Cancellation’
+- Step 3:
+- User can attach supporting document if any.
+- Step 4:
+- User should write the comments in the provided comment box.
+- Step 5:
+- User should click on ‘Submit’ button.
+- Guide Login:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User should select the option from the dropdown.
+- Approve/Recommended
+- Continuation
+- Cancel the student Admission Request
+- Step 3:
+- User can upload the supported document.
+- Step 4:
+- User can write comments in the comments box.
+- Step 5:
+- User should click on ‘Submit’ button.
+- Conditions and Validations:
+- Student Login
+- System should allow user to apply for cancellation any time during studying period.
+- System should allow user write comments in the provided comments box and allow up to 100 Alpha numeric.
+- Comment box is non-mandatory field.
+- System should allow to upload the document maximum size of 200KB.
+- Guide Login
+- System should allow user to select either one option from the dropdown.
+- Approve/Recommended
+- Continuation
+- Cancel the student admission request
+- System should allow user to click on ‘Approve’ if the student created the request within the academic duration.
+- System should allow user to raise request for admission cancellation by clicking on ‘Recommendation’.
+- System should allow user to select ‘Continuation’ post the request raised by the student.
+- System should not allow user to cancel the admission directly by their own.
+- System should allow user to cancel the request raised by the student for cancellation.
+- System should allow user to send the request to Department Chairperson and BOS for the approvals.
+- System should allow BOS to send for the PhD section for the approvals.
+- System should allow PhD section to Registrar Admin.
+- System should allow Registrar admin to send the request to Vice Chancellor.
+- If the autonomous college, system should allow PhD section to send the request to college principal.
+- Each level should reject button with comment box and document upload non-mandatory fields.
+- During each 'Reject' action, the workflow should continue in reverse order, following the same sequence as the forward flow.
+- System should allow user write comments in the provided comments box and allow up to 100 Alpha numeric.
+- Comment box is non-mandatory field.
+- System should allow to upload the document maximum size of 200KB.
+- Changes/Modification of Data:
+- Changes or modification are allowed until the clicking on the ‘Submit’ button.
+- Use Case 101: Approval of Cancellation request by Registrar.
+- User: Registrar/Vice Chancellor
+- Purpose:
+- This use case allows user to cancel the student admission post the request raised by the student/Guide.
+- Pre-Requisites:
+- Student/Guide must raise the request.
+- The request should be forwarded by the BOS to PhD section, from PhD section to respective University Registrar admin.
+- Respective university Registrar admin should forward the request to the Vice chancellor of the respective University.
+- Workflow:
+- User logs into the systemUser enters the commentsUser view the detailsYUser return to the prior user. NVerified?User attach the document and submitsUser logs into the systemUser enters the commentsUser view the detailsYUser return to the prior user. NVerified?User attach the document and submits
+- User logs into the system
+- User enters the comments
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Verified?
+- User attach the document and submits
+- User logs into the system
+- User enters the comments
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Verified?
+- User attach the document and submits
+- Step by Approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User should select either one action button from the following.
+- Approve
+- Reject
+- Step 3:
+- User can enter the comments into comment box.
+- Step 4:
+- User can upload the supporting document into the provided field.
+- Step 5:
+- User should click on ‘Submit’ button.
+- Conditions and Validations:
+- System should allow user to write comments in the comments box maximum of the 50 Alphanumeric values.
+- System should allow user to upload the document maximum size of 200KB and PDF document only.
+- Status should be updated in all the user logins defined in the flow.
+- Changes/Modification of Data:
+- Changes or modification of data are not allowed.
+- Use Case 102: Submit Final Synopsis
+- User: Student/Guide/Department chairperson/PhD section/RE
+- Purpose:
+- This use case allows user to upload and forward the final synopsis document for verification and approvals.
+- Pre-Requisites:
+- Notification date has to be set by the university
+- Student should submit the final synopsis.
+- Workflow:
+- User logs into the systemPhD section review the documentUser clicks on ‘Submit’ button. Department Chairperson review the documentUser logs into the systemPhD section review the documentUser clicks on ‘Submit’ button. Department Chairperson review the document
+- User logs into the system
+- PhD section review the document
+- User clicks on ‘Submit’ button.
+- Department Chairperson review the document
+- User logs into the system
+- PhD section review the document
+- User clicks on ‘Submit’ button.
+- Department Chairperson review the document
+- Step by Approaches:
+- Step 1:
+- User should login to the system.
+- Step 2:
+- Student should upload the document and submit for the approvals.
+- Step 3:
+- Guide has to review and forward to the Department chairperson for further review.
+- Step 4:
+- Department chairperson has to review and forward for review to PhD section
+- Step 5:
+- PhD section team has to review and forward for review to RE for final approvals
+- Step 6:
+- RE has to verify and provide the final approvals.
+- Conditions and Validations:
+- Functionality should run as per the flow defined
+- Send back option should be available only one time to each user.
+- All the activities should be works within the time lines set by the registrar.
+- Changes/Modifications of Data:
+- Modification/Changes od data are allowed.
+- Use Case 103: Approval/Rejection of Final Synopsis by Doctoral Committee/PhD Section.
+- User: Doctoral committee/ PhD section
+- Purpose:
+- This use case allows user to reject the document send back for the correction.
+- Pre-Requisites:
+- Notification date has to be set by the university
+- Student should submit the final synopsis.
+- Department Chairperson and PhD section should be reviewed, verified and submitted.
+- Workflow:
+- User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NApproved?User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NApproved?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Approved?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Approved?
+- Step by Approaches:
+- Step 1:
+- User should login to the system.
+- Step 2:
+- User should either approve/Rejects the document as per the university norms.
+- Step 3:
+- User should enter the details into the comments box
+- Step 4:
+- Student should click on the ‘Submit’ button.
+- Conditions and Validations:
+- System should allow user to reject the request only one time.
+- Rejecting the request should be allowed within the timeline.
+- System should allow user to enter maximum of 50 Alphanumeric into the comment box.
+- Comment box should be displayed during ‘Send back/Reject’ action only.
+- Changes/Modifications of data:
+- Changes/Modifications are allowed.
+- Use Case 104: Create Panel of Examiners.
+- User: RE/COE
+- Purpose:
+- This use case allows user to select the examiners for the review of the students reports as per the university regulations.
+- Pre-Requisites:
+- PhD section has already been set the examiners details
+- Notification should be announced by the university.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User selects the examiners  User logs into the systemUser clicks on ‘Submit’ button. User selects the examiners
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User selects the examiners
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User selects the examiners
+- Step by approaches: Purpose:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the examiner details menu under R&D main menu
+- Step 3:
+- User will select the examiners from the dropdown.
+- Step 4:
+- User will click on the submit button.
+- Conditions and validations:
+- System should not allow if the PhD section not listed the examiners details for the particular academic year.
+- System should allow to select the examiners per student.
+- System should allow user select one option at a time.
+- Delete option should be available to the user.
+- Changes/Modifications of data:
+- Modification/changes are allowed.
+- Use Case 105: Submit Thesis - Report.
+- User: Student
+- Purpose:
+- This use case allows user to submit the thesis that have been prepared under guidance of their allotted guide within the timeline.
+- Pre-Requisites:
+- PhD Minimum duration should be completed.
+- Minimum Doctoral committee meetings should be completed
+- Synopsis should be submitted within time lines set by the university.
+- Student received the plagiarism certificate from the University librarian.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User Upload the document  User logs into the systemUser clicks on ‘Submit’ button. User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- Step by Approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the upload button.
+- Step 3:
+- User clicks on the submit button.
+- Conditions and Validations:
+- System should allow user to upload the document within the timeline have been setup by the university.
+- Post the timeline system should not allow until the date have been extended by the university.
+- Plagiarism should be attached with the document.
+- Post the submission by student, University librarian should send the plagiarism copy to the respective department also.
+- System should allow user to upload the document only in PDF format.
+- Changes/Modification of data:
+- Modifications/changes are allowed.
+- Use Case 106: Forward Thesis Guide to Dept chairperson.
+- User: Guide
+- Purpose:
+- This use case allows user to forward the thesis submitted by the student to the department chairperson for the review and approvals.
+- Pre-Requisites:
+- Thesis should be submitted by the student within the timeline have been setup by the university.
+- Plagiarism certificate should attach with the document.
+- Plagiarism should be approved by the University librarian.
+- Workflow:
+- User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NApproved?User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NApproved?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Approved?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Approved?
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on ‘View’ button to view the document.
+- Step 3:
+- User have two options as follows:
+- Forward to Department chairperson
+- Send back to student
+- Step 4:
+- User has to click on either one action button and clicks on the submit button.
+- Conditions and validations:
+- Send back option should be enabled only within the timeline.
+- Forward option should be enabled only post the clicking on ‘View’ button.
+- Comment box should be enabled while sending the document back to the student for correction.
+- Comment box should allow user to enter maximum of 50 Alphanumeric.
+- Change/Modification of data:
+- Data changes/Modifications are allowed.
+- Use Case 107: Create Panel of examiners – RE – per thesis one panel.
+- User: Voice chancellor
+- Purpose:
+- This use case allows user to set the examination panel to examine the thesis submitted by the students.
+- Pre-Requisites:
+- Guide and Department chairperson has to be reviewed and submitted to VC for the verification.
+- Notification has to be set by the university.
+- List of examiners should be listed by the PhD section.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User selects the examiners from dropdown User logs into the systemUser clicks on ‘Submit’ button. User selects the examiners from dropdown
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User selects the examiners from dropdown
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User selects the examiners from dropdown
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the ‘Examination panel to review the thesis’
+- Step 3:
+- Select the examiners from the dropdown.
+- Step 4:
+- User should click on ‘Submit’ button.
+- Conditions and Validations:
+- Panel set should be done per thesis only.
+- Panel should have minimum of two persons.
+- Panel should be created within the notification time period.
+- Changes/Modifications of data:
+- Changes or modification of data is allowed.
+- Use Case 108: Submit Evaluation Report
+- User: Examination Panel
+- Purpose:
+- This use case allows user to examination team to provide the evaluation report to the guide and the university.
+- Pre-Requisites:
+- Thesis should be submitted by the guide to Registrar evaluation
+- Examiners should conduct the examination for the candidates as per the schedule.
+- Duration should be set as per the UGC guidelines.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User Upload the documentUser logs into the systemUser clicks on ‘Submit’ button. User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the upload the report.
+- Step 3:
+- User clicks on the submit button.
+- Conditions and validations:
+- Report should be maximum size of 200KB and should be in PDF format only.
+- Report should be submitted within the duration.
+- Change/Modification of data:
+- Changes or modification of data is allowed.
+- Use Case 109: Submit Evaluation Report – Guide (Accepted Consolidated Report)
+- User: Guide
+- Purpose:
+- This use case allows user to send the consolidated report to the Registrar evaluation
+- Pre-Requisites:
+- Examiners should evaluate report submitted and provide examiner reports.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User Upload the documentUser logs into the systemUser clicks on ‘Submit’ button. User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the upload the report.
+- Step 3:
+- User clicks on the submit button.
+- Conditions and validations:
+- Report should be maximum size of 200KB and should be in PDF format.
+- Button should not be enabled if the examiners not approved the document.
+- Change/Modification of data:
+- Changes or modification of data is allowed.
+- Use Case 110: Approval/modification/resubmission/Rejection Evaluation report – Registrar (Evaluation)
+- User: Registrar Evaluation
+- Purpose:
+- This use case allows user either approval or send back the thesis report to the student if any correction requires before the final approvals.
+- Pre-Requisites:
+- Examiners should already conduct the exam and provided the approvals for the same.
+- Examiners should provide the feedback.
+- Workflow:
+- User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NApproved?User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NApproved?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Approved?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Approved?
+- Step by approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks Approve/Send back button.
+- Step 3:
+- User clicks on the submit button.
+- Conditions and validations:
+- If user approves the report, no edit, send back or modification allowed to user, guide or student.
+- If the user send back, student should have provision to edit and resubmit the document from there login.
+- System allowed to enter the comments with maximum of 50 Alpha numeric values.
+- Send back option should be enabled in two conditions.
+- If all the examiners result/feedback is negative.
+- If either one of the examiners result/feedback is negative.
+- While sending back, user should have provision to update submission last date to the student.
+- Change/Modification of data:
+- Changes or modification of data is allowed.
+- Use Case 111: Intimation to Guide to Conduct Viva Voce – RE
+- User: Registrar Evaluation
+- Purpose:
+- This use case allows user to set the date/duration for the viva voce for the students.
+- Pre-Requisites:
+- Thesis reports should be approved by the Vice chancellor of the particular university.
+- Notification should be received by the university for the viva voce.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User set the durationUser logs into the systemUser clicks on ‘Submit’ button. User set the duration
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User set the duration
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User set the duration
+- Step by approaches:
+- Step 1:
+- User should login to the system.
+- Step 2:
+- User should set the date/duration of the viva voce
+- Step 3:
+- User should click on ‘Submit’ button.
+- Conditions and validations:
+- Date field should allow user to select only present and future dates.
+- Date range should be within the time line set by the university.
+- Post the submission allowed to change only clicking on the extended date button.
+- Extension should be within the date set by the university.
+- Change/Modification of data:
+- Changes or modification of data is allowed.
+- Use Case 112: Enter viva details – Guide (Attendance, Proceedings) proceedings to be submitted to RE
+- User: Guide
+- Purpose:
+- This use case allows user to update the attendance and proceedings of the viva conducted and allow to submit the details to the Registrar Evaluator.
+- Pre-Requisites:
+- Viva should be conducted by the respective team during the duration set by the Registrar evaluator.
+- Workflow:
+- User logs into the systemUser upload the documentUser clicks on ‘Submit’ button. User selects the option from dropdownUser logs into the systemUser upload the documentUser clicks on ‘Submit’ button. User selects the option from dropdown
+- User logs into the system
+- User upload the document
+- User clicks on ‘Submit’ button.
+- User selects the option from dropdown
+- User logs into the system
+- User upload the document
+- User clicks on ‘Submit’ button.
+- User selects the option from dropdown
+- Step by Approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks either one of the options show below.
+- Attendance
+- Proceedings
+- Step 3:
+- User enters the details and uploads the documents if any in the respective fields provided.
+- Step 4:
+- User submits the details to the Registrar evaluator.
+- Conditions and Validations:
+- System should allow user to enter the details post the duration has been setup by the Registrar Evaluator.
+- System should allow user to upload only PDF file with maximum size of 200KB only.
+- System should not allow post the duration date ends.
+- System should allow user to enter the details if the Registrar evaluator extended the dates.
+- Changes/Modification of data:
+- Changes or modification of the data allowed.
+- Use Case 113: Create PhD Notification – RE
+- User: Registrar Evaluator
+- Purpose:
+- This use case allows user to set the PhD notification post the viva voce.
+- Pre-Requisites:
+- Viva voce should be completed.
+- Viva voce attendance and proceedings details should be updated and submitted by the Guide to Registrar Evaluator.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User Creates the NotificationUser logs into the systemUser clicks on ‘Submit’ button. User Creates the Notification
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Creates the Notification
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Creates the Notification
+- Step by Approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the ‘Create Notification’ button.
+- Step 3:
+- User enters the details.
+- Step 4:
+- User clicks on the ‘Submit’ button to submit the details.
+- Conditions and Validations:
+- System should not allow user to enter the details unless the viva voce completed for the particular student.
+- Notification duration should not be completed.
+- Changes/Modifications of data:
+- Changes or modification of the data should be allowed.
+- Use Case 114: Acknowledgement of Thesis Upload UGC Website by Librarian
+- User: Librarian
+- Purpose:
+- This use case allows user to upload the thesis in the UGC website.
+- Pre-Requisites:
+- Viva voce should be completed as per the schedule.
+- Thesis should be in the PDF format and maximum file size 200KB.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User Upload the documentUser logs into the systemUser clicks on ‘Submit’ button. User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User Upload the document
+- Step by Approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User clicks on the ‘Upload’ button.
+- Step 3:
+- User clicks on ‘Submit’ button to submit the file.
+- Conditions and Validations:
+- System should allow user to upload the document post the viva result announced.
+- System should allow user to upload the file in PDF format with maximum size of 200KB only.
+- Changes/Modifications of the data:
+- Modification or changes or not allowed.
+- Use Case 115: Student login to enter the funding agency Details, Duration, Fellowship Amount, Contingency etc.
+- User: Student
+- Purpose:
+- This use case allows user to update fellowship funding details into the system that he/she availed from the agencies.
+- Pre-Requisites:
+- Student should have all the details.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User selects the details from dropdown User logs into the systemUser clicks on ‘Submit’ button. User selects the details from dropdown
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User selects the details from dropdown
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User selects the details from dropdown
+- Step by Approaches:
+- Step 1:
+- User logs into the system.
+- Step 2:
+- User enter the following details into the fields provided.
+- Funding Agency
+- Duration
+- Fellowship Amount
+- Contingency
+- Step 3:
+- User clicks on ‘Submit’ button to submit the details to Chairman.
+- Conditions and Validations:
+- Student should allow to enter the details anytime within the academic year.
+- System should allow user to submit the details next level.
+- System should not allow to alter the details post the submission to next level.
+- System should allow user to alter the details post send back from the higher-level authority.
+- Changes/Modification of data:
+- Changes are not allowed.
+- Use Case 116: Verification of Fellowship Details – chairman.
+- User: Chairman
+- Purpose:
+- This use case allows user to verify the details provided by the student and forward to the respective University Registrar admin.
+- Pre-Requisites:
+- Student has to be entered and submitted all the details.
+- Workflow:
+- User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NVerified?User logs into the systemUser forward next level. User view the detailsYUser return to the prior user. NVerified?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Verified?
+- User logs into the system
+- User forward next level.
+- User view the details
+- Y
+- User return to the prior user.
+- N
+- Verified?
+- Step by Approaches:
+- Step 1:
+- User log into the system.
+- Step 2:
+- User should click on either one button of ‘Submit’ or ‘Reject’.
+- Step 3:
+- User should enter the comments in the comment box if any while sending back the details.
+- Conditions and Validations:
+- No edit option to be provided to user.
+- Comment box should allow user to enter only Alpha numeric and maximum of 50 character.
+- Changes/Modification of data:
+- Changes are not allowed.
+- Use Case 117: Registrar Login
+- User: University Registrar Admin
+- Purpose:
+- This use case allows user to verify the details provided by the Chairman and edit the details if any.
+- Pre-Requisites:
+- Student has to be entered and submitted all the details.
+- It should be approved and forwarded by the chairman.
+- Workflow:
+- User logs into the systemUser clicks on ‘Submit’ button. User edits the details User logs into the systemUser clicks on ‘Submit’ button. User edits the details
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User edits the details
+- User logs into the system
+- User clicks on ‘Submit’ button.
+- User edits the details
+- Step by Approaches:
+- Step 1:
+- User log into the system.
+- Step 2:
+- User can edit the details by clicking on the ‘Edit’ button.
+- Step 3:
+- User should click on verified the button if verified.
+- Conditions and Validations:
+- All fields are editable to the user.
+- Clicking on ‘Save’ button, all the details should display to the student also in their login.
+- Changes/Modification of data:
+- Changes are allowed.
+- Use Case 118: State Admin Login
+- User: State Admin
+- Purpose:
+- This use case allows user view all the details entered by the student.
+- Pre-Requisites:
+- Student has to be entered and submitted all the details.
+- It should be approved and forwarded by the chairman.
+- If should approved by the respective University Registrar Admin.
+- Workflow:
+- User logs into the systemUser will only view the details User logs into the systemUser will only view the details
+- User logs into the system
+- User will only view the details
+- User logs into the system
+- User will only view the details
+- Step by Approaches:
+- Step 1:
+- User log into the system.
+- Step 2:
+- User can view the details by clicking on the ‘View’ button.
+- Conditions and Validations:
+- System should allow user to only view the details.
+- Changes/Modification of data:
+- Changes are not allowed.

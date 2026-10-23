@@ -1,5 +1,30 @@
 {
   "username": "your_username",
   "password": "your_password",
-  "captcha": "12345"
+  "captcha": "12345",
+  "roles": {
+    "candidate": { "username": "your_candidate_username", "password": "your_candidate_password" },
+    "student": { "username": "your_student_username", "password": "your_student_password" },
+    "scholar": { "username": "your_scholar_username", "password": "your_scholar_password" },
+    "guide": { "username": "your_guide_username", "password": "your_guide_password" },
+    "coguide": { "username": "your_coguide_username", "password": "your_coguide_password" },
+    "department_chairperson": { "username": "your_chair_username", "password": "your_chair_password" },
+    "doctoral_committee_chairperson": { "username": "your_dcc_username", "password": "your_dcc_password" },
+    "college_admin": { "username": "your_college_admin_username", "password": "your_college_admin_password" },
+    "superintendent": { "username": "your_superintendent_username", "password": "your_superintendent_password" },
+    "registrar_admin": { "username": "your_registrar_username", "password": "your_registrar_password" },
+    "state_admin": { "username": "your_state_admin_username", "password": "your_state_admin_password" },
+    "university_admin": { "username": "your_university_admin_username", "password": "your_university_admin_password" },
+    "registrar_evaluation": { "username": "your_registrar_evaluation_username", "password": "your_registrar_evaluation_password" },
+    "deputy_registrar": { "username": "your_deputy_registrar_username", "password": "your_deputy_registrar_password" },
+    "principal": { "username": "your_principal_username", "password": "your_principal_password" },
+    "student_obc": { "username": "your_student_obc_username", "password": "your_student_obc_password" },
+    "female_scholar": { "username": "your_female_scholar_username", "password": "your_female_scholar_password" },
+    "male_scholar": { "username": "your_male_scholar_username", "password": "your_male_scholar_password" },
+    "scholar_double_duration": { "username": "your_scholar_double_duration_username", "password": "your_scholar_double_duration_password" },
+    "scholar_not_double_duration": { "username": "your_scholar_not_double_duration_username", "password": "your_scholar_not_double_duration_password" },
+    "scholar_duration_limited": { "username": "your_scholar_duration_limited_username", "password": "your_scholar_duration_limited_password" },
+    "pre_start_scholar": { "username": "your_pre_start_scholar_username", "password": "your_pre_start_scholar_password" },
+    "expired_scholar": { "username": "your_expired_scholar_username", "password": "your_expired_scholar_password" }
+  }
 }

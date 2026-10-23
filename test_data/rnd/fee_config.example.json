@@ -1,0 +1,192 @@
+{
+  "fee_list": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_REQUEST_TYPE_SELECT", "value": "Request for Guide Change"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "list_columns": [
+      "Sl. No.", "Applicable from Academic Year", "Program Level",
+      "Program Name", "Request Type", "Action"
+    ],
+    "row_actions": ["View", "Reset"],
+    "add_new_fee_action": "REPLACE_WITH_ADD_NEW_FEE_ACTION",
+    "expected_row_values": ["REPLACE_WITH_ACADEMIC_YEAR", "Ph.D", "REPLACE_WITH_PROGRAM", "Request for Guide Change"]
+  },
+  "add_fee": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "add_action": "REPLACE_WITH_ADD_NEW_FEE_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_AOR_SELECT", "value": "REPLACE_WITH_AOR_1"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_REQUEST_TYPE_SELECT", "value": "Request for Guide Change"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_CATEGORY_SELECT", "value": "General"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_GENDER_SELECT", "value": "All"},
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_INCOME_LIMIT_FIELD", "value": "REPLACE_WITH_INCOME_LIMIT"},
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_AMOUNT_FIELD", "value": "1000"}
+    ],
+    "save_selector": "REPLACE_WITH_FEE_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_FEE_SAVED_SUCCESS_SELECTOR",
+    "fee_row": "REPLACE_WITH_NEW_FEE_ROW",
+    "expected_row_values": ["REPLACE_WITH_ACADEMIC_YEAR", "Ph.D", "REPLACE_WITH_PROGRAM", "Request for Guide Change"]
+  },
+  "add_fee_multi_select": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "add_action": "REPLACE_WITH_ADD_NEW_FEE_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "multiselect_labels", "selector": "REPLACE_WITH_FEE_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE_1, REPLACE_WITH_DISCIPLINE_2"},
+      {"type": "multiselect_labels", "selector": "REPLACE_WITH_FEE_AOR_SELECT", "value": "REPLACE_WITH_AOR_1, REPLACE_WITH_AOR_2"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_REQUEST_TYPE_SELECT", "value": "Request for Guide Change"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_CATEGORY_SELECT", "value": "General"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_GENDER_SELECT", "value": "All"},
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_INCOME_LIMIT_FIELD", "value": "REPLACE_WITH_INCOME_LIMIT"},
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_AMOUNT_FIELD", "value": "1000"}
+    ],
+    "save_selector": "REPLACE_WITH_FEE_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_FEE_SAVED_SUCCESS_SELECTOR",
+    "fee_row": "REPLACE_WITH_MULTI_SELECT_FEE_ROW",
+    "view_action": "REPLACE_WITH_FEE_VIEW_ACTION",
+    "expected_selections": ["REPLACE_WITH_DISCIPLINE_1", "REPLACE_WITH_DISCIPLINE_2", "REPLACE_WITH_AOR_1", "REPLACE_WITH_AOR_2"]
+  },
+  "revise_fee": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "fee_row": "REPLACE_WITH_EXISTING_FEE_ROW",
+    "revise_action": "REPLACE_WITH_FEE_REVISE_ACTION",
+    "actions": [
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_AMOUNT_FIELD", "value": "1500"},
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_ORDER_NO_FIELD", "value": "REPLACE_WITH_ORDER_NO"},
+      {"type": "upload", "selector": "REPLACE_WITH_FEE_ORDER_DOC_INPUT", "value": "REPLACE_WITH_ORDER_DOC.PDF"}
+    ],
+    "save_selector": "REPLACE_WITH_FEE_SAVE_BUTTON",
+    "success_selector": "REPLACE_WITH_FEE_REVISED_SUCCESS_SELECTOR",
+    "expected_row_values": ["1500"]
+  },
+  "cancel_discards": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "add_action": "REPLACE_WITH_ADD_NEW_FEE_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_REQUEST_TYPE_SELECT", "value": "Request for Guide Change"},
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_AMOUNT_FIELD", "value": "2000"}
+    ],
+    "cancel_selector": "REPLACE_WITH_FEE_CANCEL_BUTTON",
+    "cancelled_amount": "2000"
+  },
+  "reset_fee": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "fee_row": "REPLACE_WITH_REVISABLE_FEE_ROW",
+    "reset_action": "REPLACE_WITH_FEE_RESET_ACTION",
+    "confirm_selector": "REPLACE_WITH_FEE_RESET_CONFIRM_BUTTON",
+    "success_selector": "REPLACE_WITH_FEE_RESET_SUCCESS_SELECTOR",
+    "expected_row_values": ["1000"]
+  },
+  "view_fee": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "fee_row": "REPLACE_WITH_VIEWABLE_FEE_ROW",
+    "view_action": "REPLACE_WITH_FEE_VIEW_ACTION",
+    "sections": [
+      "Program Level", "Program Name", "Discipline", "Area of Research",
+      "Request Type", "Applicable from Academic Year",
+      "Applicable to Category", "Gender", "Income Limit", "Amount (Rs)",
+      "REPLACE_WITH_COMMITTEE_ORDER_SECTION"
+    ],
+    "save_selector": "REPLACE_WITH_FEE_SAVE_BUTTON",
+    "cancel_selector": "REPLACE_WITH_FEE_CANCEL_BUTTON"
+  },
+  "request_types": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "add_action": "REPLACE_WITH_ADD_NEW_FEE_ACTION",
+    "request_type_select": "REPLACE_WITH_FEE_REQUEST_TYPE_SELECT",
+    "expected_options": [
+      "Request for Guide Change",
+      "Request for Co-Guide Allocation",
+      "Request for Co-Guide Change",
+      "Request for Guide Change under special Circumstances",
+      "Request for Co-Guide Change under Special Circumstances",
+      "Request to change the mode of study",
+      "Request for Maternity Leave",
+      "Request for extension of expected end date",
+      "Request for additional year of extension",
+      "Final Report/Thesis Submission"
+    ]
+  },
+  "fee_by_category": {
+    "general_student": {
+      "login": "student",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "request_type": "Request for Guide Change",
+      "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+      "reason": "REPLACE_WITH_REASON",
+      "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+      "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+      "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+      "faculty_select": "REPLACE_WITH_SR_PREFERRED_FACULTY_SELECT",
+      "faculty": "REPLACE_WITH_FACULTY_1",
+      "fee_amount_field": "REPLACE_WITH_SR_FEE_AMOUNT_FIELD",
+      "expected_amount": "1000"
+    },
+    "obc_student": {
+      "login": "student_obc",
+      "menu_path": ["R&D", "Special Requests", "Allocation/change request"],
+      "filters": [
+        {"type": "select_label", "selector": "REPLACE_WITH_SR_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+      ],
+      "add_action": "REPLACE_WITH_ADD_NEW_REQUEST_ACTION",
+      "request_type_select": "REPLACE_WITH_SR_REQUEST_TYPE_SELECT",
+      "request_type": "Request for Guide Change",
+      "reason_field": "REPLACE_WITH_SR_REASON_FIELD",
+      "reason": "REPLACE_WITH_REASON",
+      "document_input": "REPLACE_WITH_SR_SUPPORT_DOC_INPUT",
+      "document": "REPLACE_WITH_SUPPORT_DOC.PDF",
+      "next_selector": "REPLACE_WITH_SR_NEXT_BUTTON",
+      "faculty_select": "REPLACE_WITH_SR_PREFERRED_FACULTY_SELECT",
+      "faculty": "REPLACE_WITH_FACULTY_1",
+      "fee_amount_field": "REPLACE_WITH_SR_FEE_AMOUNT_FIELD",
+      "expected_amount": "500"
+    }
+  },
+  "blank_amount": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Fee Configuration", "Research and Development related Fees"],
+    "add_action": "REPLACE_WITH_ADD_NEW_FEE_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_LEVEL_SELECT", "value": "Ph.D"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_PROGRAM_NAME_SELECT", "value": "REPLACE_WITH_PROGRAM"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_AOR_SELECT", "value": "REPLACE_WITH_AOR_1"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_REQUEST_TYPE_SELECT", "value": "Request for Guide Change"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_CATEGORY_SELECT", "value": "General"},
+      {"type": "select_label", "selector": "REPLACE_WITH_FEE_GENDER_SELECT", "value": "All"},
+      {"type": "fill", "selector": "REPLACE_WITH_FEE_INCOME_LIMIT_FIELD", "value": "REPLACE_WITH_INCOME_LIMIT"}
+    ],
+    "save_selector": "REPLACE_WITH_FEE_SAVE_BUTTON",
+    "expected_message": "REPLACE_WITH_FEE_AMOUNT_REQUIRED_MESSAGE"
+  },
+  "access_denied": {
+    "roles": ["student", "college_admin"],
+    "menu_path": ["R&D", "Fee Configuration"],
+    "denied_message": "REPLACE_WITH_ACCESS_DENIED_MESSAGE"
+  }
+}

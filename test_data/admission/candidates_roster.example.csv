@@ -1,0 +1,4 @@
+name,login_id,group,password,entrance_mark_1,entrance_mark_2,interview_mark_1,interview_mark_2,challan_no,amount_paid,payment_date_day,final_challan_no,final_amount,final_payment_date_day,guide,area_of_research,category,quota_type,research_student_type,interview_date_day,invite_date_day,verification_date_day
+Arun Kumar,2200000001,physics,SamplePass123,70,65,60,62,CH/2026/101,1000,10,CH/2026/901,20000,20,Dr. Sample Guide,Astrophysics,GEN,OPEN,FULL_TIME,15,18,25
+,2200000002,physics ,Welcome@123,35,50,CH/2026/102,1000,12,CH/2026/902,20000,20,,,,,,,,,,
+,2200000003,chemistry,Welcome@123,35,50,CH/2026/103,1000,10,CH/2026/903,20000,20,,,,,,,,,,

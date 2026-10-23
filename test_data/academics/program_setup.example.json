@@ -1,0 +1,397 @@
+{
+  "state_program_creation": {
+    "login": "state_admin",
+    "menu_path": ["Academics", "Program Details"],
+    "menu_index": 0,
+    "add_program_button": "role=button[name='Add New Program Details']",
+    "program_actions": [
+      { "type": "select_value", "selector": "#spd_discipline_id", "value": "REPLACE_WITH_DISCIPLINE" },
+      { "type": "select_value", "selector": "#spd_plm_id", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "fill", "selector": "#spd_abbrevation", "value": "REPLACE_WITH_ABBREVIATION" },
+      { "type": "fill", "selector": "#spd_program_name", "value": "REPLACE_WITH_PROGRAM_NAME" },
+      { "type": "fill", "selector": "#Abbrevation_Kannada", "value": "REPLACE_WITH_ABBREVIATION_KANNADA" },
+      { "type": "fill", "selector": "#Program_Name_Kannada", "value": "REPLACE_WITH_PROGRAM_NAME_KANNADA" },
+      { "type": "fill", "selector": "role=textbox[name='Enter Program SSP Code']", "value": "REPLACE_WITH_SSP_CODE" },
+      { "type": "select_value", "selector": "#FacultyType", "value": "REPLACE_WITH_FACULTY_TYPE" },
+      { "type": "select_value", "selector": "#CombDisciGeneralId", "value": "REPLACE_WITH_COMB_DISCIPLINE" },
+      { "type": "select_value", "selector": "#spd_minimum_duration_years", "value": "REPLACE_WITH_MIN_DURATION" },
+      { "type": "select_value", "selector": "#spd_entry_qualification_level", "value": "REPLACE_WITH_ENTRY_QUALIFICATION" },
+      { "type": "fill", "selector": "role=textbox[name='Enter Government Order Number']", "value": "REPLACE_WITH_GO_NUMBER" }
+    ],
+    "go_upload_selector": "role=button[name='Choose File']",
+    "go_upload_file": "test_files/academics/sample_go.pdf",
+    "add_new_program_selector": "role=button[name='Add New Program']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "program_success_selector": "REPLACE_WITH_PROGRAM_CREATED_SUCCESS",
+    "search_selector": "role=searchbox[name='Search:']",
+    "search_term": "REPLACE_WITH_PROGRAM_SEARCH_TERM",
+    "add_combination_link": "Add Discipline/Combination",
+    "add_combination_link_index": 3,
+    "subject_trigger_selector": "role=textbox[name='--Select Subject--']",
+    "subject_searches": [
+      { "search_selector": "role=searchbox >> nth=1", "search_term": "REPLACE_WITH_SUBJECT_SEARCH_1", "option": "REPLACE_WITH_SUBJECT_1" },
+      { "search_selector": "role=searchbox >> nth=1", "search_term": "REPLACE_WITH_SUBJECT_SEARCH_2", "option": "REPLACE_WITH_SUBJECT_2" }
+    ],
+    "combination_actions": [
+      { "type": "fill", "selector": "#subjectname", "value": "REPLACE_WITH_SUBJECT_NAME" },
+      { "type": "fill", "selector": "#Dispkannadashortname", "value": "REPLACE_WITH_DISCIPLINE_SHORT_KANNADA" },
+      { "type": "fill", "selector": "#Dispkannadaname", "value": "REPLACE_WITH_DISCIPLINE_NAME_KANNADA" },
+      { "type": "fill", "selector": "#subjectcode", "value": "REPLACE_WITH_SUBJECT_CODE" },
+      { "type": "fill", "selector": "#deptDiscpcode", "value": "REPLACE_WITH_DEPT_DISCIPLINE_CODE" }
+    ],
+    "submit_selector": "role=button[name='Submit']",
+    "combination_success_selector": "REPLACE_WITH_COMBINATION_SUCCESS"
+  },
+  "map_new_program": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Program Details"],
+    "menu_index": 1,
+    "map_new_program_button": "role=button[name='Map New Program']",
+    "fields": [
+      { "type": "select_value", "selector": "#ProgramLevel", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#ProgramNameList", "value": "REPLACE_WITH_PROGRAM" },
+      { "type": "select_value", "selector": "#TermsPerYearList", "value": "REPLACE_WITH_TERMS_PER_YEAR" },
+      { "type": "select_value", "selector": "#MaxDurationList", "value": "REPLACE_WITH_MAX_DURATION" },
+      { "type": "fill", "selector": "#TermInWeeks", "value": "REPLACE_WITH_TERM_WEEKS" }
+    ],
+    "add_button": "#btnAddProgramWiseData",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_PROGRAM_MAPPED_SUCCESS"
+  },
+  "map_disciplines": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Program Details"],
+    "menu_index": 1,
+    "search_selector": "role=searchbox[name='Search:']",
+    "search_term": "REPLACE_WITH_PROGRAM_SEARCH_TERM",
+    "map_discipline_action": "Map Discipline/Combination",
+    "discipline_selector": "#Discipline",
+    "faculty_selector": "#FacultyID",
+    "disciplines": [
+      { "discipline": "REPLACE_WITH_DISCIPLINE_1", "faculty": "REPLACE_WITH_FACULTY_1" },
+      { "discipline": "REPLACE_WITH_DISCIPLINE_2", "faculty": "REPLACE_WITH_FACULTY_2" }
+    ],
+    "add_discipline_button": "#btnAddDisciplineData",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "back_selector": "role=button[name='Back']"
+  },
+  "map_areas_of_research": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Program Details"],
+    "menu_index": 1,
+    "map_area_link": "role=link[name='Map Area Of Research']",
+    "areas": [
+      {
+        "actions": [
+          { "type": "click", "selector": "role=button[name='None selected']" },
+          { "type": "click", "selector": "role=button[name='None selected']" },
+          { "type": "click", "selector": "role=button[name='REPLACE_WITH_COMBINATION_1']" },
+          { "type": "click", "selector": "role=button[name='Select all']" },
+          { "type": "uncheck", "selector": "role=checkbox[name='REPLACE_WITH_COMBINATION_2']" }
+        ],
+        "research_short_name": "REPLACE_WITH_AOR_SHORT_1"
+      },
+      {
+        "actions": [
+          { "type": "click", "selector": "role=button[name='None selected']" },
+          { "type": "click", "selector": "role=button[name='None selected']" },
+          { "type": "click", "selector": "role=button[name='REPLACE_WITH_COMBINATION_2']" }
+        ],
+        "research_short_name": "REPLACE_WITH_AOR_SHORT_2"
+      }
+    ],
+    "research_name_field": "#researchName",
+    "research_short_name_field": "#researchShortName",
+    "add_selector": "role=button[name='Add']",
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_AOR_MAPPED_SUCCESS"
+  },
+  "map_evaluation_system": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Program Details"],
+    "menu_index": 1,
+    "map_evaluation_button": "role=button[name='Map Evaluation System']",
+    "actions": [
+      { "type": "select_value", "selector": "#ProgramlevelCurriculum", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_PROGRAM_NAME']" },
+      { "type": "select_value", "selector": "#System", "value": "REPLACE_WITH_EVALUATION_SYSTEM" }
+    ],
+    "add_button": "#btnAddCurriculumData",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_EVALUATION_MAPPED_SUCCESS"
+  },
+  "scheme_creation": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Schemes & Course Types", "Schemes"],
+    "menu_index": 0,
+    "add_scheme_button": "role=button[name='Add New Scheme Details']",
+    "scheme_name_field": "#Scheme_Name",
+    "scheme_name": "REPLACE_WITH_SCHEME_NAME",
+    "scheme_code_field": "#Scheme_Code",
+    "scheme_code": "REPLACE_WITH_SCHEME_CODE",
+    "fields": [
+      { "type": "select_value", "selector": "#schemeTypeId", "value": "REPLACE_WITH_SCHEME_TYPE" },
+      { "type": "select_value", "selector": "#Applicable_Year_Id", "value": "REPLACE_WITH_APPLICABLE_YEAR" }
+    ],
+    "add_new_scheme_selector": "role=button[name='Add New Scheme']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_SCHEME_CREATED_SUCCESS"
+  },
+  "map_program_course_types": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Schemes & Course Types", "Map Programs & Course Types"],
+    "menu_index": 0,
+    "actions": [
+      { "type": "select_value", "selector": "#Scheme_Id", "value": "REPLACE_WITH_SCHEME" },
+      { "type": "select_value", "selector": "#ProgramLevelId", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_PROGRAM_NAME']" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_COURSE_TYPE_1']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_COURSE_TYPE_2']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_COURSE_TYPE_3']" },
+      { "type": "select_value", "selector": "#ProgramEvaluationTypeId", "value": "REPLACE_WITH_EVALUATION_TYPE" }
+    ],
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_COURSE_TYPES_MAPPED_SUCCESS"
+  },
+  "course_creation": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Course Design/Structure"],
+    "menu_index": 1,
+    "add_course_button": "role=button[name='Add New Course/Paper Details']",
+    "department_trigger_selector": "role=textbox[name='--Select Offering Department--']",
+    "department_search_selector": "role=searchbox",
+    "courses": [
+      {
+        "department_search_term": "REPLACE_WITH_DEPARTMENT_SEARCH",
+        "department_option": "REPLACE_WITH_OFFERING_DEPARTMENT",
+        "fields": [
+          { "type": "select_value", "selector": "#ddlSchemeList", "value": "REPLACE_WITH_SCHEME" },
+          { "type": "select_value", "selector": "#ddlPLList", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+          { "type": "fill", "selector": "#CourseCode", "value": "REPLACE_WITH_COURSE_CODE_1" },
+          { "type": "select_value", "selector": "#ddlMOI", "value": "REPLACE_WITH_MODE_OF_INSTRUCTION_1" },
+          { "type": "select_value", "selector": "#ddlIsCredit", "value": "REPLACE_WITH_IS_CREDIT_1" },
+          { "type": "select_value", "selector": "select[name='IsPrerequisit']", "value": "REPLACE_WITH_PREREQUISIT_1" },
+          { "type": "select_value", "selector": "#ddlIsTagged", "value": "REPLACE_WITH_IS_TAGGED_1" },
+          { "type": "select_value", "selector": "#ddlauditcourse", "value": "REPLACE_WITH_AUDIT_COURSE_1" }
+        ]
+      },
+      {
+        "department_search_term": "REPLACE_WITH_DEPARTMENT_SEARCH",
+        "department_option": "REPLACE_WITH_OFFERING_DEPARTMENT",
+        "fields": [
+          { "type": "select_value", "selector": "#ddlSchemeList", "value": "REPLACE_WITH_SCHEME" },
+          { "type": "select_value", "selector": "#ddlPLList", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+          { "type": "fill", "selector": "#CourseCode", "value": "REPLACE_WITH_COURSE_CODE_2" },
+          { "type": "select_value", "selector": "#ddlMOI", "value": "REPLACE_WITH_MODE_OF_INSTRUCTION_2" },
+          { "type": "select_value", "selector": "#ddlIsCredit", "value": "REPLACE_WITH_IS_CREDIT_2" },
+          { "type": "select_value", "selector": "select[name='IsPrerequisit']", "value": "REPLACE_WITH_PREREQUISIT_2" },
+          { "type": "select_value", "selector": "#ddlIsTagged", "value": "REPLACE_WITH_IS_TAGGED_2" },
+          { "type": "select_value", "selector": "#ddlauditcourse", "value": "REPLACE_WITH_AUDIT_COURSE_2" }
+        ]
+      }
+    ],
+    "basic_add_selector": "xpath=//fieldset[./legend[contains(normalize-space(),'Basic Details')]]//*[normalize-space()='Add']",
+    "credit_fields": [
+      { "type": "select_value", "selector": "#ddlCreditCompType", "value": "REPLACE_WITH_CREDIT_COMP_TYPE" },
+      { "type": "fill", "selector": "#txtCredit", "value": "REPLACE_WITH_CREDITS" },
+      { "type": "fill", "selector": "#txtTeachingHrs", "value": "REPLACE_WITH_TEACHING_HOURS" }
+    ],
+    "credit_add_selector": "xpath=//fieldset[./legend[contains(normalize-space(),'Credit Details')]]//*[normalize-space()='Add']",
+    "next_selector": "role=button[name='Next']",
+    "evaluation_components": [
+      {
+        "fields": [
+          { "type": "select_value", "selector": "#ddlEvalComponentType", "value": "REPLACE_WITH_EVAL_COMPONENT_1" },
+          { "type": "select_value", "selector": "#ddlEvalAssessementType", "value": "REPLACE_WITH_EVAL_ASSESSMENT_1" },
+          { "type": "select_value", "selector": "#ddlEvalEvaluationType", "value": "REPLACE_WITH_EVALUATION_TYPE_1" },
+          { "type": "fill", "selector": "#ComponentMarks", "value": "REPLACE_WITH_COMPONENT_MARKS_1" },
+          { "type": "fill", "selector": "#Weightage", "value": "REPLACE_WITH_WEIGHTAGE_1" }
+        ]
+      },
+      {
+        "fields": [
+          { "type": "select_value", "selector": "#ddlEvalComponentType", "value": "REPLACE_WITH_EVAL_COMPONENT_2" },
+          { "type": "select_value", "selector": "#ddlEvalAssessementType", "value": "REPLACE_WITH_EVAL_ASSESSMENT_2" },
+          { "type": "select_value", "selector": "#ddlEvalEvaluationType", "value": "REPLACE_WITH_EVALUATION_TYPE_2" },
+          { "type": "fill", "selector": "#ComponentMarks", "value": "REPLACE_WITH_COMPONENT_MARKS_2" },
+          { "type": "fill", "selector": "#Weightage", "value": "REPLACE_WITH_WEIGHTAGE_2" }
+        ]
+      }
+    ],
+    "evaluation_add_selector": "xpath=//fieldset[./legend[contains(normalize-space(),'Evaluation Details')]]//*[normalize-space()='Add']",
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_COURSES_CREATED_SUCCESS"
+  },
+  "term_credit_details": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Credit Details", "Term/Semester Credit Details"],
+    "menu_index": 0,
+    "add_term_credit_button": "role=link[name='Add Term/Semester Credit']",
+    "fields": [
+      { "type": "select_value", "selector": "#ddlSchemeList", "value": "REPLACE_WITH_SCHEME" },
+      { "type": "select_value", "selector": "#ddlTermList", "value": "REPLACE_WITH_TERM" }
+    ],
+    "min_credit_field": "#minCredit",
+    "min_credit": "REPLACE_WITH_MIN_CREDIT",
+    "max_credit_field": "#maxCredit",
+    "max_credit": "REPLACE_WITH_MAX_CREDIT",
+    "row_add_selector": "#tblNEPLevelMinMaxBody >> text=Add",
+    "program_actions": [
+      { "type": "select_value", "selector": "#ddlProgramLevel", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "click", "selector": "role=button[name='--Select Program Name--']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_PROGRAM_NAME']" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='Select all']" }
+    ],
+    "add_temp_programwise": "#btnAddTempProgramwise",
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_TERM_CREDITS_SUCCESS",
+    "freeze": {
+      "fields": [
+        { "type": "select_value", "selector": "#ExistingSchemeId", "value": "REPLACE_WITH_SCHEME" },
+        { "type": "select_value", "selector": "#ExistingPLId", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+        { "type": "select_value", "selector": "#ExistingPNId", "value": "REPLACE_WITH_PROGRAM" }
+      ],
+      "view_selector": "role=button[name='View']",
+      "freeze_clicks": ["text=Freeze", "text=Freeze"],
+      "confirm_selector": "role=button[name='Yes']",
+      "success_selector": "REPLACE_WITH_PROGRAM_FROZEN_SUCCESS"
+    }
+  },
+  "course_type_credit_details": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Credit Details", "Course Type Credit Details", "Add Course Type Credit Details"],
+    "menu_index": 0,
+    "fields": [
+      { "type": "select_value", "selector": "#ddlSchemeList", "value": "REPLACE_WITH_SCHEME" },
+      { "type": "select_value", "selector": "#ddlTermList", "value": "REPLACE_WITH_TERM" }
+    ],
+    "course_types": [
+      { "actions": [ { "type": "select_value", "selector": "#ddlCourseType", "value": "REPLACE_WITH_COURSE_TYPE_1" } ], "credit": "REPLACE_WITH_CREDIT_1" },
+      { "actions": [ { "type": "select_value", "selector": "#ddlCourseType", "value": "REPLACE_WITH_COURSE_TYPE_2" } ] }
+    ],
+    "credit_field": "#Credit",
+    "row_add_selector": "#tblNEPLevelMinMaxBody >> text=Add",
+    "program_actions": [
+      { "type": "select_value", "selector": "#ddlcourseTypeDown", "value": "REPLACE_WITH_COURSE_TYPE_DOWN_1" },
+      { "type": "select_value", "selector": "#ddlProgramLevel", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "click", "selector": "role=button[name='--Select Program Name--']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_PROGRAM_NAME']" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='Select all']" },
+      { "type": "select_value", "selector": "#ddlcourseTypeDown", "value": "REPLACE_WITH_COURSE_TYPE_DOWN_2" },
+      { "type": "dblclick", "selector": "role=button[name='All selected (2)']" }
+    ],
+    "add_temp_programwise": "#btnAddTempProgramwise",
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_COURSE_TYPE_CREDITS_SUCCESS",
+    "validate": {
+      "fields": [
+        { "type": "select_value", "selector": "#ddlSchemeList1", "value": "REPLACE_WITH_SCHEME" },
+        { "type": "select_value", "selector": "#ddlPLList", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+        { "type": "select_value", "selector": "#ddlPNList", "value": "REPLACE_WITH_PROGRAM" }
+      ],
+      "view_selector": "role=button[name='View']",
+      "validate_action": "Validate",
+      "validate_action_index": 1,
+      "term_field": "#ddlTermList",
+      "term_value": "REPLACE_WITH_TERM",
+      "validate_button": "role=button[name='Validate']",
+      "confirm_selector": "role=button[name='Yes']",
+      "ok_selector": "role=button[name='OK']",
+      "success_selector": "REPLACE_WITH_COURSE_TYPE_VALIDATED_SUCCESS"
+    }
+  },
+  "curriculum_creation": {
+    "login": "university_admin",
+    "menu_path": ["Academics", "Curriculum", "CBCS", "Add New Curriculum"],
+    "menu_index": 0,
+    "fields": [
+      { "type": "select_value", "selector": "#ddlSchemeList", "value": "REPLACE_WITH_SCHEME" },
+      { "type": "select_value", "selector": "#ddlPLList", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#ddlTermList", "value": "REPLACE_WITH_TERM" }
+    ],
+    "rows": [
+      {
+        "actions": [
+          { "type": "select_value", "selector": "#ddlCourseTypeList", "value": "REPLACE_WITH_COURSE_TYPE_1" },
+          { "type": "select_value", "selector": "#ddlPaperTypeList", "value": "REPLACE_WITH_PAPER_TYPE_1" },
+          { "type": "select_value", "selector": "#ddlIsMandatoryList", "value": "REPLACE_WITH_MANDATORY_1" },
+          { "type": "select_value", "selector": "#ddlOffDeptList", "value": "REPLACE_WITH_OFFERING_DEPT_1" },
+          { "type": "select_value", "selector": "#ddlCourseCodeList", "value": "REPLACE_WITH_COURSE_CODE_1" }
+        ]
+      },
+      {
+        "actions": [
+          { "type": "select_value", "selector": "#ddlPaperTypeList", "value": "REPLACE_WITH_PAPER_TYPE_2" },
+          { "type": "select_value", "selector": "#ddlCourseTypeList", "value": "REPLACE_WITH_COURSE_TYPE_2" },
+          { "type": "select_value", "selector": "#ddlIsMandatoryList", "value": "REPLACE_WITH_MANDATORY_2" },
+          { "type": "select_value", "selector": "#ddlCourseCodeList", "value": "REPLACE_WITH_COURSE_CODE_2" }
+        ]
+      }
+    ],
+    "add_temp_button": "#btnAddtempCurr",
+    "program_actions": [
+      { "type": "select_value", "selector": "#ddlPNList", "value": "REPLACE_WITH_PROGRAM" },
+      { "type": "click", "selector": "role=button[name='None selected']" },
+      { "type": "click", "selector": "role=button[name='REPLACE_WITH_DISCIPLINE']" }
+    ],
+    "add_temp_programwise": "#btnAddTempProgramwise",
+    "submit_selector": "role=button[name='Submit']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_CURRICULUM_CREATED_SUCCESS",
+    "validate": {
+      "fields": [
+        { "type": "select_value", "selector": "#ddlSchemeListExt", "value": "REPLACE_WITH_SCHEME" },
+        { "type": "select_value", "selector": "#ddlPLListExt", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+        { "type": "select_value", "selector": "#ddlPNListExt", "value": "REPLACE_WITH_PROGRAM" }
+      ],
+      "view_curriculum_selector": "role=button[name='View Curriculum']",
+      "validate_action": "Validate",
+      "term_field": "#ddlTermList",
+      "term_value": "REPLACE_WITH_TERM",
+      "view_selector": "role=button[name='View']",
+      "validate_button": "role=button[name='Validate']",
+      "confirm_selector": "role=button[name='Yes']",
+      "ok_selector": "role=button[name='OK']",
+      "success_selector": "REPLACE_WITH_CURRICULUM_VALIDATED_SUCCESS"
+    }
+  },
+  "college_elective_selection": {
+    "login": "college_admin",
+    "search_selector": "role=searchbox[name='Search:']",
+    "search_term": "REPLACE_WITH_PROGRAM_SEARCH_TERM",
+    "select_electives_action": "Select Electives",
+    "select_electives_action_index": 2,
+    "fields": [
+      { "type": "select_value", "selector": "#termId", "value": "REPLACE_WITH_TERM" }
+    ],
+    "elective_checkbox": "#item_isSelectedElective_Value",
+    "final_fields": [
+      { "type": "select_value", "selector": "#electiveAllocationMethodId", "value": "REPLACE_WITH_ALLOCATION_METHOD" }
+    ],
+    "save_selector": "role=button[name='Save']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_ELECTIVES_SELECTED_SUCCESS"
+  }
+}

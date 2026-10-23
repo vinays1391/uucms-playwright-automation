@@ -1,0 +1,55 @@
+{
+  "university_admin": {
+    "login": "university_admin",
+    "menu_path": ["R&D", "Permanent USN"],
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "send_selector": "REPLACE_WITH_SEND_PROVISIONAL_USN_BUTTON",
+    "success_selector": "REPLACE_WITH_SENT_FOR_APPROVAL_SUCCESS_SELECTOR",
+    "pending_status": "REPLACE_WITH_PENDING_SUPERINTENDENT_STATUS_TEXT"
+  },
+  "eligibility": {
+    "menu_path": ["R&D", "Permanent USN"],
+    "present": ["REPLACE_WITH_STUDENT_A_USN"],
+    "absent": ["REPLACE_WITH_STUDENT_B_USN"]
+  },
+  "superintendent": {
+    "login": "superintendent",
+    "menu_path": ["R&D", "Permanent USN"],
+    "request_row": "REPLACE_WITH_PERM_USN_REQUEST_ROW",
+    "review_action": "REPLACE_WITH_PERM_USN_REQUEST_REVIEW_ACTION",
+    "approve_selector": "REPLACE_WITH_SUPERINTENDENT_APPROVE_BUTTON",
+    "success_selector": "REPLACE_WITH_SUPERINTENDENT_APPROVE_SUCCESS_SELECTOR",
+    "forwarded_status": "REPLACE_WITH_PENDING_REGISTRAR_STATUS_TEXT",
+    "reject_selector": "REPLACE_WITH_SUPERINTENDENT_REJECT_BUTTON",
+    "remarks_field": "REPLACE_WITH_SUPERINTENDENT_REMARKS_FIELD",
+    "reject_remarks": "REPLACE_WITH_SUPERINTENDENT_REMARKS",
+    "rejected_status": "REPLACE_WITH_REJECTED_STATUS_TEXT"
+  },
+  "registrar_admin": {
+    "login": "registrar_admin",
+    "menu_path": ["R&D", "Permanent USN"],
+    "request_row": "REPLACE_WITH_PERM_USN_REQUEST_ROW",
+    "review_action": "REPLACE_WITH_PERM_USN_REQUEST_REVIEW_ACTION",
+    "approve_selector": "REPLACE_WITH_REGISTRAR_APPROVE_BUTTON",
+    "success_selector": "REPLACE_WITH_REGISTRAR_APPROVE_SUCCESS_SELECTOR",
+    "completed_status": "REPLACE_WITH_COMPLETED_STATUS_TEXT"
+  },
+  "usn_verification": {
+    "login": "registrar_admin",
+    "menu_path": ["R&D", "Permanent USN"],
+    "student_row": "REPLACE_WITH_STUDENT_USN_ROW",
+    "permanent_usn_selector": "REPLACE_WITH_PERMANENT_USN_CELL_SELECTOR",
+    "usn_format": "REPLACE_WITH_PERMANENT_USN_FORMAT_REGEX",
+    "provisional_usn": "REPLACE_WITH_PROVISIONAL_USN",
+    "all_usn_cells_selector": "REPLACE_WITH_ALL_STUDENT_USN_CELLS_SELECTOR"
+  },
+  "student": {
+    "login": "student",
+    "menu_path": ["R&D", "Permanent USN"],
+    "notification_selector": "REPLACE_WITH_STUDENT_NOTIFICATION_SELECTOR",
+    "permanent_usn": "REPLACE_WITH_PERMANENT_USN",
+    "profile_selector": "REPLACE_WITH_STUDENT_PROFILE_SELECTOR",
+    "scholar_status_text": "REPLACE_WITH_PHD_SCHOLAR_STATUS_TEXT",
+    "progress_report_row": "REPLACE_WITH_STUDENT_ROW_IN_PROGRESS_REPORT_LIST"
+  }
+}

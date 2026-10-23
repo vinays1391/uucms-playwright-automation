@@ -1,6 +1,6 @@
 # Exam POM conversion prompt
 
-Record the exam workflow with the browser automation tool, then convert the generated actions into a stable page object model under `src/pages/exam` and a data-driven test under `tests`.
+Record the exam workflow with the browser automation tool, then convert the generated actions into a stable page object model under `src/uucms/modules/exam/pages` and a data-driven test under `tests/ui/exam`.
 
 Checklist:
 - use selectors from the live UI only

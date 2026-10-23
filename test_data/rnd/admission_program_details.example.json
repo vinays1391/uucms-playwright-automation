@@ -1,0 +1,90 @@
+{
+  "list": {
+    "filters": [
+      {"type": "select_label", "selector": "REPLACE_WITH_ACADEMIC_YEAR_SELECT", "value": "REPLACE_WITH_ACADEMIC_YEAR"}
+    ],
+    "list_columns": [
+      "Sl. No.", "Program Level", "Program Name", "Abbreviation",
+      "Terms per Year", "Duration of Program (In Years)",
+      "Max Duration allowed (In Years)", "Duration of Term in Weeks", "Action"
+    ],
+    "row_actions": [
+      "Edit", "View", "Map Discipline/Combination", "Map Areas of Research"
+    ]
+  },
+  "edit": {
+    "program_row": "REPLACE_WITH_PROGRAM_1_ROW",
+    "edit_action": "REPLACE_WITH_PROGRAM_1_EDIT_ACTION",
+    "actions": [
+      {"type": "fill", "selector": "REPLACE_WITH_MAX_DURATION_FIELD", "value": "7"},
+      {"type": "fill", "selector": "REPLACE_WITH_TERMS_PER_YEAR_FIELD", "value": "2"}
+    ],
+    "save_selector": "REPLACE_WITH_PROGRAM_EDIT_SAVE_BUTTON",
+    "expected_values": ["7", "2"]
+  },
+  "view": {
+    "program_row": "REPLACE_WITH_PROGRAM_1_ROW",
+    "view_action": "REPLACE_WITH_PROGRAM_1_VIEW_ACTION",
+    "columns": [
+      "Program Level", "Program Name", "Abbreviation", "Terms per Year",
+      "Duration of Program", "Max Duration allowed", "Duration of Term in Weeks"
+    ],
+    "save_selector": "REPLACE_WITH_PROGRAM_EDIT_SAVE_BUTTON"
+  },
+  "map_discipline": {
+    "program_row": "REPLACE_WITH_PROGRAM_1_ROW",
+    "action": "REPLACE_WITH_PROGRAM_1_MAP_DISCIPLINE_ACTION",
+    "actions": [
+      {"type": "select_label", "selector": "REPLACE_WITH_DISCIPLINE_SELECT", "value": "REPLACE_WITH_DISCIPLINE"}
+    ],
+    "submit_selector": "REPLACE_WITH_DISCIPLINE_MAP_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_DISCIPLINE_MAPPING_SUCCESS_SELECTOR"
+  },
+  "map_areas": {
+    "program_row": "REPLACE_WITH_PROGRAM_1_ROW",
+    "action": "REPLACE_WITH_PROGRAM_1_MAP_AREAS_ACTION",
+    "actions": [
+      {"type": "select_labels", "selector": "REPLACE_WITH_AREAS_SELECT", "value": "REPLACE_WITH_AOR_1, REPLACE_WITH_AOR_2"}
+    ],
+    "submit_selector": "REPLACE_WITH_AREAS_MAP_SUBMIT_BUTTON",
+    "success_selector": "REPLACE_WITH_AREAS_MAPPING_SUCCESS_SELECTOR"
+  },
+  "map_new_program": {
+    "program_row": "REPLACE_WITH_PROGRAM_2_ROW",
+    "action": "REPLACE_WITH_PROGRAM_2_MAP_NEW_PROGRAM_ACTION",
+    "submit_selector": "REPLACE_WITH_MAP_NEW_PROGRAM_SUBMIT_BUTTON",
+    "teaching_mode_medium": {
+      "actions": [
+        {"type": "select_label", "selector": "REPLACE_WITH_TEACHING_MODE_SELECT", "value": "REPLACE_WITH_TEACHING_MODE"},
+        {"type": "select_label", "selector": "REPLACE_WITH_MEDIUM_SELECT", "value": "REPLACE_WITH_MEDIUM_OF_INSTRUCTION"}
+      ],
+      "success_selector": "REPLACE_WITH_MAP_NEW_PROGRAM_SUCCESS_SELECTOR",
+      "expected_values": ["REPLACE_WITH_TEACHING_MODE", "REPLACE_WITH_MEDIUM_OF_INSTRUCTION"]
+    },
+    "evaluation_system": {
+      "actions": [
+        {"type": "select_label", "selector": "REPLACE_WITH_EVALUATION_SYSTEM_SELECT", "value": "REPLACE_WITH_EVALUATION_SYSTEM"}
+      ],
+      "success_selector": "REPLACE_WITH_MAP_NEW_PROGRAM_SUCCESS_SELECTOR",
+      "expected_values": ["REPLACE_WITH_EVALUATION_SYSTEM"]
+    },
+    "language": {
+      "actions": [
+        {"type": "select_label", "selector": "REPLACE_WITH_LANGUAGE_SELECT", "value": "REPLACE_WITH_LANGUAGE"}
+      ],
+      "success_selector": "REPLACE_WITH_MAP_NEW_PROGRAM_SUCCESS_SELECTOR",
+      "expected_values": ["REPLACE_WITH_LANGUAGE"]
+    },
+    "open_elective": {
+      "actions": [
+        {"type": "select_label", "selector": "REPLACE_WITH_OPEN_ELECTIVE_SELECT", "value": "REPLACE_WITH_OPEN_ELECTIVE"}
+      ],
+      "success_selector": "REPLACE_WITH_MAP_NEW_PROGRAM_SUCCESS_SELECTOR",
+      "expected_values": ["REPLACE_WITH_OPEN_ELECTIVE"]
+    },
+    "blank": {
+      "expected_message": "REPLACE_WITH_BLANK_MAPPING_VALIDATION_MESSAGE",
+      "unmapped_check_selector": "REPLACE_WITH_MAPPED_PROGRAM_2_CHECK_SELECTOR"
+    }
+  }
+}

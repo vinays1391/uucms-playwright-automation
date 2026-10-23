@@ -1,0 +1,284 @@
+{
+  "create_application": {
+    "login": "candidate",
+    "menu_entry_selector": "#file-export ",
+    "menu_entry_text": "Create/View Application",
+    "create_button": "role=button[name='Create Application']",
+    "actions": [
+      { "type": "select_value", "selector": "#ProgramLevelList", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#UniversityList", "value": "REPLACE_WITH_UNIVERSITY" },
+      { "type": "select_value", "selector": "#ProgramNameID", "value": "REPLACE_WITH_PROGRAM" }
+    ],
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_APPLICATION_CREATED_SUCCESS"
+  },
+  "education_declaration": {
+    "login": "candidate",
+    "program_level": "Ph.D",
+    "user_menu_selector": "#userDropdown",
+    "registration_details_text": "Registration Details",
+    "education_declarations": {
+      "PUC": {
+        "submitted_check_selector": "REPLACE_WITH_PUC_SUBMITTED_CHECK_SELECTOR",
+        "tab": "Previous Education Details - PUC",
+        "declaration_selector": "REPLACE_WITH_PUC_DECLARATION_SELECTOR",
+        "success_selector": "REPLACE_WITH_PUC_DECLARATION_SUCCESS"
+      },
+      "UG": {
+        "submitted_check_selector": "REPLACE_WITH_UG_SUBMITTED_CHECK_SELECTOR",
+        "tab": "Previous Education Details - UG",
+        "declaration_selector": "REPLACE_WITH_UG_DECLARATION_SELECTOR",
+        "success_selector": "REPLACE_WITH_UG_DECLARATION_SUCCESS"
+      },
+      "PG": {
+        "submitted_check_selector": "REPLACE_WITH_PG_SUBMITTED_CHECK_SELECTOR",
+        "tab": "Previous Education Details - PG",
+        "declaration_selector": "#PGdeclaration",
+        "success_selector": "REPLACE_WITH_PG_DECLARATION_SUCCESS"
+      }
+    },
+    "captcha_selector": "role=textbox[name='Enter Captcha']",
+    "submit_selector": "role=button[name='Submit']",
+    "ok_selector": "role=button[name='OK']"
+  },
+  "application_details": {
+    "login": "candidate",
+    "menu_entry_selector": "#file-export ",
+    "menu_entry_text": "Create/View Application",
+    "create_button": "role=button[name='Create Application']",
+    "actions": [
+      { "type": "select_value", "selector": "#ProgramLevelList", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#UniversityList", "value": "REPLACE_WITH_UNIVERSITY" },
+      { "type": "select_value", "selector": "#ProgramNameID", "value": "REPLACE_WITH_PROGRAM" },
+      { "type": "select_value", "selector": "#CycleID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "submit_selector": "role=button[name='Submit']",
+    "discipline_selector": "#phddisciplineID1",
+    "discipline_value": "REPLACE_WITH_DISCIPLINE",
+    "preview_submit_selector": "role=button[name='Preview & Submit']",
+    "declaration_checkbox": "role=checkbox[name='I hereby declare that the']",
+    "confirm_selector": "role=button[name='Confirm & Submit']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_CONFIRM_SUBMIT_SUCCESS"
+  },
+  "offline_payment": {
+    "login": "candidate",
+    "menu_entry_selector": "#file-export ",
+    "menu_entry_text": "Create/View Application",
+    "view_application_button": "role=button[name='View Existing Application']",
+    "offline_payment_link": "#PGApplicationOfflinepayPhdnull",
+    "challan_field": "role=textbox[name='Challan / Receipt No']",
+    "challan_value": "REPLACE_WITH_CHALLAN_NUMBER",
+    "amount_field": "role=textbox[name='Actual Amount Paid']",
+    "amount_value": "REPLACE_WITH_AMOUNT_PAID",
+    "payment_date_day": "REPLACE_WITH_PAYMENT_DATE_DAY",
+    "receipt_upload_selector": "role=button[name='Choose File']",
+    "receipt_file": "test_files/admission/sample_payment.pdf",
+    "submit_selector": "role=button[name='Submit']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_OFFLINE_PAYMENT_SUCCESS"
+  },
+  "entrance_view": {
+    "login": "department_chairperson",
+    "menu_path": ["Administration", "Enter Ph.D Candidate Entrance"],
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "student_row": "REPLACE_WITH_STUDENT_ROW"
+  },
+  "cut_off_marks": {
+    "login": "department_chairperson",
+    "menu_path": ["Administration", "Ph.D-Set up cut off marks", "Setup Entrance exam marks"],
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#ProgramLevel", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#ProgramName", "value": "REPLACE_WITH_PROGRAM" },
+      { "type": "select_value", "selector": "#departmentID", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "edit_action_selector": "REPLACE_WITH_CUT_OFF_EDIT_ACTION",
+    "back_selector": "role=link[name='Back']",
+    "success_selector": "REPLACE_WITH_CUT_OFF_SUCCESS"
+  },
+  "review_approve": {
+    "login": "department_chairperson",
+    "menu_path": ["Admissions", "Ph.D-Candidate Offline"],
+    "menu_index": 1,
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "approval_cycles": 2,
+    "review_action_selector": "role=button[name='Review & Approve']",
+    "confirm_selector": "role=button[name='Yes']",
+    "approve_selector": "role=button[name='Approve']",
+    "ok_selector": "role=button[name='OK']"
+  },
+  "entrance_marks": {
+    "login": "department_chairperson",
+    "menu_path": ["Administration", "Enter Ph.D Candidate Entrance"],
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "edit_marks_selector": "role=button[name='Edit Entrance Exam Marks']",
+    "marks_fields": [
+      { "selector": "#Exammarks_1", "value": "REPLACE_WITH_ENTRANCE_MARK_1" },
+      { "selector": "#Exammarks_2", "value": "REPLACE_WITH_ENTRANCE_MARK_2" }
+    ],
+    "save_marks_selector": "role=button[name='Save Entrance Exam Marks']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "send_registrar_selector": "role=button[name='Send For Registrar Approval']",
+    "success_selector": "REPLACE_WITH_SENT_FOR_REGISTRAR_SUCCESS"
+  },
+  "registrar_action": {
+    "login": "registrar_admin",
+    "menu_path": ["Admissions", "Approve/Reject Ph.D"],
+    "menu_index": 2,
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "approve_selector": "role=button[name='Approve']",
+    "remarks_field": "#ApproveRejectRemarks",
+    "remarks_value": "REPLACE_WITH_REMARKS",
+    "submit_selector": "#Submit_Approve",
+    "confirms": ["role=button[name='Yes']", "role=button[name='OK']"],
+    "success_selector": "REPLACE_WITH_REGISTRAR_APPROVE_SUCCESS"
+  },
+  "interview_invite": {
+    "login": "department_chairperson",
+    "menu_path": ["Admissions", "Administration", "Ph.D-Set up cut off marks", "Invite Ph.D Candidate for Interview"],
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "row_expand_selector": "td:nth-child(14)",
+    "checkbox_selector": "#TrChkBoxSelect",
+    "students": [
+      { "row_selector": "REPLACE_WITH_STUDENT_ROW_1", "date_day": "REPLACE_WITH_INTERVIEW_DATE_DAY" },
+      { "row_selector": "REPLACE_WITH_STUDENT_ROW_2", "date_day": "REPLACE_WITH_INTERVIEW_DATE_DAY" }
+    ],
+    "send_selector": "role=button[name='Send Invite for Selected']",
+    "confirm_selector": "role=button[name='Yes']",
+    "confirmation_count": 2,
+    "success_selector": "REPLACE_WITH_INTERVIEW_INVITE_SUCCESS"
+  },
+  "interview_marks": {
+    "login": "department_chairperson",
+    "menu_path": ["Admissions", "Administration", "Ph.D-Set up cut off marks", "Enter Ph.D Candidate Interview Marks"],
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "edit_marks_selector": "role=button[name='Edit Interview Marks']",
+    "marks_fields": [
+      { "selector": "#Exammarks_1", "value": "REPLACE_WITH_INTERVIEW_MARK_1" },
+      { "selector": "#Exammarks_2", "value": "REPLACE_WITH_INTERVIEW_MARK_2" }
+    ],
+    "save_marks_selector": "role=button[name='Save Interview Marks']",
+    "confirm_selector": "role=button[name='Yes']",
+    "ok_selector": "role=button[name='OK']",
+    "send_registrar_selector": "role=button[name='Send For Registrar Approval']",
+    "success_selector": "REPLACE_WITH_INTERVIEW_MARKS_SENT_SUCCESS"
+  },
+  "interview_marks_approval": {
+    "login": "registrar_admin",
+    "menu_path": ["Admissions", "Approve/Reject Ph.D"],
+    "menu_index": 2,
+    "filters": [
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#Department", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "approve_selector": "role=button[name='Approve']",
+    "remarks_field": "#ApproveRejectRemarks",
+    "remarks_value": "REPLACE_WITH_REMARKS",
+    "submit_selector": "#Submit_Approve",
+    "confirms": ["role=button[name='OK']"],
+    "success_selector": "REPLACE_WITH_INTERVIEW_MARKS_APPROVED_SUCCESS"
+  },
+  "student_invite": {
+    "login": "department_chairperson",
+    "menu_path": ["Admissions", "Student Invite"],
+    "filters": [
+      { "type": "select_value", "selector": "#AdmissionTypeID", "value": "REPLACE_WITH_ADMISSION_TYPE" },
+      { "type": "select_value", "selector": "#AcademicYearID", "value": "REPLACE_WITH_ACADEMIC_YEAR" },
+      { "type": "select_value", "selector": "#spd_plm_id", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#spd_id", "value": "REPLACE_WITH_PROGRAM" },
+      { "type": "select_value", "selector": "#departmentID", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "view_student_details_selector": "role=button[name='View Student Details']",
+    "checkbox_selector": "role=checkbox",
+    "select_all_selector": "#ThChkBoxSelectAll",
+    "students": [
+      { "row_selector": "REPLACE_WITH_STUDENT_ROW_1", "date_day": "REPLACE_WITH_INVITE_DATE_DAY" },
+      { "row_selector": "REPLACE_WITH_STUDENT_ROW_2", "date_day": "REPLACE_WITH_INVITE_DATE_DAY" }
+    ],
+    "send_selector": "role=button[name='Send All']",
+    "ok_selector": "role=button[name='OK']",
+    "success_selector": "REPLACE_WITH_STUDENT_INVITE_SUCCESS"
+  },
+  "document_verification": {
+    "login": "department_chairperson",
+    "menu_path": ["Admissions", "Admission Document", "Verify Document"],
+    "filters": [
+      { "type": "select_value", "selector": "#AdmissionTypeID", "value": "REPLACE_WITH_ADMISSION_TYPE" },
+      { "type": "select_value", "selector": "#AcademicYearID", "value": "REPLACE_WITH_ACADEMIC_YEAR" },
+      { "type": "select_value", "selector": "#spd_plm_id", "value": "REPLACE_WITH_PROGRAM_LEVEL" },
+      { "type": "select_value", "selector": "#Admission_Cycle_ID", "value": "REPLACE_WITH_ADMISSION_CYCLE" },
+      { "type": "select_value", "selector": "#spd_id", "value": "REPLACE_WITH_PROGRAM" },
+      { "type": "select_value", "selector": "#departmentID", "value": "REPLACE_WITH_DEPARTMENT" }
+    ],
+    "preview_row_selector": "#InviteRow_1",
+    "preview_button": "role=button[name='Preview Application']",
+    "documents": [
+      "#sslc_marks_card_path-a",
+      "#stud_ug_marks_card_path-a-3-1",
+      "#sa_category_doc_path-a",
+      "#sa_income_doc_path-a",
+      "#sa_photo_path-a",
+      "#sa_signature_path-a"
+    ],
+    "document_ok_selector": "role=button[name='OK']",
+    "verification_date_day": "REPLACE_WITH_VERIFICATION_DATE_DAY",
+    "phd_mapping": [
+      { "type": "select_value", "selector": "#phdDisciplineID", "value": "REPLACE_WITH_DISCIPLINE" },
+      { "type": "select_value", "selector": "#phdareaofResearchID", "value": "REPLACE_WITH_AREA_OF_RESEARCH" },
+      { "type": "select_value", "selector": "#phdGuideNameID", "value": "REPLACE_WITH_GUIDE" },
+      { "type": "select_value", "selector": "#phdCategoryID", "value": "REPLACE_WITH_CATEGORY" },
+      { "type": "select_value", "selector": "#phdQuotaType", "value": "REPLACE_WITH_QUOTA_TYPE" },
+      { "type": "select_value", "selector": "#phdResearchStudentTypeID", "value": "REPLACE_WITH_RESEARCH_STUDENT_TYPE" }
+    ],
+    "submit_selector": "role=button[name='Submit']",
+    "success_selector": "REPLACE_WITH_DOCUMENT_VERIFICATION_SUCCESS"
+  },
+  "final_payment": {
+    "login": "student",
+    "menu_entry_selector": "#file-export ",
+    "menu_entry_text": "Create/View Application",
+    "view_application_button": "role=button[name='View Existing Application']",
+    "application_row_action": "tr:nth-child(2) > td:nth-child(10) > a",
+    "offline_payment_control": "REPLACE_WITH_OFFLINE_PAYMENT_CONTROL",
+    "challan_field": "role=textbox[name='Challan / Receipt No']",
+    "challan_value": "REPLACE_WITH_CHALLAN_NUMBER",
+    "amount_field": "role=textbox[name='Actual Amount Paid']",
+    "amount_value": "REPLACE_WITH_AMOUNT_PAID",
+    "payment_date_day": "REPLACE_WITH_PAYMENT_DATE_DAY",
+    "receipt_upload_selector": "role=button[name='Choose File']",
+    "receipt_file": "test_files/admission/sample_payment.pdf",
+    "submit_selector": "role=button[name='Submit']",
+    "ok_selector": "role=button[name='OK']",
+    "resubmit": { "amount_value": "REPLACE_WITH_CORRECTED_AMOUNT" },
+    "success_selector": "REPLACE_WITH_FINAL_PAYMENT_SUCCESS"
+  }
+}

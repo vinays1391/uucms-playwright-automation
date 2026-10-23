@@ -12,15 +12,99 @@ py -m pip install --upgrade pip
 py -m pip install -e .
 py -m playwright install chromium
 Copy-Item .env.example .env
-Copy-Item test_data/loginData.example.json test_data/loginData.json
+Copy-Item test_data\login\LoginData.example.json test_data\login\LoginData.json
 ```
 
-Set `username` and `password` in `test_data/loginData.json`. The
-`captcha` field is currently `12345`. Keep the URL, browser, headless
-mode, and timeout in `.env`. Set `UUCMS_BROWSER` to `chromium`,
+Set usernames in the Excel workbook or JSON registry described below, then
+define the password environment variable in your local `.env`. The `captcha`
+field defaults to `12345`. Keep the URL, browser, headless mode, and timeout
+in `.env`. Set `UUCMS_BROWSER` to `chromium`,
 `firefox`, or `webkit`; the test, Codegen, video recorder, and one-click
 runner all use that value. The example uses `http://123.63.4.210:5010/`.
 Login data is ignored by Git.
+
+## Role-based authentication
+
+Store accounts in either `test_data/login/LoginData.xlsx` or
+`test_data/login/LoginData.json`. If the Excel workbook exists, it is used
+instead of JSON; otherwise the loader falls back to JSON. Do not leave an
+invalid or incomplete workbook in place expecting JSON fallback.
+
+The workbook must have a `Roles` worksheet (or use its first worksheet) with
+these columns:
+
+| role_key | username | password_env |
+|---|---|---|
+| default | default account username | UUCMS_TEST_PASSWORD |
+| candidate_1 | first candidate username | UUCMS_TEST_PASSWORD |
+| candidate_2 | second candidate username | UUCMS_TEST_PASSWORD |
+
+Use a unique `role_key` per account and include exactly one `default` row.
+Store usernames as text in Excel to preserve leading zeros.
+`password_env` is optional; if omitted, the account uses
+`UUCMS_TEST_PASSWORD`. For JSON, store the default account at the top level
+and the other accounts in the `roles` object. Role keys can be
+`student`, `deputy_registrar`, `registrar_evaluation`, and
+`university_admin_university_1`. The default account uses top-level
+`username` and `password_env`; each role entry uses the same fields.
+
+Define the password environment variable(s) in your local `.env`, not in the
+workbook or JSON. For example, if all accounts share one test password, set
+`UUCMS_TEST_PASSWORD=...` once and use that name for every account. Only add
+roles needed by your tests, and never commit real credentials.
+
+Use distinct keys for accounts belonging to different universities, such as
+`university_admin_university_1` and `university_admin_university_2`.
+
+Ph.D actors move through three phases: **Candidate** before admission
+(its own login number), **Student** after admission, and **Scholar**
+after the synopsis is approved and the permanent USN is generated. The
+Student and Scholar phases use the same USN for login; the Candidate
+phase uses a different number. Pick the role key that matches the phase
+of each stage (`candidate`, `student`, `scholar`).
+
+All tests use the same `login_as` fixture to sign in or switch accounts:
+
+```python
+def test_registrar_approves(page, login_as):
+    login_as("registrar_evaluation")
+    # Continue using the authenticated page.
+```
+
+Use `authenticated_page` when a test only needs the configured default
+account. Both fixtures share the central `RoleManager`; role-specific
+test suites do not need separate login helpers.
+
+## Project structure
+
+```text
+config/                          Runtime settings and environment configuration
+src/uucms/
+├── auth/                        Login page and authentication behaviour
+├── core/                        Shared Playwright page abstractions
+├── constants/                   Roles, statuses, menus, and menu paths
+├── modules/
+│   ├── admission/
+│   │   └── pages/               Application, payment, registration, approvals
+│   ├── academics/pages/
+│   ├── exam/pages/
+│   ├── research_development/
+│   │   └── pages/
+│   └── common/                  Shared dashboard and menu page objects
+├── workflows/                   Cross-module workflows
+│   ├── phd_workflow.py
+│   └── research_development/
+└── fixtures/
+tests/
+├── unit/
+└── ui/
+    ├── admission/
+    ├── authentication/
+    ├── exam/
+    └── research_development/
+test_data/                        JSON test data and example templates
+utils/                            JSON, logging, screenshot, and wait helpers
+```
 
 ## Codegen to POM workflow
 
@@ -41,7 +125,7 @@ Login data is ignored by Git.
     use the documented Gemini-in-Antigravity prompt.
 
 5.  Review the returned selectors and waits, then apply only the
-    maintained POM changes under `src/pages` and `tests`.
+    maintained POM changes under `src/uucms/modules` and `tests`.
 
 6.  Run the maintained test with the one-click script:
 
@@ -79,25 +163,147 @@ credentials; the video recording remains under `recordings/videos/`.
 Run only the Exam test:
 
 ``` powershell
-.venv\Scripts\python.exe -m pytest tests\test_exam.py -m exam -v
+.venv\Scripts\python.exe -m pytest tests\ui\exam\test_exam.py -m exam -v
 ```
 
 The Exam test intentionally stops with a clear error while
 `examData.json` still contains `REPLACE_WITH` placeholders. This
 prevents guessed selectors from creating unreliable automation.
 
-## Video recording
+## Admission module
 
-To save a video of the browser session for future reference:
+The admission module automates the full Ph.D admission lifecycle:
+candidate application (program selection, previous-education
+declaration, details, offline payment), chairperson entrance view /
+cut-off marks / review & approve / entrance marks, Registrar (Admin)
+approvals, interview invites and interview marks, student invites,
+admission document verification with the Ph.D mapping (discipline,
+area of research, guide, category, quota, research student type), and
+the final offline payment.
+
+Create the admission test-data file from its template:
 
 ``` powershell
-.\record_login_video.bat
+Copy-Item test_data\admission\phd_admission.example.json test_data\admission\phd_admission.json
+```
+
+After recording each screen, fill every `REPLACE_WITH_*` selector and
+value in `test_data/admission/phd_admission.json`. Each stage carries a
+`login` role key, and multi-role stages switch accounts through the
+`login_as` fixture. Run only the admission tests:
+
+``` powershell
+.venv\Scripts\python.exe -m pytest tests\ui\admission\test_admission.py -m admission -v
+```
+
+The admission tests intentionally stop with a clear error while their
+test-data file still contains `REPLACE_WITH` placeholders.
+
+## Academics (coursework) module
+
+The coursework module automates chairperson application review, student
+course registration, Registrar (Evaluation) course modification, internal
+assessment marks, and attendance. Those stages are orchestrated by the
+coursework workflow; separate exam screens are under
+`src/uucms/modules/exam/pages`.
+
+Create the coursework test-data file from its template:
+
+``` powershell
+Copy-Item test_data\academics\coursework_examination.example.json test_data\academics\coursework_examination.json
+```
+
+After recording each screen, fill every `REPLACE_WITH_*` selector and
+value in `test_data/academics/coursework_examination.json`. Coursework
+stages use the `login` role key and shared `login_as` fixture. Run only
+the coursework tests:
+
+``` powershell
+.venv\Scripts\python.exe -m pytest tests\ui\academics\test_coursework.py -m academics -v
+```
+
+The coursework tests intentionally stop with a clear error while their
+test-data file still contains `REPLACE_WITH` placeholders.
+
+The Exam workflow provides dedicated page objects and tests for
+permitting students, exam-center approval, QP-code updates, evaluation
+marks entry, and hall-ticket eligibility. The first four screens always
+authenticate as `registrar_evaluation`; hall tickets authenticate as
+`principal`, using the shared role registry and `login_as` fixture.
+These exam screens currently use the corresponding stage data in
+`test_data/academics/coursework_examination.json`. Run them with:
+
+``` powershell
+.\run_exam.bat
+```
+
+## Academics (program setup) module
+
+The program setup module automates the Ph.D program and curriculum setup
+across admin roles: State Admin creates the statewise program details
+and the first discipline/subject combination; University Admin maps the
+program (new program data, disciplines, Areas of Research, evaluation
+system), creates the scheme, maps programs and course types, designs the
+courses with credit and evaluation components, configures term and
+course-type credit details (freeze + validate), and builds the CBCS
+curriculum; College Admin selects the electives. The screen page
+objects live under `src/uucms/modules/academics/pages/` and the
+workflow under `src/uucms/workflows/program_setup_workflow.py`.
+
+Create the program setup test-data file from its template:
+
+``` powershell
+Copy-Item test_data\academics\program_setup.example.json test_data\academics\program_setup.json
+```
+
+After recording each screen, fill every `REPLACE_WITH_*` selector and
+value in `test_data/academics/program_setup.json`. Stages run as the
+`state_admin`, `university_admin`, and `college_admin` roles from
+`test_data/login/LoginData.json`, switching accounts through the shared
+`login_as` fixture. Run only the program setup tests:
+
+``` powershell
+.venv\Scripts\python.exe -m pytest tests\ui\academics\test_program_setup.py -m academics -v
+```
+
+The program setup tests intentionally stop with a clear error while
+their test-data file still contains `REPLACE_WITH` placeholders.
+
+## Video recording
+
+To save a video of the browser session while you work through a
+workflow:
+
+``` powershell
+.\record_video.bat
+```
+
+To start on a specific page instead of the configured base URL, pass
+the page URL:
+
+``` powershell
+.\record_video.bat --url <page-url>
 ```
 
 Complete the flow in the opened browser, then return to the terminal and
 press Enter. The `.webm` video is saved under `recordings/videos/`.
 Videos can contain credentials or other sensitive page data, so review
 them before sharing.
+
+## Codegen recording (GUI)
+
+To record a workflow with the Playwright codegen browser, with the live
+generated Python code printed in the console:
+
+``` powershell
+.\record_codegen.bat
+```
+
+Click **Start Codegen**, do the workflow in the codegen browser window,
+then click **Stop Codegen** (or close that browser window). The generated
+file is saved under `recordings/` as `workflow_<timestamp>_codegen.py`
+and is the input for `prompts/<module>-pom-conversion.md` when writing
+the page objects and tests.
 
 ## CAPTCHA
 
@@ -412,3 +618,134 @@ messages should be captured from the actual UUCMS environment through
 Playwright recording/inspection rather than guessed, because the
 uploaded R&D source documents define workflows and UI requirements but
 do not provide concrete DOM selectors.
+
+### R&D Phase-1
+
+Phase-1 automation covers the ADMISSION (program details),
+AREAOFRESEARCH, FACULTYMAPPING, SYNOPSIS and PERMUSN test cases from
+`testcases/rnd_phase-1_testcases.csv`.
+
+Create the R&D test-data files from their templates:
+
+``` powershell
+Copy-Item test_data\rnd\admission_program_details.example.json test_data\rnd\admission_program_details.json
+Copy-Item test_data\rnd\area_of_research.example.json test_data\rnd\area_of_research.json
+Copy-Item test_data\rnd\faculty_mapping.example.json test_data\rnd\faculty_mapping.json
+Copy-Item test_data\rnd\synopsis.example.json test_data\rnd\synopsis.json
+Copy-Item test_data\rnd\permanent_usn.example.json test_data\rnd\permanent_usn.json
+```
+
+After recording each R&D flow, fill every `REPLACE_WITH_*` selector,
+dropdown label/value, date, USN and file path in the matching
+`test_data/rnd/*.json` file. Multi-role flows (synopsis approval chain,
+permanent USN chain) switch logins through the `rnd_login` fixture:
+add one entry per role (student, guide, coguide,
+department_chairperson, doctoral_committee_chairperson, college_admin,
+superintendent, registrar_admin, university_admin) under the
+`roles` mapping in `test_data/login/LoginData.json` (see
+`test_data/login/LoginData.example.json`). The configured default login in
+`LoginData.json` should be the University Admin; it is used by the
+`authenticated_page` fixture. The menu paths in
+`src/uucms/constants/menu_paths/research_development.py` are documented from
+the test cases - confirm each one against a recording.
+
+Run only the R&D Phase-1 tests:
+
+``` powershell
+.venv\Scripts\python.exe -m pytest tests -k rnd -v
+```
+
+or the one-click runners `.\run_rnd.bat` / `.\scripts\run-rnd.ps1`.
+
+The R&D tests intentionally stop with a clear error while their
+test-data files still contain `REPLACE_WITH` placeholders. This
+prevents guessed selectors from creating unreliable automation.
+
+### R&D Ph.D setup (Academics screens)
+
+The University Admin Ph.D setup is automated from the Academics menu
+screens (Program Details, Areas of Research) plus Research And
+Development > Set-up: map an Area of Research to the Ph.D program,
+map/view/modify the Area of Research to faculty mapping, map the
+student to the committee, and create the committee. The screen page
+objects live under `src/uucms/modules/academics/pages/` while the
+workflow lives under `src/uucms/workflows/research_development/`.
+
+Create the Ph.D setup test-data file from its template:
+
+``` powershell
+Copy-Item test_data\rnd\phd_setup.example.json test_data\rnd\phd_setup.json
+```
+
+After recording each screen, fill every `REPLACE_WITH_*` selector and
+value in `test_data/rnd/phd_setup.json`. The stages run as the
+University Admin role from `test_data/login/LoginData.json`.
+
+``` powershell
+.venv\Scripts\python.exe -m pytest tests\ui\research_development\test_rnd_phd_setup.py -m rnd -v
+```
+
+### R&D Research Projects (Phase-3 screens)
+
+The Research Projects sub-menu (top nav "Research And Development" >
+"Research Projects") is automated for the Department Chairperson across
+the four screens: Research Projects Details (list + Create Research
+Project form), Submission Configuration, Submissions (View Details
+modal) and Progress Completion. The screen page objects live under
+`src/uucms/modules/research_development/pages/research_projects/`.
+
+Create the Research Projects test-data file from its template:
+
+``` powershell
+Copy-Item test_data\rnd\research_projects.example.json test_data\rnd\research_projects.json
+```
+
+After recording each screen, fill every `REPLACE_WITH_*` selector and
+value in `test_data/rnd/research_projects.json`. The screen-structure
+tests (headings, breadcrumbs, filters, buttons, table columns,
+empty-state text, create-form smoke check) run as soon as the file is
+copied; the create-project, configuration, View Details modal and
+completion-marking tests intentionally stop with a clear error while
+their selectors still contain `REPLACE_WITH` placeholders, and the
+row-level checks skip when the tables have no rows. Run only the
+Research Projects tests:
+
+``` powershell
+.venv\Scripts\python.exe -m pytest tests -k rnd_rp -v
+```
+
+or the one-click runner `.\run_rnd_research_projects.bat` /
+`.\scripts\run-rnd-research-projects.ps1`.
+
+## AI agents (opencode)
+
+Two project agents under `.opencode/agent/` drive the test-case and
+automation workflow:
+
+1. `testcase-writer` — turns requirement decks into test cases. Give it
+   a raw PPTX path or an extracted `docs/rnd/*.md` file. It extracts the
+   deck with `scripts/extract_pptx.py` when needed and writes
+   `testcases/<module>_<slug>_testcases.csv` with TC-ID, steps, expected
+   result, and an empty actual-result column to be filled after
+   execution.
+2. `playwright-writer` — turns the test case CSV into automation in this
+   project's structure (page objects under `src/uucms/modules`, workflows
+   under `src/uucms/workflows`, `test_data` JSON templates, UI tests under
+   `tests/ui`, and unit tests under `tests/unit`).
+   Unrecorded selectors stay as `REPLACE_WITH` placeholders until filled
+   from a codegen recording.
+
+Example flow:
+
+``` text
+@testcase-writer  write test cases for C:\...\Phase 2 R&D Module Final 1.pptx
+@playwright-writer  automate testcases\rnd_phase-2_testcases.csv
+```
+
+The extracted deck sources live under `docs/rnd/`
+(`phase-1.md`, `phase-2.md`, `phase-3.md`, `phase-2-master-v2.md`),
+generated by:
+
+``` powershell
+.venv\Scripts\python.exe scripts\extract_pptx.py "<deck.pptx>" -o "docs\rnd\<slug>.md"
+```
